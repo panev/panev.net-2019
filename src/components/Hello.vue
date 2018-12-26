@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="hello">
         <img v-bind:src="currentPhoto">
         <div class="t-himsg">
             <p>My name is Todor &ndash; I’m a 
@@ -65,13 +65,14 @@ export default {
 
     methods: {
         roleUp() {
-            var active = this.activePhoto + 1;
+            this.activePhoto = (this.activePhoto + 1) % this.roles.length;
+            // var active = this.activePhoto + 1;
             
-            if (active >= this.roles.length) {
-                active = 0;
-            }
+            // if (active >= this.roles.length) {
+            //     active = 0;
+            // }
           
-            this.swapPhoto(active);        
+            // this.swapPhoto(active);        
         },
         
         roleDown() {
@@ -92,6 +93,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/scss/utils.scss';
+
+#hello {
+    padding-top: $nav-height;
+}
 
 $visual-colour: #F68EFF;
 $ux-colour: #A68AFF;
