@@ -1,9 +1,7 @@
 <template> 
     <div id="works">
     Works section
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-      <router-link to="/grid">Grid</router-link>
+      <router-link to="/project-lockedinlive">Lockedin Live</router-link>
     </div>
     <!-- <router-view/> -->
 </template>
