@@ -1,5 +1,5 @@
 <template> 
-    <div id="works">
+    <div id="works" ref="works">
     Works section
       <router-link to="/project-lockedinlive">Lockedin Live</router-link>
     </div>
@@ -8,7 +8,10 @@
 
 <script>
 export default {
-	name: 'Works'
+	name: 'Works',
+	mounted() {
+		console.log("works is at " + this.$refs.works.offsetTop)
+	}
 }
 </script>
 

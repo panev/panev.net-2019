@@ -1,12 +1,15 @@
 <template>
-	<div id="contact">
+	<div id="contact" ref="contact">
 		Contact section
 	</div>
 </template>
 
 <script>
 export default {
-	name: 'Contact'	
+	name: 'Contact',
+	mounted() {
+		console.log("contact is at " + this.$refs.contact.offsetTop)
+	}
 }
 </script>
 
@@ -16,7 +19,7 @@ export default {
 #contact {
 	padding-top: $nav-height;
 	height: 100vh;
-	background: indigo;
+	background: #fcfcfc;
 }
 
 </style>
