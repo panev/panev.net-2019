@@ -8,8 +8,30 @@
 </template>
 
 <script>
+import About from '@/components/About.vue'
+
 export default {
-	name: 'HomeNav'	
+	name: 'HomeNav'
+	// data: function() {
+ //   		return {
+ //   			scrollPosition: null
+ //   		}
+ //  	},
+
+	// methods: {
+	// 	getSectionPos() {
+	// 		let aboutHeight = this.$refs.about.offsetTop;
+	// 		console.log(aboutHeight);
+	// 	},
+	// 	updateScroll() {
+	// 	  this.scrollPosition = window.scrollY
+	// 	}
+	// },
+
+	// mounted() {
+	// 	window.addEventListener('scroll', this.updateScroll);
+	// 	this.getSectionPos();
+	// }
 }
 </script> 
 
@@ -27,6 +49,7 @@ nav {
 a {
 	margin: 0 10px;
 	display: inline-block;
+	font-size: 20px;
 }
 
 </style>

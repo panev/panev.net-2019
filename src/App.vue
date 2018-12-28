@@ -5,8 +5,16 @@
 </template>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 
-$nav-height: 70px;
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
 
 html {
   padding: 0;
@@ -19,13 +27,11 @@ body {
 }
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
-
-
 
 </style>

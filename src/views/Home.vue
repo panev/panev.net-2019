@@ -2,7 +2,7 @@
 	<div>
 		<HomeNav></HomeNav>
 		<Hello></Hello>
-		<About></About>
+		<About v-on:inAbout="omg"></About>
 		<Works></Works>
 		<Contact></Contact>
 	</div>
@@ -24,6 +24,11 @@ export default {
     About,
     Works,
     Contact
+  },
+  methods: {
+  	omg: function() {
+  		console.log('omg')
+  	}
   }
 }
 </script>
