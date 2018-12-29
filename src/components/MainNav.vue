@@ -1,6 +1,6 @@
 <template> 
-	<section class="header">
-		<nav v-bind:class=" { 
+	<section class="header" :class="{ personHasScrolled: personHasScrolled }">
+		<nav :class=" { 
 			helloActive: helloActive,
 			aboutActive: aboutActive,
 			worksActive: worksActive,
@@ -27,6 +27,7 @@ export default {
    			aboutActive: false,
    			worksActive: false,
    			contactActive: false,
+   			personHasScrolled: false
    		}
   	},
   	props: [ 
@@ -41,10 +42,17 @@ export default {
   	],
 	methods: {
 
-		updateScroll() {
-			
-			this.scrollPosition = window.scrollY
-			
+		checkIfPersonHasScrolled() {
+			if (this.scrollPosition >= 90 && this.personHasScrolled === false) {
+				this.personHasScrolled = true;
+			}
+
+			if (this.scrollPosition <= 90 && this.personHasScrolled === true) {
+				this.personHasScrolled = false;
+			}
+		},
+
+		updateSections() {
 			if (this.scrollPosition >= this.helloAreaStart && 
 				this.scrollPosition < this.helloAreaEnd && 
 				this.helloActive === false) {
@@ -79,10 +87,18 @@ export default {
 		   			this.aboutActive = false,
 					this.worksActive = false,
 					this.contactActive = true
-			
 			}
-		}
+		},
 
+		updateScroll() {
+
+			this.scrollPosition = window.scrollY
+
+			this.checkIfPersonHasScrolled();
+
+			this.updateSections();
+			
+		}
 	},
 
 	mounted() {
@@ -96,8 +112,12 @@ export default {
 
 @import '@/scss/utils.scss';
 
-.line {
+.personHasScrolled nav a {
+	transform: translateY(0px);
+}
 
+.personHasScrolled.header {
+	height: 70px;
 }
 
 .header {
@@ -107,6 +127,7 @@ export default {
 	top: 0;
 	width: 100%;
 	z-index: 9000;
+	transition: 0.3s;
 }
 
 nav {
@@ -117,11 +138,13 @@ nav {
 a {
 	box-sizing: border-box;
 	padding: 20px;
-	margin: 50px 0 0 0;
+	transform: translateY(50px);
 	display: inline-block;
 	font-size: 18px;
 	color: $wl-second;
 	width: 120px;
+	transition: 0.3s;
+
 }
 
 .helloActive .hello-link,
@@ -137,22 +160,40 @@ a {
 	height: 7px;
 	width: 120px;
 	transition: 0.3s;
+	transform: translateX(0) translateY(50px);
+
 }
 
-.helloActive .active-marker {
-	transform: translateX(0);
+.helloActive nav.active-marker {
+	transform: translateX(0) translateY(0px);
 }
 
-.aboutActive .active-marker {
-	transform: translateX(120px);
+.aboutActive nav.active-marker {
+	transform: translateX(120px) translateY(50px);
 }
 
-.worksActive .active-marker {
-	transform: translateX(240px);
+.worksActive nav.active-marker {
+	transform: translateX(240px) translateY(50px);
 }
 
-.contactActive .active-marker {
-	transform: translateX(360px);
+.contactActive nav.active-marker {
+	transform: translateX(360px) translateY(50px);
+}
+
+.personHasScrolled nav.helloActive .active-marker {
+	transform: translateX(0) translateY(0px);
+}
+
+.personHasScrolled nav.aboutActive .active-marker {
+	transform: translateX(120px) translateY(0px);
+}
+
+.personHasScrolled nav.worksActive .active-marker {
+	transform: translateX(240px) translateY(0px);
+}
+
+.personHasScrolled nav.contactActive .active-marker {
+	transform: translateX(360px) translateY(0px);
 }
 
 
