@@ -9,8 +9,22 @@
 <script>
 export default {
 	name: 'Works',
+	data: function() {
+		return {
+			worksAreaStart: 0,
+			worksAreaEnd: 0		
+		}
+	},
+	methods: {
+		getWorksArea() {
+			this.worksAreaStart = this.$refs.works.offsetTop;
+			this.worksAreaEnd = this.$refs.works.offsetTop + this.$refs.works.offsetHeight;
+			this.$emit('worksAreaStartCalculated', this.worksAreaStart)
+			this.$emit('worksAreaEndCalculated', this.worksAreaEnd)
+		}
+	},
 	mounted() {
-		console.log("works is at " + this.$refs.works.offsetTop)
+		this.getWorksArea();
 	}
 }
 </script>

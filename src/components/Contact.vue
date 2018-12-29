@@ -7,8 +7,21 @@
 <script>
 export default {
 	name: 'Contact',
+	data: function() {
+		return {
+			contactAreaStart: 0,
+			contactAreaEnd: 0		}
+	},
+	methods: {
+		getContactArea() {
+			this.contactAreaStart = this.$refs.contact.offsetTop;
+			this.contactAreaEnd = this.$refs.contact.offsetTop + this.$refs.contact.offsetHeight;
+			this.$emit('contactAreaStartCalculated', this.contactAreaStart)
+			this.$emit('contactAreaEndCalculated', this.contactAreaEnd)
+		}
+	},
 	mounted() {
-		console.log("contact is at " + this.$refs.contact.offsetTop)
+		this.getContactArea();
 	}
 }
 </script>

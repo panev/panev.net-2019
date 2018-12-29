@@ -10,10 +10,8 @@
 			<a href="#" class="about-link" v-scroll-to="'#about'">About</a>
 			<a href="#" class="works-link" v-scroll-to="'#works'">Work</a>
 			<a href="#" class="contact-link" v-scroll-to="'#contact'">Contact</a>
-			
 			<div class="active-marker"></div>
 		</nav>
-		
 
 	</section>
 </template>
@@ -31,38 +29,51 @@ export default {
    			contactActive: false,
    		}
   	},
-
+  	props: [ 
+  		'helloAreaStart',
+  		'helloAreaEnd',
+  		'aboutAreaStart',
+  		'aboutAreaEnd',
+  		'worksAreaStart',
+  		'worksAreaEnd',
+  		'contactAreaStart',
+  		'contactAreaEnd',
+  	],
 	methods: {
 
 		updateScroll() {
+			
 			this.scrollPosition = window.scrollY
 			
-			if (this.scrollPosition > 0 && 
-				this.scrollPosition < 328 && 
+			if (this.scrollPosition >= this.helloAreaStart && 
+				this.scrollPosition < this.helloAreaEnd && 
 				this.helloActive === false) {
 					this.helloActive = true;
 		   			this.aboutActive = false,
 					this.worksActive = false,
 					this.contactActive = false
 			}
-			if (this.scrollPosition >= 328 && 
-				this.scrollPosition < 1156 && 
+
+			if (this.scrollPosition >= this.aboutAreaStart && 
+				this.scrollPosition < this.aboutAreaEnd && 
 				this.aboutActive === false) {
 					this.helloActive = false;
 		   			this.aboutActive = true,
 					this.worksActive = false,
 					this.contactActive = false
 			}
-			if (this.scrollPosition >= 1156 && 
-				this.scrollPosition < 1984 && 
+
+			if (this.scrollPosition >= this.worksAreaStart  && 
+				this.scrollPosition < this.worksAreaEnd  && 
 				this.worksActive === false) {
 					this.helloActive = false;
 		   			this.aboutActive = false,
 					this.worksActive = true,
 					this.contactActive = false
 			}
-			if (this.scrollPosition >= 1984 && 
-				this.scrollPosition < 5000 && 
+
+			if (this.scrollPosition >= this.contactAreaStart  && 
+				this.scrollPosition < this.contactAreaEnd  && 
 				this.contactActive === false) {
 					this.helloActive = false;
 		   			this.aboutActive = false,

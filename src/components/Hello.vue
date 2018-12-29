@@ -1,5 +1,5 @@
 <template>
-    <div id="hello">
+    <div id="hello" ref="hello">
         <img v-bind:src="currentPhoto">
         <div class="t-himsg">
             <p>My name is Todor &ndash; I’m a 
@@ -47,7 +47,9 @@ export default {
                     roleColour: "#FFBC9A"
                 }
             ],
-            activePhoto: 0
+            activePhoto: 0,
+            helloAreaStart: 0,
+            helloAreaEnd: 0   
         }
     },
 
@@ -87,7 +89,16 @@ export default {
         
         swapPhoto(imageIndex) {
             this.activePhoto = imageIndex;
+        },
+        getHelloArea() {
+            this.helloAreaStart = this.$refs.hello.offsetTop;
+            this.helloAreaEnd = this.$refs.hello.offsetTop + this.$refs.hello.offsetHeight;
+            this.$emit('helloAreaStartCalculated', this.helloAreaStart)
+            this.$emit('helloAreaEndCalculated', this.helloAreaEnd)
         }
+    },
+    mounted() {
+        this.getHelloArea();
     }
 }
 </script>
