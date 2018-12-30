@@ -7,6 +7,10 @@
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
@@ -22,7 +26,7 @@ html {
 }
 
 body {
-  padding: 70px 0 0 0;
+  padding: 0;
   margin: 0;
 }
 

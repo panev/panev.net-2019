@@ -23,7 +23,7 @@ export default {
   	data: function() {
    		return {
    			scrollPosition: null,
-   			helloActive: false,
+   			helloActive: true,
    			aboutActive: false,
    			worksActive: false,
    			contactActive: false,
@@ -122,7 +122,7 @@ export default {
 
 .header {
 	height: $nav-height;
-	background: #fff;
+	background: rgba(255,255,255,0.95);
 	position: fixed;
 	top: 0;
 	width: 100%;
