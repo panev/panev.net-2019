@@ -10,7 +10,8 @@ export default {
 	data: function() {
 		return {
 			contactAreaStart: 0,
-			contactAreaEnd: 0		}
+			contactAreaEnd: 0		
+		}
 	},
 	methods: {
 		getContactArea() {
@@ -30,7 +31,7 @@ export default {
 @import '@/scss/utils.scss';
 
 #contact {
-	padding-top: $nav-height;
+	padding-top: calc(#{$nav-height} * 2);
 	height: 100vh;
 	background: #fcfcfc;
 }

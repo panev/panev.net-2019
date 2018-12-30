@@ -30,7 +30,7 @@ export default {
 @import '@/scss/utils.scss';
 
 #about {
-	padding-top: $nav-height;
+	padding-top: calc(#{$nav-height} * 2);
 	height: 100vh;
 	background: hotpink;
 }

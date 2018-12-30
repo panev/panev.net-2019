@@ -107,7 +107,7 @@ export default {
 @import '@/scss/utils.scss';
 
 #hello {
-    padding-top: $nav-height;
+    padding-top: calc(#{$nav-height} * 2);
 }
 
 $visual-colour: #F68EFF;

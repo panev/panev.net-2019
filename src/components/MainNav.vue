@@ -43,11 +43,11 @@ export default {
 	methods: {
 
 		checkIfPersonHasScrolled() {
-			if (this.scrollPosition >= 90 && this.personHasScrolled === false) {
+			if (this.scrollPosition >= 65 && this.personHasScrolled === false) {
 				this.personHasScrolled = true;
 			}
 
-			if (this.scrollPosition <= 90 && this.personHasScrolled === true) {
+			if (this.scrollPosition <= 65 && this.personHasScrolled === true) {
 				this.personHasScrolled = false;
 			}
 		},
@@ -112,22 +112,42 @@ export default {
 
 @import '@/scss/utils.scss';
 
-.personHasScrolled nav a {
-	transform: translateY(0px);
-}
 
-.personHasScrolled.header {
-	height: 70px;
+.personHasScrolled {
+	
+	&.header {
+		transform: translateY(0);
+		
+		&::after {
+			opacity: 0.03;
+			transform: scaleY(1);
+
+		}
+	}
 }
 
 .header {
 	height: $nav-height;
-	background: rgba(255,255,255,0.95);
+	transform: translateY($nav-height);
+	background: rgba(255,255,255,1);
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 9000;
 	transition: 0.3s;
+	
+	&::after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 30px;
+		/*background: rgba(255,255,255,0.2);*/
+		background-image: linear-gradient(-180deg, #000 0%, rgba(255,255,255,0.00) 100%);
+		opacity: 0;
+		transition: 0.3s;
+		transform: scaleY(0);
+		transform-origin: top;
+	}
 }
 
 nav {
@@ -138,7 +158,6 @@ nav {
 a {
 	box-sizing: border-box;
 	padding: 20px;
-	transform: translateY(50px);
 	display: inline-block;
 	font-size: 18px;
 	color: $wl-second;
@@ -164,35 +183,19 @@ a {
 
 }
 
-.helloActive nav.active-marker {
+.helloActive .active-marker {
 	transform: translateX(0) translateY(0px);
 }
 
-.aboutActive nav.active-marker {
-	transform: translateX(120px) translateY(50px);
-}
-
-.worksActive nav.active-marker {
-	transform: translateX(240px) translateY(50px);
-}
-
-.contactActive nav.active-marker {
-	transform: translateX(360px) translateY(50px);
-}
-
-.personHasScrolled nav.helloActive .active-marker {
-	transform: translateX(0) translateY(0px);
-}
-
-.personHasScrolled nav.aboutActive .active-marker {
+.aboutActive .active-marker {
 	transform: translateX(120px) translateY(0px);
 }
 
-.personHasScrolled nav.worksActive .active-marker {
+.worksActive .active-marker {
 	transform: translateX(240px) translateY(0px);
 }
 
-.personHasScrolled nav.contactActive .active-marker {
+.contactActive .active-marker {
 	transform: translateX(360px) translateY(0px);
 }
 
