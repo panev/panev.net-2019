@@ -1,16 +1,21 @@
 <template>
     <div id="hello" ref="hello">
-        <img v-bind:src="currentPhoto">
         <div class="t-himsg">
-            <p>My name is Todor &ndash; I’m a 
-                <span class="t-role" :style="{color: currentColour}">
-                    <span @click="roleUp" class="t-role-up">&#9650;</span>
-                        {{ currentText}}
-                    <span @click="roleDown" class="t-role-down">&#9660;</span>
-                </span> 
-                designer
+            <p>I'm Todor &ndash; a 
+                    <span class="t-role" :style="{color: currentColour}">
+                        
+                        <span @click="roleUp" class="t-role-up">
+                            <img src="@/assets/arrowUp.svg" alt="up arrow" :style="{fill: currentColour}">
+                        </span>
+                        
+                        {{ currentText }}
+                        
+                        <span @click="roleDown" class="t-role-down">
+                            <img src="@/assets/arrowDown.svg" alt="down arrow" :style="{fill: currentColour}">
+                        </span>
+                    </span> 
+                designer based in Sofia, Bulgaria.
             </p>
-            <p>based in Sofia, Bulgaria.</p>
         </div>
     </div>
 </template>
@@ -25,25 +30,21 @@ export default {
                 {
                     id: '1',
                     buttonString: "User Experience",
-                    photoSource: require('@/assets/ux.png'),
                     roleColour: "#A68AFF"
                 }, 
                 {
                     id: '2',
                     buttonString: "Product",
-                    photoSource: require('@/assets/product.png'),
                     roleColour: "#50E3C2"
                 }, 
                 {
                     id: '3',
                     buttonString: "Visual",
-                    photoSource: require('@/assets/visual.png'),
                     roleColour: "#F68EFF"
                 }, 
                 {
                     id: '4',
                     buttonString: "Interaction",
-                    photoSource: require('@/assets/ixd.png'),
                     roleColour: "#FFBC9A"
                 }
             ],
@@ -54,9 +55,7 @@ export default {
     },
 
     computed: {
-        currentPhoto() {
-            return this.roles[this.activePhoto].photoSource;
-        },
+
         currentText() {
             return this.roles[this.activePhoto].buttonString;
         },
@@ -66,15 +65,11 @@ export default {
     },
 
     methods: {
+
         roleUp() {
-            this.activePhoto = (this.activePhoto + 1) % this.roles.length;
-            // var active = this.activePhoto + 1;
-            
-            // if (active >= this.roles.length) {
-            //     active = 0;
-            // }
-          
-            // this.swapPhoto(active);        
+
+            // Ivo wrote this optimisation that can be applied to roleDown and swapPhoto can be omitted, but I'm not smart enough to understand it.
+            this.activePhoto = (this.activePhoto + 1) % this.roles.length;    
         },
         
         roleDown() {
@@ -82,14 +77,15 @@ export default {
       
             if (active < 0) {
                 active = this.roles.length - 1;
-            }
-      
+            }            
+
             this.swapPhoto(active);        
         },
         
         swapPhoto(imageIndex) {
             this.activePhoto = imageIndex;
         },
+        
         getHelloArea() {
             this.helloAreaStart = this.$refs.hello.offsetTop;
             this.helloAreaEnd = this.$refs.hello.offsetTop + this.$refs.hello.offsetHeight;
@@ -162,16 +158,17 @@ $ixd-colour: #FFBC9A;
 }
 
 .t-role-up {
-    top: -35px;
+    top: -45px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .t-role-down {
-    bottom: -25px;
+    bottom: -35px;
     left: 50%;
     transform: translateX(-50%);
 }
+
 
 </style>
 

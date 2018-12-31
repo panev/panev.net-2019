@@ -1,5 +1,5 @@
 <template>
-	<div class="home-container">
+	<div class="home-container app-view">
 		<MainNav	
 			:helloAreaStart="helloAreaStart"
 			:helloAreaEnd="helloAreaEnd"
