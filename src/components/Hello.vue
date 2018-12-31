@@ -1,5 +1,7 @@
 <template>
-    <div id="hello" ref="hello">
+    <div id="hello" ref="hello" class="grid-container">
+        <h1 class="hello-heading">Hi there!</h1>
+        <div class="test"></div>
         <div class="t-himsg">
             <p>I'm Todor &ndash; a 
                     <span class="t-role" :style="{color: currentColour}">
@@ -30,12 +32,12 @@ export default {
                 {
                     id: '1',
                     buttonString: "User Experience",
-                    roleColour: "#A68AFF"
+                    roleColour: "#52DBDB"
                 }, 
                 {
                     id: '2',
                     buttonString: "Product",
-                    roleColour: "#50E3C2"
+                    roleColour: "#A68AFF"
                 }, 
                 {
                     id: '3',
@@ -106,10 +108,24 @@ export default {
     padding-top: calc(#{$nav-height} * 2);
 }
 
-$visual-colour: #F68EFF;
-$ux-colour: #A68AFF;
-$product-colour: #50E3C2;
-$ixd-colour: #FFBC9A;
+.hello-heading {
+    margin-top: 150px;
+    margin-bottom: 0;
+    height: auto;
+    position: relative;
+    z-index: 10;
+    
+    &::before {
+        content: '';
+        background: $wl-prime;
+        width: 365px;
+        height: 31px;
+        position: absolute;
+        z-index: -1;
+        top: 45px;
+        transform: translateX(-50px);
+    }
+}
 
 .visual-colour {
     background: $visual-colour;
@@ -128,12 +144,13 @@ $ixd-colour: #FFBC9A;
 }
 
 .t-himsg {
+    grid-column: 1 / 13;
     margin-top: 50px;
-    font-size: 24px;
+    font-size: $type-small-heading;
     color: #2B3E56;
-    width: 756px;
     text-align: center;
     margin: 40px auto;
+    margin-bottom: 150px;
 }
 
 .t-role {
@@ -164,7 +181,7 @@ $ixd-colour: #FFBC9A;
 }
 
 .t-role-down {
-    bottom: -35px;
+    bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
 }

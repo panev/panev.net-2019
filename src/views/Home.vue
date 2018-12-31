@@ -61,9 +61,6 @@ export default {
     About,
     Works,
     Contact
-  },
-  mounted() {
-
   }
 }
 </script>
