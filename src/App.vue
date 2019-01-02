@@ -17,6 +17,10 @@ a:visited {
   color: inherit;
 }
 
+li {
+  list-style: none;
+}
+
 
 html {
   padding: 0;

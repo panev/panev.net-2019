@@ -6,6 +6,8 @@ $wl-second: #2B3E56;
 $wl-second-lite: #2B507D;
 $wl-third: #FFCD7A;
 
+$wl-gray: #D6D6D6;
+
 $type-heading: 87px;
 $type-small-heading: 30px;
 $type-paragraph: 19px;
@@ -25,10 +27,28 @@ $ixd-colour: #FFBC9A;
 	justify-content: center;
 }
 
+.section-heading {
+    height: auto;
+    position: relative;
+    z-index: 10;
+	grid-column: 1 / 13;
+	z-index: 30;
+    
+    &::before {
+        content: '';
+        background: $wl-prime-lite;
+        width: 430px;
+        height: 28px;
+        position: absolute;
+        z-index: -1;
+        top: 45px;
+        transform: translate(-110px, 23px);
+    }
+}
+
 h1 {
 	font-size: $type-heading;
 	color: $wl-second;
-	grid-column: 1 / 13;
 }
 
 h2 {

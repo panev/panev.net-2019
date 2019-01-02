@@ -1,6 +1,6 @@
 <template>
     <div id="hello" ref="hello" class="grid-container">
-        <h1 class="hello-heading">Hi there!</h1>
+        <h1 class="hello-heading section-heading">Hi there!</h1>
         <div class="test"></div>
         <div class="t-himsg">
             <h2>I'm Todor &ndash; a 
@@ -112,21 +112,6 @@ export default {
 
 .hello-heading {
     margin-top: 150px;
-    margin-bottom: 0;
-    height: auto;
-    position: relative;
-    z-index: 10;
-    
-    &::before {
-        content: '';
-        background: $wl-prime-lite;
-        width: 430px;
-        height: 28px;
-        position: absolute;
-        z-index: -1;
-        top: 45px;
-        transform: translate(-110px, 23px);
-    }
 }
 
 .visual-colour {

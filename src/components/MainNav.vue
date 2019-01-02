@@ -134,7 +134,18 @@ export default {
 	top: 0;
 	width: 100%;
 	z-index: 9000;
-	transition: 0.3s;
+	transition: 0.25s;
+
+	/* this is like a curtain, so you don't see the content underneath in the transition time when the header snaps to top */
+	&::before {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 70px;
+		background: #fff;
+		position: absolute;
+		top: -$nav-height;
+	}
 	
 	&::after {
 		content: '';
@@ -171,7 +182,6 @@ a {
 .worksActive .works-link,
 .contactActive .contact-link {
 	font-weight: bold;
-	/*color: $wl-prime;*/
 }
 
 .active-marker {

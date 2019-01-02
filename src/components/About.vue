@@ -1,6 +1,6 @@
 <template>
 	<div id="about" ref="about" class="grid-container">
-		<h1 class="about-heading">About me</h1>
+		<h1 class="about-heading section-heading">About me</h1>
 		<img src="@/assets/aboutGraph.svg" alt="timeline graph">
 		<p>I've spent the last 10 years doing[?] visual communication, learning about the intracacies that technology has to offer and exploring what user experience is and applying it to the real world.
 		<br>
@@ -43,22 +43,7 @@ export default {
 }
 
 .about-heading {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    height: auto;
-    position: relative;
-    z-index: 10;
-    
-    &::before {
-        content: '';
-        background: $wl-prime-lite;
-        width: 365px;
-        height: 31px;
-        position: absolute;
-        z-index: -1;
-        top: 45px;
-        transform: translate(-110px, 23px);
-    }
+
 }
 
 p {
