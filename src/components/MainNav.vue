@@ -171,15 +171,17 @@ a {
 .worksActive .works-link,
 .contactActive .contact-link {
 	font-weight: bold;
-	color: $wl-prime;
+	/*color: $wl-prime;*/
 }
 
 .active-marker {
 	background: $wl-prime;
-	height: 7px;
+	height: 8px;
 	width: 120px;
 	transition: 0.3s;
-	transform: translateX(0) translateY(50px);
+	transform: translateX(0) translateY(0px);
+	z-index: -5;
+	position: relative;
 
 }
 

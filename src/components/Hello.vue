@@ -3,7 +3,7 @@
         <h1 class="hello-heading">Hi there!</h1>
         <div class="test"></div>
         <div class="t-himsg">
-            <p>I'm Todor &ndash; a 
+            <h2>I'm Todor &ndash; a 
                     <span class="t-role" :style="{color: currentColour}">
                         
                         <span @click="roleUp" class="t-role-up">
@@ -15,9 +15,10 @@
                         <span @click="roleDown" class="t-role-down">
                             <img src="@/assets/arrowDown.svg" alt="down arrow" :style="{fill: currentColour}">
                         </span>
+
                     </span> 
                 designer based in Sofia, Bulgaria.
-            </p>
+            </h2>
         </div>
     </div>
 </template>
@@ -106,6 +107,7 @@ export default {
 
 #hello {
     padding-top: calc(#{$nav-height} * 2);
+    margin-bottom: 50px;
 }
 
 .hello-heading {
@@ -117,13 +119,13 @@ export default {
     
     &::before {
         content: '';
-        background: $wl-prime;
-        width: 365px;
-        height: 31px;
+        background: $wl-prime-lite;
+        width: 430px;
+        height: 28px;
         position: absolute;
         z-index: -1;
         top: 45px;
-        transform: translateX(-50px);
+        transform: translate(-110px, 23px);
     }
 }
 

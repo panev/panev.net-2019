@@ -1,8 +1,10 @@
 $nav-height: 70px;
 
 $wl-prime: #52DBDB;
+$wl-prime-lite: rgba(133, 230, 230, 1);
 $wl-second: #2B3E56;
 $wl-second-lite: #2B507D;
+$wl-third: #FFCD7A;
 
 $type-heading: 87px;
 $type-small-heading: 30px;
@@ -27,4 +29,13 @@ h1 {
 	font-size: $type-heading;
 	color: $wl-second;
 	grid-column: 1 / 13;
+}
+
+h2 {
+	font-size: $type-small-heading;
+	font-weight: normal;
+}
+
+p {
+	font-size: $type-paragraph;
 }

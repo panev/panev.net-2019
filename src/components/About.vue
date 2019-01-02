@@ -1,6 +1,14 @@
 <template>
-	<div id="about" ref="about">
-		About section
+	<div id="about" ref="about" class="grid-container">
+		<h1 class="about-heading">About me</h1>
+		<img src="@/assets/aboutGraph.svg" alt="timeline graph">
+		<p>I've spent the last 10 years doing[?] visual communication, learning about the intracacies that technology has to offer and exploring what user experience is and applying it to the real world.
+		<br>
+		<br>
+		[too harsh of a context-switch] I believe that technology is an integral part of any designer's toolkit. Being able to code & keeping up to date with front-end has vastly expanded my outlook towards the products that I design and build.
+		<br>
+		<br>
+		My current focus is doing user experience design, where I strive to optimize complexity and prevent noise in digital products.</p>
 	</div>
 </template>
 
@@ -31,7 +39,44 @@ export default {
 
 #about {
 	padding-top: calc(#{$nav-height} * 2);
-	height: 100vh;
-	background: hotpink;
+	margin-bottom: 100px;
 }
+
+.about-heading {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    height: auto;
+    position: relative;
+    z-index: 10;
+    
+    &::before {
+        content: '';
+        background: $wl-prime-lite;
+        width: 365px;
+        height: 31px;
+        position: absolute;
+        z-index: -1;
+        top: 45px;
+        transform: translate(-110px, 23px);
+    }
+}
+
+p {
+	grid-column: 6 / 11;
+	text-align: left;
+	align-self: center;
+	background-image: linear-gradient(0deg, #47D8D8 0%, #4FD1DB 15%, #A68AFF 43%, #2B507D 66%, #4AADE2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent
+}
+
+img {
+	grid-column: 2 / 5;
+}
+
+
+
+
+
+
 </style>
