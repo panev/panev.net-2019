@@ -24,6 +24,4 @@ footer {
 	color: $wl-prime;
 }
 
-
-
 </style>

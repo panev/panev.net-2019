@@ -59,9 +59,4 @@ img {
 	grid-column: 2 / 5;
 }
 
-
-
-
-
-
 </style>

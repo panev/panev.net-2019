@@ -170,7 +170,7 @@ a {
 	box-sizing: border-box;
 	padding: 20px;
 	display: inline-block;
-	font-size: 18px;
+	font-size: $type-paragraph;
 	color: $wl-second;
 	width: 120px;
 	transition: 0.3s;
