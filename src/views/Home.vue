@@ -30,6 +30,8 @@
 			@contactAreaStartCalculated="contactAreaStart = $event" 
 			@contactAreaEndCalculated="contactAreaEnd = $event" >
 		</Contact>
+
+		<Footer></Footer>
 	</div>
 </template>
 
@@ -40,6 +42,7 @@ import Hello from '@/components/Hello.vue'
 import About from '@/components/About.vue'
 import Works from '@/components/Works.vue'
 import Contact from '@/components/Contact.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'home',
@@ -60,7 +63,8 @@ export default {
     Hello,
     About,
     Works,
-    Contact
+    Contact,
+    Footer
   }
 }
 </script>

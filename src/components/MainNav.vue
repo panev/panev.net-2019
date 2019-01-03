@@ -175,6 +175,22 @@ a {
 	width: 120px;
 	transition: 0.3s;
 
+	&::after {
+		content: '';
+		height: 8px;
+		width: 120px;
+		display: block;
+		background: #efefef;
+		position: relative;
+		top: 28px;
+		opacity: 0;
+    	left: -20px;
+    	transition: 0.35s;
+	}
+
+	&:hover::after {
+		opacity: 0.85;
+	}
 }
 
 .helloActive .hello-link,
@@ -190,8 +206,9 @@ a {
 	width: 120px;
 	transition: 0.3s;
 	transform: translateX(0) translateY(0px);
-	z-index: -5;
+	z-index: 5;
 	position: relative;
+
 
 }
 

@@ -1,6 +1,7 @@
 <template>
-	<div id="contact" ref="contact">
-		Contact section
+	<div id="contact" ref="contact" class="grid-container">
+		<h1 class="section-heading contact-heading">Get in touch</h1>
+		<h2>You can contact me via <a href="mailto:todor@panev.net">email</a> or directly message me on&nbsp;<a href="#">twitter</a>.</h2>
 	</div>
 </template>
 
@@ -32,8 +33,23 @@ export default {
 
 #contact {
 	padding-top: calc(#{$nav-height} * 2);
-	height: 100vh;
 	background: #fcfcfc;
+}
+
+.contact-heading {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+h2 {
+	grid-column: 3 / 11;
+	text-align: left;
+
+	& a {
+		font-weight: bold;
+		color: $wl-prime;
+		text-decoration: underline;
+	}
 }
 
 </style>
