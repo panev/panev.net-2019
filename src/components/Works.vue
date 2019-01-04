@@ -47,6 +47,7 @@ export default {
 			this.worksAreaEnd = this.$refs.works.offsetTop + this.$refs.works.offsetHeight;
 			this.$emit('worksAreaStartCalculated', this.worksAreaStart)
 			this.$emit('worksAreaEndCalculated', this.worksAreaEnd)
+			console.log(this.worksAreaStart)
 		}
 	},
 	mounted() {

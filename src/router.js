@@ -18,5 +18,8 @@ export default new Router({
       component: ProjectLockedin
     }
 
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 2058 }
+  }
 })
