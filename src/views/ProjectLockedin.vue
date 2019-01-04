@@ -121,6 +121,11 @@
 					What I ended up with was pretty much what I set out to do initially – a small optimisation of somehting I do daily. The real-world technical challenges that I encoutered in this little project were a fantastic opportunity for me to update my front-end skills to be more current. 
 				</p>
 				<p>< few more imgs></p>
+				<p>Thanks for reading!</p>
+			</section>
+			<section id="buttons">
+				<router-link to="/" class="button back">< Back to Home Page</router-link>
+				<a href="http://lockedin.live" target="_blank" class="button visit external">Visit live project <img src="@/assets/project-lockedin/iconExternal.svg" alt="external icon"></a>
 			</section>
 		</div>
 
@@ -309,6 +314,41 @@ audio {
 
 .listen-label {
 	margin-bottom: 25px;
+}
+
+#buttons {
+	width: 100%;
+	text-align: center;
+}
+
+.button {
+	height: 58px;
+	border-radius: 30px;
+	padding: 20px 30px;
+	font-weight: bold;
+	color: #fff;
+	display: inline-block;
+	margin: 0 20px;
+	box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.15);
+	transition: 0.3s;
+
+	&.back {
+		background: $wl-second;
+	}
+
+	&.visit {
+		background: $wl-prime;
+	}
+
+	& img {
+		vertical-align: bottom;
+		margin-left: 8px;
+	}
+
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.20);
+	}
 }
 
 </style>
