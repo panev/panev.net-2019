@@ -41,10 +41,15 @@
 		</div>
 
 		<div class="content">
-			<section class="audio">
-				
+			<section class="audio grid-container">
+				<div class="duration">8 minute read</div>
+				<div class="listen-label">Don't want to? Listen to an audio version of this case study instead!</div>
+				<audio controls>
+					<source v-bind:src="audioSrc">
+				</audio>
 			</section>
 			<section id="inception" class="grid-container">
+				<img src="@/assets/project-lockedin/inception.svg" alt="inception image" class="section-thumb">
 				<h2>Inception</h2>
 				<p>
 					For the longest time I've been an avid listener of a certain online drum and bass radio – bassdrive.com. What had been bugging me recently was that there wasn't a way for me to listen to it on a mobile phone, at least not that easily – each time I had to go to the website, which wasn't responsive and fiddle with the tiny buttons and awkward flow to start listening.
@@ -54,14 +59,16 @@
 				</p>
 			</section>
 			<section id="project-goals" class="grid-container">
+				<img src="@/assets/project-lockedin/projectGoals.svg" alt="project goals image" class="section-thumb">
 				<h2>Project goals</h2>
 				<p>What I needed was a one click solution – easy right? A play button.</p>
 				<img src="@/assets/project-lockedin/test.png" alt="test" class="mock">
 				<p>
-					However, I wanted to purposefully overengineer this solution and go beyond vanilla web technologies and dip my foot in the emerging world of progressive web apps, vue.js and css grid – things I had only read about and found immensley interesting to play around with. Despite being overkill for my simple use case, these tools would allow me to achieve a native like feel, improved performance (PWAs), build a landing page for the desktop that I could reuse on mobile (CSS grid) and scale this project in the future to not only be a play button for 1 online radio (vue.js).
+					However, I wanted to purposefully overengineer this solution and go beyond vanilla web technologies and dip my foot in the emerging world of progressive web apps, vue.js and css grid – things I had only read about and found immensley interesting to play around with. Despite being overkill for my simple use case, these tools would allow me to achieve a native like feel, improved performance (PWAs), build a landing page for the desktop that I could reuse on mobile (CSS grid) and scale this project in the future to be more than just a play button for 1 online radio (vue.js).
 				</p>
 			</section>
 			<section id="getting-there" class="grid-container">
+				<img src="@/assets/project-lockedin/gettingThere.svg" alt="getting there image" class="section-thumb">
 				<h2>Getting there</h2>
 				<p>
 					I started off by considering when and how myself and others would use this thing – I kind off already knew that for myself and for now that was enough to get started – pressing play and then immediately doing something else, while the audio plays in the background.
@@ -85,6 +92,7 @@
 				</p>
 			</section>
 			<section id="implementation" class="grid-container">
+				<img src="@/assets/project-lockedin/implementation.svg" alt="implementation image" class="section-thumb">
 				<h2>Implementation</h2>
 				<p>
 					The app features Progressive Web App capabilities like adding it to your phone's home screen for quicker access. 
@@ -107,6 +115,8 @@
 				</p>
 			</section>
 			<section id="outcome" class="grid-container">
+				<img src="@/assets/project-lockedin/outcome.svg" alt="outcome image" class="section-thumb">
+				<h2>Outcome</h2>
 				<p>
 					What I ended up with was pretty much what I set out to do initially – a small optimisation of somehting I do daily. The real-world technical challenges that I encoutered in this little project were a fantastic opportunity for me to update my front-end skills to be more current. 
 				</p>
@@ -121,11 +131,17 @@
 
 <script>
 import Footer from '@/components/Footer.vue'
+
 export default {
 	name: 'project-lockedin',
 	components: {
     	Footer
-  }
+	},
+	data: function() {
+		return {
+			audioSrc: require('@/assets/project-lockedin/sample.mp3')
+		}
+	}
 }
 </script>
 
@@ -256,6 +272,14 @@ nav {
 		padding-top: $nav-height;
 		text-align: left;
 		margin-bottom: 80px;
+
+		&.audio {
+			border-top: 1px dashed #ddd;
+			border-bottom: 1px dashed #ddd;
+			padding-bottom: 50px;
+			padding-top: 50px;
+			background: #fcfcfc;
+		}
 	}
 
 	& p {
@@ -264,13 +288,28 @@ nav {
 
 	& .mock {
 		grid-column: 2 / 12;
-		margin-top: 20px;
-		margin-bottom: 20px;
+		margin-top: 10px;
+		margin-bottom: 55px;
 	}
 }
 
+.section-thumb,
+.duration,
+.listen-label,
+audio {
+	grid-column: 1 / 13;
+	justify-self: center;
+}
 
+.duration {
+	color: $wl-prime;
+	margin-bottom: 5px; 
+	font-weight: bold;
+}
 
+.listen-label {
+	margin-bottom: 25px;
+}
 
 </style>
 
