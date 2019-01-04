@@ -6,12 +6,18 @@
 				<h3>Project<span>:</span> Lockedin Live</h3>
 				<router-link to="/">< Back</router-link>
 			</div>
-			<nav>
-				<a href="#" v-scroll-to="'#inception'">Inception</a>
-				<a href="#" v-scroll-to="'#project-goals'">Project Goals</a>
-				<a href="#" v-scroll-to="'#getting-there'">Getting There</a>
-				<a href="#" v-scroll-to="'#implementation'">Implementation</a>
-				<a href="#" v-scroll-to="'#outcome'">Outcome</a>
+			<nav :class=" { 
+				inceptionActive: inceptionActive,
+				projectGoalsActive: projectGoalsActive,
+				gettingThereActive: gettingThereActive,
+				implementationActive: implementationActive,
+				outcomeActive: outcomeActive }" >
+				<a class="inception-link" href="#" v-scroll-to="'#inception'">Inception</a>
+				<a class="project-goals-link" href="#" v-scroll-to="'#project-goals'">Project Goals</a>
+				<a class="getting-there-link" href="#" v-scroll-to="'#getting-there'">Getting There</a>
+				<a class="implementation-link" href="#" v-scroll-to="'#implementation'">Implementation</a>
+				<a class="outcome-link" href="#" v-scroll-to="'#outcome'">Outcome</a>
+				<div class="active-marker"></div>
 			</nav>
 		</header>
 
@@ -48,7 +54,7 @@
 					<source v-bind:src="audioSrc">
 				</audio>
 			</section>
-			<section id="inception" class="grid-container">
+			<section id="inception" ref="inception" class="grid-container">
 				<img src="@/assets/project-lockedin/inception.svg" alt="inception image" class="section-thumb">
 				<h2>Inception</h2>
 				<p>
@@ -58,7 +64,7 @@
 					I hadn't coded anything in a long while so I though that making something small that solves this first-world-problem of mine would be a great opportunity to catch up on the latest in the web technology world as well as give somehting back to the fantastic community that operates the online radio station. 
 				</p>
 			</section>
-			<section id="project-goals" class="grid-container">
+			<section id="project-goals" ref="project" class="grid-container">
 				<img src="@/assets/project-lockedin/projectGoals.svg" alt="project goals image" class="section-thumb">
 				<h2>Project goals</h2>
 				<p>What I needed was a one click solution – easy right? A play button.</p>
@@ -67,7 +73,7 @@
 					However, I wanted to purposefully overengineer this solution and go beyond vanilla web technologies and dip my foot in the emerging world of progressive web apps, vue.js and css grid – things I had only read about and found immensley interesting to play around with. Despite being overkill for my simple use case, these tools would allow me to achieve a native like feel, improved performance (PWAs), build a landing page for the desktop that I could reuse on mobile (CSS grid) and scale this project in the future to be more than just a play button for 1 online radio (vue.js).
 				</p>
 			</section>
-			<section id="getting-there" class="grid-container">
+			<section id="getting-there" ref="getting" class="grid-container">
 				<img src="@/assets/project-lockedin/gettingThere.svg" alt="getting there image" class="section-thumb">
 				<h2>Getting there</h2>
 				<p>
@@ -91,7 +97,7 @@
 					Ultimately, I decided to not include this idea and keep things more simple and focused towards the main idea of my little app – listening. The scheduling feature was just extra stuff there, that didn't really help you achieve your main goal. 
 				</p>
 			</section>
-			<section id="implementation" class="grid-container">
+			<section id="implementation" ref="implementation" class="grid-container">
 				<img src="@/assets/project-lockedin/implementation.svg" alt="implementation image" class="section-thumb">
 				<h2>Implementation</h2>
 				<p>
@@ -114,7 +120,7 @@
 					Unfortunatelly, I wasn't able to overcome a technical issue that allowed me to fetch the title of the stream, which was essentially info about what was playing a the moment (CORS issue). A drawback for sure, but I decided not to dwell on it too much and went ahead with the project.
 				</p>
 			</section>
-			<section id="outcome" class="grid-container">
+			<section id="outcome" ref="outcome" class="grid-container">
 				<img src="@/assets/project-lockedin/outcome.svg" alt="outcome image" class="section-thumb">
 				<h2>Outcome</h2>
 				<p>
@@ -144,8 +150,121 @@ export default {
 	},
 	data: function() {
 		return {
-			audioSrc: require('@/assets/project-lockedin/sample.mp3')
+			audioSrc: require('@/assets/project-lockedin/sample.mp3'),
+			scrollPosition: 0,
+			//
+			inceptionAreaStart: 0,
+			inceptionAreaEnd: 0,
+			projectGoalsAreaStart: 0,
+			projectGoalsAreaEnd: 0,
+			gettingThereAreaStart: 0,
+			gettingThereAreaEnd: 0,
+			implementationAreaStart: 0,
+			implementationAreaEnd: 0,
+			outcomeAreaStart: 0,
+			outcomeAreaEnd: 0,
+			//
+			inceptionActive: false,
+			projectGoalsActive: false,
+			gettingThereActive: false,
+			implementationActive: false,
+			outcomeActive: false
 		}
+	},
+	methods: {
+		getAreas() {
+			this.inceptionAreaStart = this.$refs.inception.offsetTop;
+			this.inceptionAreaEnd = this.$refs.inception.offsetTop + this.$refs.inception.offsetHeight;
+
+			this.projectGoalsAreaStart = this.$refs.project.offsetTop;
+			this.projectGoalsAreaEnd = this.$refs.project.offsetTop + this.$refs.project.offsetHeight;
+
+			this.gettingThereAreaStart = this.$refs.getting.offsetTop;
+			this.gettingThereAreaEnd = this.$refs.getting.offsetTop + this.$refs.getting.offsetHeight;
+
+			this.implementationAreaStart = this.$refs.implementation.offsetTop;
+			this.implementationAreaEnd = this.$refs.implementation.offsetTop + this.$refs.implementation.offsetHeight;
+
+			this.outcomeAreaStart = this.$refs.outcome.offsetTop;
+			this.outcomeAreaEnd = this.$refs.outcome.offsetTop + this.$refs.outcome.offsetHeight;
+			
+			console.log(this.inceptionAreaStart + " " + this.inceptionAreaEnd + " " + this.projectGoalsAreaStart+ " " + this.projectGoalsAreaEnd + " " + this.gettingThereAreaStart + " " + this.gettingThereAreaEnd + " " + this.implementationAreaStart + " " + this.implementationAreaEnd + " " + this.outcomeAreaStart + " " + this.outcomeAreaEnd)
+		},
+
+		updateSections() {
+
+			if (this.scrollPosition < this.inceptionAreaStart) {
+					this.inceptionActive = false,
+					this.projectGoalsActive = false,
+					this.gettingThereActive = false,
+					this.implementationActive = false,
+					this.outcomeActive = false
+			}
+
+			if (this.scrollPosition >= this.inceptionAreaStart && 
+				this.scrollPosition < this.inceptionAreaEnd && 
+				this.inceptionActive === false) {
+					this.inceptionActive = true,
+					this.projectGoalsActive = false,
+					this.gettingThereActive = false,
+					this.implementationActive = false,
+					this.outcomeActive = false
+			}
+
+			if (this.scrollPosition >= this.projectGoalsAreaStart && 
+				this.scrollPosition < this.projectGoalsAreaEnd && 
+				this.projectGoalsActive === false) {
+					this.inceptionActive = false,
+					this.projectGoalsActive = true,
+					this.gettingThereActive = false,
+					this.implementationActive = false,
+					this.outcomeActive = false
+			}
+
+			if (this.scrollPosition >= this.gettingThereAreaStart && 
+				this.scrollPosition < this.gettingThereAreaEnd && 
+				this.gettingThereActive === false) {
+					this.inceptionActive = false,
+					this.projectGoalsActive = false,
+					this.gettingThereActive = true,
+					this.implementationActive = false,
+					this.outcomeActive = false
+			}
+
+			if (this.scrollPosition >= this.implementationAreaStart && 
+				this.scrollPosition < this.implementationAreaEnd && 
+				this.implementationActive === false) {
+					this.inceptionActive = false,
+					this.projectGoalsActive = false,
+					this.gettingThereActive = false,
+					this.implementationActive = true,
+					this.outcomeActive = false
+			}
+
+			if (this.scrollPosition >= this.outcomeAreaStart && 
+				this.scrollPosition < this.outcomeAreaEnd && 
+				this.outcomeActive === false) {
+					this.inceptionActive = false,
+					this.projectGoalsActive = false,
+					this.gettingThereActive = false,
+					this.implementationActive = false,
+					this.outcomeActive = true
+			}
+		},
+
+		updateScroll() {
+
+			this.scrollPosition = window.scrollY
+
+			this.updateSections();
+		},
+
+
+	},
+
+	mounted() {
+		this.getAreas();
+		window.addEventListener('scroll', this.updateScroll);
 	}
 }
 </script>
@@ -163,6 +282,7 @@ header {
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
 	position: fixed;
 	top: 0;
+	z-index: 9000;
 }
 
 .logo-and-back {
@@ -171,7 +291,7 @@ header {
 
 	& h3 {
 		font-size: $type-project-heading;
-		margin: 15px 0 0 0;
+		margin: 10px 0 0 0;
 
 
 		& span {
@@ -199,6 +319,44 @@ nav {
 		padding: 25px 20px;
 		width: 150px;	
 	}
+}
+
+.active-marker {
+	background: $wl-prime;
+	height: 8px;
+	width: 150px;
+	transition: 0.3s;
+	transform: translateX(-360px) translateY(0px) scaleX(1.55);
+	z-index: 5;
+	position: relative;
+}
+
+.inceptionActive .inception-link,
+.projectGoalsActive .project-goals-link,
+.gettingThereActive .getting-there-link,
+.implementationActive .implementation-link,
+.outcomeActive .outcome-link {
+	font-weight: bold;
+}
+
+.inceptionActive .active-marker {
+	transform: translateX(0px) translateY(0px) scaleX(1);
+}
+
+.projectGoalsActive .active-marker {
+	transform: translateX(150px) translateY(0px) scaleX(1);
+}
+
+.gettingThereActive .active-marker {
+	transform: translateX(300px) translateY(0px) scaleX(1);
+}
+
+.implementationActive .active-marker {
+	transform: translateX(450px) translateY(0px) scaleX(1);
+}
+
+.outcomeActive .active-marker {
+	transform: translateX(600px) translateY(0px) scaleX(1);
 }
 
 .hero-unit {
@@ -274,7 +432,7 @@ nav {
 	}
 
 	& section {
-		padding-top: $nav-height;
+		padding-top: $nav-height + 10px;
 		text-align: left;
 		margin-bottom: 80px;
 
@@ -284,6 +442,7 @@ nav {
 			padding-bottom: 50px;
 			padding-top: 50px;
 			background: #fcfcfc;
+			position: relative;
 		}
 	}
 
