@@ -432,9 +432,10 @@ nav {
 	}
 
 	& section {
-		padding-top: $nav-height + 10px;
+		padding-top: $nav-height;
 		text-align: left;
 		margin-bottom: 80px;
+		box-sizing: border-box;
 
 		&.audio {
 			border-top: 1px dashed #ddd;
@@ -463,6 +464,10 @@ nav {
 audio {
 	grid-column: 1 / 13;
 	justify-self: center;
+}
+
+.section-thumb {
+	margin-top: 10px;
 }
 
 .duration {

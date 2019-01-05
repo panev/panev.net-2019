@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="130px" height="130px" viewBox="0 0 130 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
     <title>implementation</title>
     <desc>Created with Sketch.</desc>
     <g id="Visual-playground" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Project:-Bassdrive" transform="translate(-915.000000, -4370.000000)">
-            <g id="implementation" transform="translate(965.000000, 4420.000000) rotate(-45.000000) translate(-965.000000, -4420.000000) translate(925.000000, 4379.000000)">
+        <g id="Project:-Bassdrive" transform="translate(-900.000000, -4421.000000)">
+            <g id="implementation" transform="translate(965.275649, 4486.275649) rotate(-45.000000) translate(-965.275649, -4486.275649) translate(925.275649, 4445.275649)">
                 <ellipse id="Oval-19-Copy-5" stroke="#52DBDB" stroke-width="5" cx="17.5" cy="64" rx="15" ry="15.5"></ellipse>
                 <ellipse id="Oval-19-Copy-6" stroke="#52DBDB" stroke-width="5" fill="#52DBDB" cx="62.5" cy="18" rx="15" ry="15.5"></ellipse>
                 <ellipse id="Oval-19-Copy" stroke="#E1E1E1" stroke-width="5" transform="translate(62.500000, 64.000000) rotate(-180.000000) translate(-62.500000, -64.000000) " cx="62.5" cy="64" rx="15" ry="15.5"></ellipse>
