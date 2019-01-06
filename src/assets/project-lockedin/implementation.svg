@@ -4,12 +4,10 @@
     <title>implementation</title>
     <desc>Created with Sketch.</desc>
     <g id="Visual-playground" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Project:-Bassdrive" transform="translate(-900.000000, -4421.000000)">
-            <g id="implementation" transform="translate(965.275649, 4486.275649) rotate(-45.000000) translate(-965.275649, -4486.275649) translate(925.275649, 4445.275649)">
-                <ellipse id="Oval-19-Copy-5" stroke="#52DBDB" stroke-width="5" cx="17.5" cy="64" rx="15" ry="15.5"></ellipse>
-                <ellipse id="Oval-19-Copy-6" stroke="#52DBDB" stroke-width="5" fill="#52DBDB" cx="62.5" cy="18" rx="15" ry="15.5"></ellipse>
-                <ellipse id="Oval-19-Copy" stroke="#E1E1E1" stroke-width="5" transform="translate(62.500000, 64.000000) rotate(-180.000000) translate(-62.500000, -64.000000) " cx="62.5" cy="64" rx="15" ry="15.5"></ellipse>
-                <ellipse id="Oval-19-Copy-7" fill="#E1E1E1" transform="translate(17.500000, 18.000000) rotate(-180.000000) translate(-17.500000, -18.000000) " cx="17.5" cy="18" rx="17.5" ry="18"></ellipse>
+        <g id="Project:-Bassdrive" transform="translate(-900.000000, -4421.000000)" stroke-width="5">
+            <g id="Group-3" transform="translate(910.000000, 4461.000000)">
+                <path d="M101.007794,41.3864911 C109.644803,32.7494821 109.44417,18.5045024 100.509881,9.57021417 C91.5755932,0.635925888 77.3306135,0.435292372 68.6936046,9.07230134 C60.0565956,17.7093103 60.2572291,31.9542899 69.1915174,40.8885782 C78.1258057,49.8228665 92.3707853,50.0235 101.007794,41.3864911 Z" id="Oval-19-Copy-6" stroke="#52DBDB" fill="#52DBDB"></path>
+                <path d="M8.84290514,8.84290514 C0.205896173,17.4799141 0.406529689,31.7248938 9.34081797,40.659182 C18.2751062,49.5934703 32.5200859,49.7941038 41.1570949,41.1570949 C49.7941038,32.5200859 49.5934703,18.2751062 40.659182,9.34081797 C31.7248938,0.406529689 17.4799141,0.205896173 8.84290514,8.84290514 Z" id="Oval-19-Copy" stroke="#E1E1E1"></path>
             </g>
         </g>
     </g>

@@ -48,7 +48,7 @@
 
 		<div class="content">
 			<section class="audio grid-container">
-				<div class="duration">8 minute read</div>
+				<div class="duration">5 minute read</div>
 				<div class="listen-label">Don't want to? Listen to an audio version of this case study instead!</div>
 				<audio controls>
 					<source v-bind:src="audioSrc">
@@ -58,19 +58,19 @@
 				<img src="@/assets/project-lockedin/inception.svg" alt="inception image" class="section-thumb">
 				<h2>Inception</h2>
 				<p>
-					For the longest time I've been an avid listener of a certain online drum and bass radio – bassdrive.com. What had been bugging me recently was that there wasn't a way for me to listen to it on a mobile phone, at least not that easily – each time I had to go to the website, which wasn't responsive and fiddle with the tiny buttons and awkward flow to start listening.
+					For the longest time, I've been an avid listener of a certain online drum and bass radio – bassdrive.com. What had been bugging me recently was that there wasn't a way for me to listen to it on a mobile phone, at least not that easily – each time I had to go to the website, which wasn't responsive and fiddle with the tiny buttons and awkward flow to start listening.
 				</p>
 				<p>
-					I hadn't coded anything in a long while so I though that making something small that solves this first-world-problem of mine would be a great opportunity to catch up on the latest in the web technology world as well as give somehting back to the fantastic community that operates the online radio station. 
+					I hadn't coded anything in a long while so I thought that making something small that solves this first-world-problem of mine would be a great opportunity to catch up on the latest in the web technology world as well as give something back to the fantastic community that operates the online radio station. 
 				</p>
 			</section>
 			<section id="project-goals" ref="project" class="grid-container">
 				<img src="@/assets/project-lockedin/projectGoals.svg" alt="project goals image" class="section-thumb">
 				<h2>Project goals</h2>
-				<p>What I needed was a one click solution – easy right? A play button.</p>
-				<img src="@/assets/project-lockedin/test.png" alt="test" class="mock">
+				<p>What I needed was a one-click solution – easy right? A play button.</p>
+				<img src="@/assets/project-lockedin/buttonSketch.jpg" alt="sketch of a button" class="mock">
 				<p>
-					However, I wanted to purposefully overengineer this solution and go beyond vanilla web technologies and dip my foot in the emerging world of progressive web apps, vue.js and css grid – things I had only read about and found immensley interesting to play around with. Despite being overkill for my simple use case, these tools would allow me to achieve a native like feel, improved performance (PWAs), build a landing page for the desktop that I could reuse on mobile (CSS grid) and scale this project in the future to be more than just a play button for 1 online radio (vue.js).
+					However, I wanted to purposefully overengineer this solution and go beyond vanilla web technologies and dip my foot in the emerging world of progressive web apps, vue.js and CSS grid – things I had only read about and found immensely interesting to play around with. Despite being overkill for my simple use case, these tools would allow me to achieve a native-like feel, improved performance (PWAs), build a landing page for the desktop that I could reuse on mobile (CSS grid) and scale this project in the future to be more than just a play button for 1 online radio (vue.js).
 				</p>
 			</section>
 			<section id="getting-there" ref="getting" class="grid-container">
@@ -79,20 +79,22 @@
 				<p>
 					I started off by considering when and how myself and others would use this thing – I kind off already knew that for myself and for now that was enough to get started – pressing play and then immediately doing something else, while the audio plays in the background.
 				</p>
-				<img src="@/assets/project-lockedin/test.png" alt="test" class="mock">
+				<img src="@/assets/project-lockedin/flow.jpg" alt="flowchart" class="mock">
 				<p>
-					I drew a few sketches, considered a few cases and then went digital. What I ended up with was a big play / pause button and a title. I opted out of volume controls since all phones already have those as hardware buttons. 
+					I drew a few sketches, considered a few cases and then went digital. What I ended up with were a big play/pause button and a title. I opted out of volume controls since all phones already have those as hardware buttons. 
 				</p>
-				<img src="@/assets/project-lockedin/test.png" alt="test" class="mock">
+				<img src="@/assets/project-lockedin/visuals.jpg" alt="visuals for app" class="mock">
 				<h3>Scope creep</h3>
 				<p>
-					The seemingly innevitable happened and I couldn't help thinking about things to add to my creation. A schedule feature was the first thing that came to mind and I immedietely mocked something up.
+					The seemingly inevitable happened and I couldn't help thinking about things to add to my creation. A scheduling feature was the first thing that came to mind and I immedietely mocked something up.
 				</p>
-				<img src="@/assets/project-lockedin/test.png" alt="test" class="mock">
+				<img src="@/assets/project-lockedin/scheduleSketch.jpg" alt="sketch of schedule" class="mock">
 				<p>
-					The radio station has live shows, and I though it would be useful for you to know not only what is currently playing, but what will be comming on in the near future. 
+					The radio station has live shows, and I thought it would be useful for you to know not only what is currently playing, but what will be coming on in the near future. 
 				</p>
-				<img src="@/assets/project-lockedin/test.png" alt="test" class="mock">
+				<video controls alt="video of schedule feature">
+					<source src="@/assets/project-lockedin/scheduleProto.mp4">
+				</video>
 				<p>
 					Ultimately, I decided to not include this idea and keep things more simple and focused towards the main idea of my little app – listening. The scheduling feature was just extra stuff there, that didn't really help you achieve your main goal. 
 				</p>
@@ -103,30 +105,31 @@
 				<p>
 					The app features Progressive Web App capabilities like adding it to your phone's home screen for quicker access. 
 				</p>
-				<p>< PWA adding ></p>
+				<video controls class="mock">
+					<source src="@/assets/project-lockedin/pwa-video-dark.mp4">
+				</video>
 				<p>
-					This was great – but the problem was that people don't generally know what PWAs are or that you have this ability to begin with. My solution to this was to actually build a landing page for the desktop that explains this.
+					This was great – but the problem was that people don't generally know what PWAs are or that you have this ability, to begin with. My solution to this was to actually build a landing page for the desktop that explains this.
 				</p>
-				<p>< Desktop landing page ></p>
+				<img src="@/assets/project-lockedin/desktop.jpg" alt="desktop page" class="mock">
 				<p>
-					I used vue.js and and css grid to actually reuse the same code base for the landing page and PWA app. When you're on a desktop you get the landing page and when on mobile – just the player. This was a good opportunity to keep the audio player on desktop too, so you could listen there if you wanted to.
+					I used vue.js and css grid to actually reuse the same code base for the landing page and PWA app. When you're on a desktop you get the landing page and when on mobile – just the player. This was a good opportunity to keep the audio player on the desktop too, so you could listen there if you wanted to.
 				</p>
-				<p>< Desktop  play button, switch to mobile gif ></p>
+				<img src="@/assets/project-lockedin/rwd.gif" alt="responsive demo" class="mock">
 				<h3>Technical challenges & front-end adventures</h3>
 				<p>
-					Having to delve in a modern front-end framework like vue.js really expanded my outlook into the way web apps are built these days (CLIs now have interfaces!!). It was extremely refreshing to see how front-end technologies have matured and a fun challenge to catch-up on everyhing new. I also got to make something with css grid, which is amazing.
+					Having to delve into a modern front-end framework like vue.js really expanded my outlook into the way web apps are built these days (CLIs now have interfaces!). It was extremely refreshing to see how front-end technologies have matured and a fun challenge to catch-up on everything new. I also got to make something with CSS grid, which is amazing.
 				</p>
 				<p>
-					Unfortunatelly, I wasn't able to overcome a technical issue that allowed me to fetch the title of the stream, which was essentially info about what was playing a the moment (CORS issue). A drawback for sure, but I decided not to dwell on it too much and went ahead with the project.
+					Unfortunately, I wasn't able to overcome a technical issue that allowed me to fetch the title of the stream, which was essentially info about what was playing a the moment (CORS issue). A drawback for sure, but I decided not to dwell on it too much and went ahead with the project.
 				</p>
 			</section>
 			<section id="outcome" ref="outcome" class="grid-container">
 				<img src="@/assets/project-lockedin/outcome.svg" alt="outcome image" class="section-thumb">
 				<h2>Outcome</h2>
 				<p>
-					What I ended up with was pretty much what I set out to do initially – a small optimisation of somehting I do daily. The real-world technical challenges that I encoutered in this little project were a fantastic opportunity for me to update my front-end skills to be more current. 
+					What I ended up with was pretty much what I set out to do initially – a small optimisation of something I do daily. The real-world technical challenges that I encountered in this little project were a fantastic opportunity for me to update my front-end skills to be more current. 
 				</p>
-				<p>< few more imgs></p>
 				<p>Thanks for reading!</p>
 			</section>
 			<section id="buttons">
@@ -435,7 +438,6 @@ nav {
 		padding-top: $nav-height;
 		text-align: left;
 		margin-bottom: 80px;
-		box-sizing: border-box;
 
 		&.audio {
 			border-top: 1px dashed #ddd;
@@ -455,19 +457,17 @@ nav {
 		grid-column: 2 / 12;
 		margin-top: 10px;
 		margin-bottom: 55px;
+		justify-self: center;
 	}
 }
 
 .section-thumb,
 .duration,
 .listen-label,
-audio {
+audio,
+video {
 	grid-column: 1 / 13;
 	justify-self: center;
-}
-
-.section-thumb {
-	margin-top: 10px;
 }
 
 .duration {
@@ -483,6 +483,7 @@ audio {
 #buttons {
 	width: 100%;
 	text-align: center;
+	padding-top: 0;
 }
 
 .button {
