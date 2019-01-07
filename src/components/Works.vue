@@ -62,7 +62,8 @@ export default {
 $wl-lockedin: #6FADF5;
 
 #works {
-	padding-top: calc(#{$nav-height} * 2);
+	/*padding-top: calc(#{$nav-height} * 2);*/
+	padding-top: $nav-height;
 
 	& .grid-container {
 

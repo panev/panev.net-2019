@@ -98,6 +98,7 @@ export default {
     },
     mounted() {
         this.getHelloArea();
+        console.log(this.helloAreaStart)
     }
 }
 </script>
@@ -106,8 +107,9 @@ export default {
 @import '@/scss/utils.scss';
 
 #hello {
-    padding-top: calc(#{$nav-height} * 2);
-    margin-bottom: 50px;
+    padding-top: $nav-height;
+    /*padding-top: calc(#{$nav-height} * 2);*/
+    /*margin-bottom: 50px;*/
 }
 
 .hello-heading {

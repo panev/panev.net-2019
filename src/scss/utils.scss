@@ -7,6 +7,7 @@ $wl-second-lite: #2B507D;
 $wl-third: #FFCD7A;
 
 $wl-gray: #D6D6D6;
+$wl-body: #4A4A4A;
 
 $type-heading: 87px;
 $type-small-heading: 30px;
@@ -19,6 +20,9 @@ $ux-colour: $wl-prime;
 $product-colour: #A68AFF;
 $ixd-colour: #FFBC9A;
 
+* {
+	/*box-sizing: border-box;*/
+}
 
 .grid-container {
 	width: 100%;
@@ -37,7 +41,7 @@ $ixd-colour: #FFBC9A;
     
     &::before {
         content: '';
-        background: $wl-prime-lite;
+        background: #efefef;
         width: 430px;
         height: 28px;
         position: absolute;
@@ -59,4 +63,5 @@ h2 {
 
 p {
 	font-size: $type-paragraph;
+	color: $wl-body;
 }

@@ -121,7 +121,6 @@ export default {
 		&::after {
 			opacity: 0.03;
 			transform: scaleY(1);
-
 		}
 	}
 }
@@ -141,7 +140,7 @@ export default {
 		content: '';
 		display: block;
 		width: 100%;
-		height: 70px;
+		height: 80px;
 		background: #fff;
 		position: absolute;
 		top: -$nav-height;
@@ -208,8 +207,6 @@ a {
 	transform: translateX(0) translateY(0px);
 	z-index: 5;
 	position: relative;
-
-
 }
 
 .helloActive .active-marker {

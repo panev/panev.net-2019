@@ -41,6 +41,7 @@ export default {
 	},
 	mounted() {
 		this.getContactArea();
+		console.log(this.contactAreaStart);
 	}
 }
 </script>
@@ -49,8 +50,9 @@ export default {
 @import '@/scss/utils.scss';
 
 #contact {
-	padding-top: calc(#{$nav-height} * 2);
-	background: #fcfcfc;
+	/*padding-top: calc(#{$nav-height} * 2);*/
+	padding-top: $nav-height;
+	margin-bottom: 200px;
 }
 
 .contact-heading {
