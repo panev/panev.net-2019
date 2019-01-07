@@ -1,21 +1,19 @@
 <template>
-	<div id="project-lockedin" class="app-view">
+	<div id="project-ticketmaster" class="app-view">
 
 		<header class="grid-container">
 			<div class="logo-and-back">
-				<h3>Project<span>:</span> Lockedin Live</h3>
+				<h3>Project<span>:</span> Ticketmaster</h3>
 				<router-link to="/">< Back</router-link>
 			</div>
 			<nav :class=" { 
-				inceptionActive: inceptionActive,
+				contextActive: contextActive,
 				projectGoalsActive: projectGoalsActive,
-				gettingThereActive: gettingThereActive,
-				implementationActive: implementationActive,
+				processActive: processActive,
 				outcomeActive: outcomeActive }" >
-				<a class="inception-link" href="#" v-scroll-to="'#inception'">Inception</a>
+				<a class="context-link" href="#" v-scroll-to="'#context'">Context</a>
 				<a class="project-goals-link" href="#" v-scroll-to="'#project-goals'">Project Goals</a>
-				<a class="getting-there-link" href="#" v-scroll-to="'#getting-there'">Getting There</a>
-				<a class="implementation-link" href="#" v-scroll-to="'#implementation'">Implementation</a>
+				<a class="process-link" href="#" v-scroll-to="'#process'">Process</a>
 				<a class="outcome-link" href="#" v-scroll-to="'#outcome'">Outcome</a>
 				<div class="active-marker"></div>
 			</nav>
@@ -23,24 +21,23 @@
 
 		<div class="hero-unit">
 			<div class="grid-container">
-				<img src="@/assets/project-lockedin/phone.png" alt="phone image" class="hero-phone">
+				<img src="@/assets/project-ticketmaster/tm-logo.svg" alt="phone image">
 				<div class="hero-info">
 					<div class="hero-heading">
-						<span>Lockedin Live</span> allows you to easily listen to online radio. 
+						<span>Ticketmaster</span> is an American ticket sales and distribution company. 
 					</div>
 					<div class="hero-subheading">
 						TL;DR:
 					</div>
 					<p>
-						An extremely simple progressive web app that allows you to listen to a specific online radio. The goal of <strong>this personal side project</strong> was to learn more about modern web technologies and also have the means to listen to my favourite online drum and bass radio with ease.
+						In late 2016 I had the opportunity to work with ticketmaster.com’s design team, building the design system behind the website that sells hundreds of millions of tickets each year.
 					</p>
 					<div class="hero-subheading">
 						PROJECT ROLES:
 					</div>
 					<ul>
-						<li>Product Designer</li>
-						<li>Software Engineer</li>
-						<li>Chief Visionary</li>
+						<li>User Interface Designer</li>
+						<li>Visual Designer</li>
 					</ul>
 				</div>
 			</div>
@@ -48,15 +45,15 @@
 
 		<div class="content">
 			<section class="audio grid-container">
-				<div class="duration">5 minute read</div>
+				<div class="duration">10 minute read</div>
 				<div class="listen-label">Don't want to? Listen to an audio version of this case study instead!</div>
 				<audio controls>
 					<source v-bind:src="audioSrc">
 				</audio>
 			</section>
-			<section id="inception" ref="inception" class="grid-container">
-				<img src="@/assets/project-shared/inception.svg" alt="inception image" class="section-thumb">
-				<h2>Inception</h2>
+			<section id="context" ref="context" class="grid-container">
+				<img src="@/assets/project-shared/context.svg" alt="context image" class="section-thumb">
+				<h2>Context</h2>
 				<p>
 					For the longest time, I've been an avid listener of a certain online drum and bass radio – bassdrive.com. What had been bugging me recently was that there wasn't a way for me to listen to it on a mobile phone, at least not that easily – each time I had to go to the website, which wasn't responsive and fiddle with the tiny buttons and awkward flow to start listening.
 				</p>
@@ -73,9 +70,9 @@
 					However, I wanted to purposefully overengineer this solution and go beyond vanilla web technologies and dip my foot in the emerging world of progressive web apps, vue.js and CSS grid – things I had only read about and found immensely interesting to play around with. Despite being overkill for my simple use case, these tools would allow me to achieve a native-like feel, improved performance (PWAs), build a landing page for the desktop that I could reuse on mobile (CSS grid) and scale this project in the future to be more than just a play button for 1 online radio (vue.js).
 				</p>
 			</section>
-			<section id="getting-there" ref="getting" class="grid-container">
-				<img src="@/assets/project-shared/gettingThere.svg" alt="getting there image" class="section-thumb">
-				<h2>Getting there</h2>
+			<section id="process" ref="process" class="grid-container">
+				<img src="@/assets/project-shared/process.svg" alt="process there image" class="section-thumb">
+				<h2>Process</h2>
 				<p>
 					I started off by considering when and how myself and others would use this thing – I kind off already knew that for myself and for now that was enough to get started – pressing play and then immediately doing something else, while the audio plays in the background.
 				</p>
@@ -99,31 +96,6 @@
 					Ultimately, I decided to not include this idea and keep things more simple and focused towards the main idea of my little app – listening. The scheduling feature was just extra stuff there, that didn't really help you achieve your main goal. 
 				</p>
 			</section>
-			<section id="implementation" ref="implementation" class="grid-container">
-				<img src="@/assets/project-shared/implementation.svg" alt="implementation image" class="section-thumb">
-				<h2>Implementation</h2>
-				<p>
-					The app features Progressive Web App capabilities like adding it to your phone's home screen for quicker access. 
-				</p>
-				<video controls class="mock">
-					<source src="@/assets/project-lockedin/pwa-video-dark.mp4">
-				</video>
-				<p>
-					This was great – but the problem was that people don't generally know what PWAs are or that you have this ability, to begin with. My solution to this was to actually build a landing page for the desktop that explains this.
-				</p>
-				<img src="@/assets/project-lockedin/desktop.jpg" alt="desktop page" class="mock">
-				<p>
-					I used vue.js and css grid to actually reuse the same code base for the landing page and PWA app. When you're on a desktop you get the landing page and when on mobile – just the player. This was a good opportunity to keep the audio player on the desktop too, so you could listen there if you wanted to.
-				</p>
-				<img src="@/assets/project-lockedin/rwd.gif" alt="responsive demo" class="mock">
-				<h3>Technical challenges & front-end adventures</h3>
-				<p>
-					Having to delve into a modern front-end framework like vue.js really expanded my outlook into the way web apps are built these days (CLIs now have interfaces!). It was extremely refreshing to see how front-end technologies have matured and a fun challenge to catch-up on everything new. I also got to make something with CSS grid, which is amazing.
-				</p>
-				<p>
-					Unfortunately, I wasn't able to overcome a technical issue that allowed me to fetch the title of the stream, which was essentially info about what was playing a the moment (CORS issue). A drawback for sure, but I decided not to dwell on it too much and went ahead with the project.
-				</p>
-			</section>
 			<section id="outcome" ref="outcome" class="grid-container">
 				<img src="@/assets/project-shared/outcome.svg" alt="outcome image" class="section-thumb">
 				<h2>Outcome</h2>
@@ -134,7 +106,6 @@
 			</section>
 			<section id="buttons">
 				<router-link to="/" class="button back">< Back to Home Page</router-link>
-				<a href="http://lockedin.live" target="_blank" class="button visit external">Visit live project <img src="@/assets/iconExternal.svg" alt="external icon"></a>
 			</section>
 		</div>
 
@@ -147,7 +118,7 @@
 import Footer from '@/components/Footer.vue'
 
 export default {
-	name: 'project-lockedin',
+	name: 'project-ticketmaster',
 	components: {
     	Footer
 	},
@@ -156,101 +127,78 @@ export default {
 			audioSrc: require('@/assets/project-lockedin/sample.mp3'),
 			scrollPosition: 0,
 			//
-			inceptionAreaStart: 0,
-			inceptionAreaEnd: 0,
+			contextAreaStart: 0,
+			contextAreaEnd: 0,
 			projectGoalsAreaStart: 0,
 			projectGoalsAreaEnd: 0,
-			gettingThereAreaStart: 0,
-			gettingThereAreaEnd: 0,
-			implementationAreaStart: 0,
-			implementationAreaEnd: 0,
+			processAreaStart: 0,
+			processAreaEnd: 0,
 			outcomeAreaStart: 0,
 			outcomeAreaEnd: 0,
 			//
-			inceptionActive: false,
+			contextActive: false,
 			projectGoalsActive: false,
-			gettingThereActive: false,
-			implementationActive: false,
+			processActive: false,
 			outcomeActive: false
 		}
 	},
 	methods: {
 		getAreas() {
-			this.inceptionAreaStart = this.$refs.inception.offsetTop;
-			this.inceptionAreaEnd = this.$refs.inception.offsetTop + this.$refs.inception.offsetHeight;
+			this.contextAreaStart = this.$refs.context.offsetTop;
+			this.contextAreaEnd = this.$refs.context.offsetTop + this.$refs.context.offsetHeight;
 
 			this.projectGoalsAreaStart = this.$refs.project.offsetTop;
 			this.projectGoalsAreaEnd = this.$refs.project.offsetTop + this.$refs.project.offsetHeight;
 
-			this.gettingThereAreaStart = this.$refs.getting.offsetTop;
-			this.gettingThereAreaEnd = this.$refs.getting.offsetTop + this.$refs.getting.offsetHeight;
-
-			this.implementationAreaStart = this.$refs.implementation.offsetTop;
-			this.implementationAreaEnd = this.$refs.implementation.offsetTop + this.$refs.implementation.offsetHeight;
+			this.processAreaStart = this.$refs.process.offsetTop;
+			this.processAreaEnd = this.$refs.process.offsetTop + this.$refs.process.offsetHeight;
 
 			this.outcomeAreaStart = this.$refs.outcome.offsetTop;
 			this.outcomeAreaEnd = this.$refs.outcome.offsetTop + this.$refs.outcome.offsetHeight;
-			
-			console.log(this.inceptionAreaStart + " " + this.inceptionAreaEnd + " " + this.projectGoalsAreaStart+ " " + this.projectGoalsAreaEnd + " " + this.gettingThereAreaStart + " " + this.gettingThereAreaEnd + " " + this.implementationAreaStart + " " + this.implementationAreaEnd + " " + this.outcomeAreaStart + " " + this.outcomeAreaEnd)
 		},
 
 		updateSections() {
 
-			if (this.scrollPosition < this.inceptionAreaStart) {
-					this.inceptionActive = false,
+			if (this.scrollPosition < this.contextAreaStart) {
+					this.contextActive = false,
 					this.projectGoalsActive = false,
-					this.gettingThereActive = false,
-					this.implementationActive = false,
+					this.processActive = false,
 					this.outcomeActive = false
 			}
 
-			if (this.scrollPosition >= this.inceptionAreaStart && 
-				this.scrollPosition < this.inceptionAreaEnd && 
-				this.inceptionActive === false) {
-					this.inceptionActive = true,
+			if (this.scrollPosition >= this.contextAreaStart && 
+				this.scrollPosition < this.contextAreaEnd && 
+				this.contextActive === false) {
+					this.contextActive = true,
 					this.projectGoalsActive = false,
-					this.gettingThereActive = false,
-					this.implementationActive = false,
+					this.processActive = false,
 					this.outcomeActive = false
 			}
 
 			if (this.scrollPosition >= this.projectGoalsAreaStart && 
 				this.scrollPosition < this.projectGoalsAreaEnd && 
 				this.projectGoalsActive === false) {
-					this.inceptionActive = false,
+					this.contextActive = false,
 					this.projectGoalsActive = true,
-					this.gettingThereActive = false,
-					this.implementationActive = false,
+					this.processActive = false,
 					this.outcomeActive = false
 			}
 
-			if (this.scrollPosition >= this.gettingThereAreaStart && 
-				this.scrollPosition < this.gettingThereAreaEnd && 
-				this.gettingThereActive === false) {
-					this.inceptionActive = false,
+			if (this.scrollPosition >= this.processAreaStart && 
+				this.scrollPosition < this.processAreaEnd && 
+				this.processActive === false) {
+					this.contextActive = false,
 					this.projectGoalsActive = false,
-					this.gettingThereActive = true,
-					this.implementationActive = false,
-					this.outcomeActive = false
-			}
-
-			if (this.scrollPosition >= this.implementationAreaStart && 
-				this.scrollPosition < this.implementationAreaEnd && 
-				this.implementationActive === false) {
-					this.inceptionActive = false,
-					this.projectGoalsActive = false,
-					this.gettingThereActive = false,
-					this.implementationActive = true,
+					this.processActive = true,
 					this.outcomeActive = false
 			}
 
 			if (this.scrollPosition >= this.outcomeAreaStart && 
 				this.scrollPosition < this.outcomeAreaEnd && 
 				this.outcomeActive === false) {
-					this.inceptionActive = false,
+					this.contextActive = false,
 					this.projectGoalsActive = false,
-					this.gettingThereActive = false,
-					this.implementationActive = false,
+					this.processActive = false,
 					this.outcomeActive = true
 			}
 		},
@@ -275,7 +223,7 @@ export default {
 <style scoped lang="scss">
 @import '@/scss/utils.scss';
 
-#project-lockedin {
+#project-ticketmaster {
 	padding-top: $nav-height;
 }
 
@@ -310,7 +258,7 @@ header {
 }
 
 nav {
-	grid-column: 5 / 13;
+	grid-column: 6 / 13;
 
 	& a {
 		display: inline-block;
@@ -320,52 +268,47 @@ nav {
 		color: $wl-second;
 		transition: 0.3s;	
 		padding: 25px 20px;
-		width: 150px;	
+		width: 140px;	
 	}
 }
 
 .active-marker {
 	background: $wl-prime;
 	height: 8px;
-	width: 150px;
+	width: 140px;
 	transition: 0.3s;
 	transform: translateX(-360px) translateY(0px) scaleX(1.55);
 	z-index: 5;
 	position: relative;
 }
 
-.inceptionActive .inception-link,
+.contextActive .context-link,
 .projectGoalsActive .project-goals-link,
-.gettingThereActive .getting-there-link,
-.implementationActive .implementation-link,
+.processActive .process-link,
 .outcomeActive .outcome-link {
 	font-weight: bold;
 }
 
-.inceptionActive .active-marker {
-	transform: translateX(0px) translateY(0px) scaleX(1);
+.contextActive .active-marker {
+	transform: translateX(40px) translateY(0px) scaleX(1);
 }
 
 .projectGoalsActive .active-marker {
-	transform: translateX(150px) translateY(0px) scaleX(1);
+	transform: translateX(180px) translateY(0px) scaleX(1);
 }
 
-.gettingThereActive .active-marker {
-	transform: translateX(300px) translateY(0px) scaleX(1);
-}
-
-.implementationActive .active-marker {
-	transform: translateX(450px) translateY(0px) scaleX(1);
+.processActive .active-marker {
+	transform: translateX(320px) translateY(0px) scaleX(1);
 }
 
 .outcomeActive .active-marker {
-	transform: translateX(600px) translateY(0px) scaleX(1);
+	transform: translateX(480px) translateY(0px) scaleX(1);
 }
 
 .hero-unit {
 	height: 620px;
-	background-image: linear-gradient(-135deg, rgba(59,194,187,0.75) 0%, #4183CF 100%);
-	margin-bottom: 250px;
+	background-image: linear-gradient(-180deg, rgba(59,111,194,0.75) 1%, #009CDE 100%, #009CDE 100%);
+	margin-bottom: 50px;
 }
 
 .hero-phone {

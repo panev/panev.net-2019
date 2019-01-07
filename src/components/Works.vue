@@ -14,8 +14,8 @@
 			</li>
 
 			<li class="project">
-				<router-link to="/project-lockedinlive">
-					<h3>Beoynd PWA</h3>
+				<router-link to="/project-ticketmaster">
+					<h3>Ticketmaster</h3>
 					<p>A Progressive Web App that allows you to easily listen to online radio.</p>
 				</router-link>
 			</li>
