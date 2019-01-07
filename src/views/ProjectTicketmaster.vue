@@ -55,53 +55,96 @@
 				<img src="@/assets/project-shared/context.svg" alt="context image" class="section-thumb">
 				<h2>Context</h2>
 				<p>
-					For the longest time, I've been an avid listener of a certain online drum and bass radio – bassdrive.com. What had been bugging me recently was that there wasn't a way for me to listen to it on a mobile phone, at least not that easily – each time I had to go to the website, which wasn't responsive and fiddle with the tiny buttons and awkward flow to start listening.
+					In the autumn of 2016, I had the opportunity to work with ticketmaster.com – one of the go-to websites in the United States to get tickets for virtually any type of event. The challenge was to help design the next generation digital experience for their customers – a more engaging and optimized version of their legacy website.
 				</p>
 				<p>
-					I hadn't coded anything in a long while so I thought that making something small that solves this first-world-problem of mine would be a great opportunity to catch up on the latest in the web technology world as well as give something back to the fantastic community that operates the online radio station. 
+					A design team was set up here in Sofia and in California to aid the core ticketmaster.com designers in this endevour, along with front-end and back-end development teams. Our collective involvement in the project was 4 months.
 				</p>
 			</section>
 			<section id="project-goals" ref="project" class="grid-container">
 				<img src="@/assets/project-shared/projectGoals.svg" alt="project goals image" class="section-thumb">
 				<h2>Project goals</h2>
-				<p>What I needed was a one-click solution – easy right? A play button.</p>
-				<img src="@/assets/project-lockedin/buttonSketch.jpg" alt="sketch of a button" class="mock">
 				<p>
-					However, I wanted to purposefully overengineer this solution and go beyond vanilla web technologies and dip my foot in the emerging world of progressive web apps, vue.js and CSS grid – things I had only read about and found immensely interesting to play around with. Despite being overkill for my simple use case, these tools would allow me to achieve a native-like feel, improved performance (PWAs), build a landing page for the desktop that I could reuse on mobile (CSS grid) and scale this project in the future to be more than just a play button for 1 online radio (vue.js).
+					Having in mind the company's ambitious goals to redefine and optimize their web presence, we had to be very selective on which parts of the projects we were engaged with. 
 				</p>
+				<p>
+					Ultimately, we ended up with 3 main responsibilities:
+				</p>
+				<ul>
+					<li>Design some of the core customer-facing portals for artists, venues and the homepage feed</li>
+					<li>Improve the UI library’s versatility and accommodate for current and future needs</li>
+					<li>Oversee hand-off procedures with and support development teams in the implementation phase</li>
+				</ul>
+				<p>
+					For a project that is starting from scratch, these points may seem a bit ambiguous – there were a lot of questions regarding the separate pages for example – fortunately for us, the core ticketmaster.com design team had already gatnered requirements and laid some of the groundwork. Our objective was to pick up, validate and finish what they had already started, while they focus extensively on other parts of the system, user research and testing. <br><br>These were some of the artifacts we received from the core team as a starting point:
+				</p>
+				<img src="@/assets/project-ticketmaster/nucleusStyles.jpg" alt="styles" class="mock">
+				<img src="@/assets/project-ticketmaster/exampleFeed.jpg" alt="example feed" class="mock with-shadow">
 			</section>
 			<section id="process" ref="process" class="grid-container">
 				<img src="@/assets/project-shared/process.svg" alt="process there image" class="section-thumb">
 				<h2>Process</h2>
 				<p>
-					I started off by considering when and how myself and others would use this thing – I kind off already knew that for myself and for now that was enough to get started – pressing play and then immediately doing something else, while the audio plays in the background.
+					Our goals required us to do a thorough audit of the existing UI library and validate some of the original assumptions made about the different sections of the website.
 				</p>
-				<img src="@/assets/project-lockedin/flow.jpg" alt="flowchart" class="mock">
+				<h3>Challenges</h3>
 				<p>
-					I drew a few sketches, considered a few cases and then went digital. What I ended up with were a big play/pause button and a title. I opted out of volume controls since all phones already have those as hardware buttons. 
+					Our team spanned across the globe, clocking an 11 hour time difference. This proved tricky when it came to synchronising in real time as we had only a few hours of overlap, so some compromises in terms of scheduling had to be made. 
 				</p>
-				<img src="@/assets/project-lockedin/visuals.jpg" alt="visuals for app" class="mock">
-				<h3>Scope creep</h3>
 				<p>
-					The seemingly inevitable happened and I couldn't help thinking about things to add to my creation. A scheduling feature was the first thing that came to mind and I immedietely mocked something up.
+					Communication between design teams was also difficult. In-house teams and contractors did not have any alignment in terms of workflow or vision. This was an issue as both parties did not have context or even shared understanding as to what and why exactly the other was doing.
 				</p>
-				<img src="@/assets/project-lockedin/scheduleSketch.jpg" alt="sketch of schedule" class="mock">
 				<p>
-					The radio station has live shows, and I thought it would be useful for you to know not only what is currently playing, but what will be coming on in the near future. 
+					Additionally, the UI assets that we had to start with were a little dated, incomplete and not really meant for the type of design work we were setting out to do. 
 				</p>
-				<video controls alt="video of schedule feature">
-					<source src="@/assets/project-lockedin/scheduleProto.mp4">
-				</video>
 				<p>
-					Ultimately, I decided to not include this idea and keep things more simple and focused towards the main idea of my little app – listening. The scheduling feature was just extra stuff there, that didn't really help you achieve your main goal. 
+					Fortunately, everyone involved did not shy away from challenges and had a very constructive attitude towards these problems, so we got to work.
+				</p>
+				<h3>Team structure & Workflow</h3>
+				<p>
+					Our team was comprised of 5 designers – 2 focused on UX, 2 focused on visual design and a manager/lead. who handled process, lead design reviews and communicated with stakeholders. Half of us were located in Sofia and the other half in California. We seldom collaborated with the ticketmaster.com core design team and had a team of front-end developers to support that was also located in Sofia.
+				</p>
+				<p>
+					After a few iterations and some trial and error, we set up an elaborate process that helped us communicate better amongst ourselves and the core design team, created a coherent feedback loop with product owners and stakeholders and established a hand-off procedure with the development teams. 
+				</p>
+				<img src="@/assets/project-ticketmaster/workflow.svg" alt="process workflow" class="mock">
+				<p>
+					It looks a bit intense, I know. However, this seemingly bloated looking process diagram actually provided a lot of value as it gave us a framework for our workflow within the organisation and wasn't actually that slow and heavy to work with.
+				</p>
+				<p>
+					For example, Step 3 may look like a hectic review session, but we actually made it a part of our daily sync and it was a rather productive routine where we advised each other on how to make things better, that did not take more than 30 minutes overall. The rest of the process was mostly a stricter way of handling files – which at such scale – is a necessary hassle, in my opinion.
+				</p>
+				<p>
+					Moving forward, we did a lot of iteration on some of the page designs and components. We leveraged the fact the there were already some user tests being done with other parts of the system and used this opportunity to do some A/B tests on some of the visual designs that we have been creating. My favourite example of which is the list component – we were very uncertain how to go about the information hierarchy of the DateTime stamp inside it. The A/B tests helped us narrow down the possible solutions for this component.
+				</p>
+				<img src="@/assets/project-ticketmaster/listVersions.jpg" alt="versions of list controls" class="mock with-shadow">
+				<p>
+					Finally, as our UI library was growing fast, we decided to employ the Atomic Design methodology in order to better organise our components and establish a solid foundation that we could use to continue scaling into a design system with confidence.
+				</p>
+				<p>
+					More examples and context of the aforementioned can be observed below.
 				</p>
 			</section>
 			<section id="outcome" ref="outcome" class="grid-container">
 				<img src="@/assets/project-shared/outcome.svg" alt="outcome image" class="section-thumb">
 				<h2>Outcome</h2>
 				<p>
-					What I ended up with was pretty much what I set out to do initially – a small optimisation of something I do daily. The real-world technical challenges that I encountered in this little project were a fantastic opportunity for me to update my front-end skills to be more current. 
+					What resulted from process, was a few pages that hopefully made getting tickets for events easier and a design system following the atomic design methodology that served as a solid foundation for the future.
 				</p>
+				<h3>Site Pages</h3>
+				<img src="@/assets/project-ticketmaster/sp1.jpg" alt="website preview" class="mock with-shadow">
+				<img src="@/assets/project-ticketmaster/sp2.jpg" alt="website preview" class="mock with-shadow">
+				<img src="@/assets/project-ticketmaster/sp3.jpg" alt="website preview" class="mock with-shadow">
+				<img src="@/assets/project-ticketmaster/sp4.jpg" alt="website preview" class="mock with-shadow">
+				<img src="@/assets/project-ticketmaster/sp5.jpg" alt="website preview" class="mock with-shadow">
+				<img src="@/assets/project-ticketmaster/sp6.jpg" alt="website preview" class="mock with-shadow">
+				<img src="@/assets/project-ticketmaster/sp7.jpg" alt="website preview" class="mock with-shadow">
+				<h3>Atomic Design</h3>
+				<img src="@/assets/project-ticketmaster/atoms.jpg" alt="atomic design" class="half-mock">
+				<img src="@/assets/project-ticketmaster/molecules.jpg" alt="atomic design" class="half-mock">
+				<img src="@/assets/project-ticketmaster/organisms1.jpg" alt="atomic design" class="half-mock">
+				<img src="@/assets/project-ticketmaster/organisms2.jpg" alt="atomic design" class="half-mock">
+				<img src="@/assets/project-ticketmaster/templates.jpg" alt="atomic design" class="mock">
 				<p>Thanks for reading!</p>
 			</section>
 			<section id="buttons">
@@ -380,8 +423,8 @@ nav {
 	& section {
 		padding-top: $nav-height;
 		text-align: left;
-		margin-bottom: 80px;
-
+/*		margin-bottom: 80px;
+*/
 		&.audio {
 			border-top: 1px dashed #ddd;
 			border-bottom: 1px dashed #ddd;
@@ -401,6 +444,41 @@ nav {
 		margin-top: 10px;
 		margin-bottom: 55px;
 		justify-self: center;
+	}
+
+	& .half-mock {
+		grid-column: span 6;
+		margin-top: 10px;
+		margin-bottom: 55px;
+	}
+
+	& .with-shadow {
+		box-shadow: 0 2px 60px 0 rgba(155,155,155,0.40);
+	}
+
+	ul {
+		grid-column: 2 / 12;
+		padding: 40px;
+		font-size: $type-paragraph;
+		background: #FBFBFB;
+		border: 1px dashed #E1E1E1;
+
+		& li {
+			margin: 25px 0;
+			font-weight: bold;
+		}
+
+		& li::before {
+			content: '';
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			background: $wl-prime;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 10px;
+			margin-top: -4px;
+		}
 	}
 }
 
