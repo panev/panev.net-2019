@@ -21,10 +21,10 @@
 			</li>
 
 			<li class="project">
-				<router-link to="/project-lockedinlive">
+				<!-- <router-link to="/project-lockedinlive"> -->
 					<h3>Beoynd PWA</h3>
 					<p>A Progressive Web App that allows you to easily listen to online radio.</p>
-				</router-link>
+				<!-- </router-link> -->
 			</li>
 
 		</ul>

@@ -45,7 +45,7 @@
 
 		<div class="content">
 			<section class="audio grid-container">
-				<div class="duration">10 minute read</div>
+				<div class="duration">6 minute read</div>
 				<div class="listen-label">Don't want to? Listen to an audio version of this case study instead!</div>
 				<audio controls>
 					<source v-bind:src="audioSrc">
@@ -78,8 +78,8 @@
 				<p>
 					For a project that is starting from scratch, these points may seem a bit ambiguous – there were a lot of questions regarding the separate pages for example – fortunately for us, the core ticketmaster.com design team had already gatnered requirements and laid some of the groundwork. Our objective was to pick up, validate and finish what they had already started, while they focus extensively on other parts of the system, user research and testing. <br><br>These were some of the artifacts we received from the core team as a starting point:
 				</p>
-				<img src="@/assets/project-ticketmaster/nucleusStyles.jpg" alt="styles" class="mock">
-				<img src="@/assets/project-ticketmaster/exampleFeed.jpg" alt="example feed" class="mock with-shadow">
+				<img src="@/assets/project-ticketmaster/nucleusStyles.jpg" alt="styles" class="mock" style="height: 512px">
+				<img src="@/assets/project-ticketmaster/exampleFeed.jpg" alt="example feed" class="mock with-shadow" style="height: 1344px">
 			</section>
 			<section id="process" ref="process" class="grid-container">
 				<img src="@/assets/project-shared/process.svg" alt="process there image" class="section-thumb">
@@ -107,7 +107,7 @@
 				<p>
 					After a few iterations and some trial and error, we set up an elaborate process that helped us communicate better amongst ourselves and the core design team, created a coherent feedback loop with product owners and stakeholders and established a hand-off procedure with the development teams. 
 				</p>
-				<img src="@/assets/project-ticketmaster/workflow.svg" alt="process workflow" class="mock">
+				<img src="@/assets/project-ticketmaster/workflow.svg" alt="process workflow" class="mock" style="height: 2004px">
 				<p>
 					It looks a bit intense, I know. However, this seemingly bloated looking process diagram actually provided a lot of value as it gave us a framework for our workflow within the organisation and wasn't actually that slow and heavy to work with.
 				</p>
@@ -117,7 +117,7 @@
 				<p>
 					Moving forward, we did a lot of iteration on some of the page designs and components. We leveraged the fact the there were already some user tests being done with other parts of the system and used this opportunity to do some A/B tests on some of the visual designs that we have been creating. My favourite example of which is the list component – we were very uncertain how to go about the information hierarchy of the DateTime stamp inside it. The A/B tests helped us narrow down the possible solutions for this component.
 				</p>
-				<img src="@/assets/project-ticketmaster/listVersions.jpg" alt="versions of list controls" class="mock with-shadow">
+				<img src="@/assets/project-ticketmaster/listVersions.jpg" alt="versions of list controls" class="mock with-shadow" style="height: 631px">
 				<p>
 					Finally, as our UI library was growing fast, we decided to employ the Atomic Design methodology in order to better organise our components and establish a solid foundation that we could use to continue scaling into a design system with confidence.
 				</p>
@@ -129,22 +129,22 @@
 				<img src="@/assets/project-shared/outcome.svg" alt="outcome image" class="section-thumb">
 				<h2>Outcome</h2>
 				<p>
-					What resulted from process, was a few pages that hopefully made getting tickets for events easier and a design system following the atomic design methodology that served as a solid foundation for the future.
+					What resulted from this process, was a few pages that hopefully made getting tickets for events a little easier. Additionally, we created a design system following the atomic design methodology that served as a solid foundation for the future.
 				</p>
 				<h3>Site Pages</h3>
-				<img src="@/assets/project-ticketmaster/sp1.jpg" alt="website preview" class="mock with-shadow">
-				<img src="@/assets/project-ticketmaster/sp2.jpg" alt="website preview" class="mock with-shadow">
-				<img src="@/assets/project-ticketmaster/sp3.jpg" alt="website preview" class="mock with-shadow">
-				<img src="@/assets/project-ticketmaster/sp4.jpg" alt="website preview" class="mock with-shadow">
-				<img src="@/assets/project-ticketmaster/sp5.jpg" alt="website preview" class="mock with-shadow">
-				<img src="@/assets/project-ticketmaster/sp6.jpg" alt="website preview" class="mock with-shadow">
-				<img src="@/assets/project-ticketmaster/sp7.jpg" alt="website preview" class="mock with-shadow">
+				<img src="@/assets/project-ticketmaster/sp1.jpg" alt="website preview" class="mock with-shadow" style="height: 1252px">
+				<img src="@/assets/project-ticketmaster/sp2.jpg" alt="website preview" class="mock with-shadow" style="height: 684px">
+				<img src="@/assets/project-ticketmaster/sp3.jpg" alt="website preview" class="mock with-shadow" style="height: 684px">
+				<img src="@/assets/project-ticketmaster/sp4.jpg" alt="website preview" class="mock with-shadow" style="height: 1377px">
+				<img src="@/assets/project-ticketmaster/sp5.jpg" alt="website preview" class="mock with-shadow" style="height: 1000px">
+				<img src="@/assets/project-ticketmaster/sp6.jpg" alt="website preview" class="mock with-shadow" style="height: 588px">
+				<img src="@/assets/project-ticketmaster/sp7.jpg" alt="website preview" class="mock with-shadow" style="height: 1343px">
 				<h3>Atomic Design</h3>
-				<img src="@/assets/project-ticketmaster/atoms.jpg" alt="atomic design" class="half-mock">
-				<img src="@/assets/project-ticketmaster/molecules.jpg" alt="atomic design" class="half-mock">
-				<img src="@/assets/project-ticketmaster/organisms1.jpg" alt="atomic design" class="half-mock">
-				<img src="@/assets/project-ticketmaster/organisms2.jpg" alt="atomic design" class="half-mock">
-				<img src="@/assets/project-ticketmaster/templates.jpg" alt="atomic design" class="mock">
+				<img src="@/assets/project-ticketmaster/atoms.jpg" alt="atomic design" class="half-mock" style="height: 2080px">
+				<img src="@/assets/project-ticketmaster/molecules.jpg" alt="atomic design" class="half-mock" style="height: 1493px">
+				<img src="@/assets/project-ticketmaster/organisms1.jpg" alt="atomic design" class="half-mock" style="height: 1620px">
+				<img src="@/assets/project-ticketmaster/organisms2.jpg" alt="atomic design" class="half-mock" style="height: 1586px">
+				<img src="@/assets/project-ticketmaster/templates.jpg" alt="atomic design" class="mock" style="height: 682px">
 				<p>Thanks for reading!</p>
 			</section>
 			<section id="buttons">
@@ -320,7 +320,7 @@ nav {
 	height: 8px;
 	width: 140px;
 	transition: 0.3s;
-	transform: translateX(-360px) translateY(0px) scaleX(1.55);
+	transform: translateX(-450px) translateY(0px) scaleX(1.60);
 	z-index: 5;
 	position: relative;
 }
@@ -333,19 +333,19 @@ nav {
 }
 
 .contextActive .active-marker {
-	transform: translateX(40px) translateY(0px) scaleX(1);
+	transform: translateX(50px) translateY(0px) scaleX(1);
 }
 
 .projectGoalsActive .active-marker {
-	transform: translateX(180px) translateY(0px) scaleX(1);
+	transform: translateX(185px) translateY(0px) scaleX(1);
 }
 
 .processActive .active-marker {
-	transform: translateX(320px) translateY(0px) scaleX(1);
+	transform: translateX(330px) translateY(0px) scaleX(1);
 }
 
 .outcomeActive .active-marker {
-	transform: translateX(480px) translateY(0px) scaleX(1);
+	transform: translateX(470px) translateY(0px) scaleX(1);
 }
 
 .hero-unit {
@@ -382,6 +382,10 @@ nav {
 				display: inline-block;
 			}
 		}
+	}
+
+	& p {
+		color: $wl-second;
 	}
 }
 
@@ -489,6 +493,10 @@ audio,
 video {
 	grid-column: 1 / 13;
 	justify-self: center;
+}
+
+.section-thumb {
+	height: 130px;
 }
 
 .duration {

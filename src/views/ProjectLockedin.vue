@@ -68,7 +68,7 @@
 				<img src="@/assets/project-shared/projectGoals.svg" alt="project goals image" class="section-thumb">
 				<h2>Project goals</h2>
 				<p>What I needed was a one-click solution – easy right? A play button.</p>
-				<img src="@/assets/project-lockedin/buttonSketch.jpg" alt="sketch of a button" class="mock">
+				<img src="@/assets/project-lockedin/buttonSketch.jpg" alt="sketch of a button" class="mock" style="height: 464px;">
 				<p>
 					However, I wanted to purposefully overengineer this solution and go beyond vanilla web technologies and dip my foot in the emerging world of progressive web apps, vue.js and CSS grid – things I had only read about and found immensely interesting to play around with. Despite being overkill for my simple use case, these tools would allow me to achieve a native-like feel, improved performance (PWAs), build a landing page for the desktop that I could reuse on mobile (CSS grid) and scale this project in the future to be more than just a play button for 1 online radio (vue.js).
 				</p>
@@ -79,20 +79,20 @@
 				<p>
 					I started off by considering when and how myself and others would use this thing – I kind off already knew that for myself and for now that was enough to get started – pressing play and then immediately doing something else, while the audio plays in the background.
 				</p>
-				<img src="@/assets/project-lockedin/flow.jpg" alt="flowchart" class="mock">
+				<img src="@/assets/project-lockedin/flow.jpg" alt="flowchart" class="mock" style="height: 443px">
 				<p>
 					I drew a few sketches, considered a few cases and then went digital. What I ended up with were a big play/pause button and a title. I opted out of volume controls since all phones already have those as hardware buttons. 
 				</p>
-				<img src="@/assets/project-lockedin/visuals.jpg" alt="visuals for app" class="mock">
+				<img src="@/assets/project-lockedin/visuals.jpg" alt="visuals for app" class="mock" style="height: 644px">
 				<h3>Scope creep</h3>
 				<p>
 					The seemingly inevitable happened and I couldn't help thinking about things to add to my creation. A scheduling feature was the first thing that came to mind and I immedietely mocked something up.
 				</p>
-				<img src="@/assets/project-lockedin/scheduleSketch.jpg" alt="sketch of schedule" class="mock">
+				<img src="@/assets/project-lockedin/scheduleSketch.jpg" alt="sketch of schedule" class="mock" style="height: 464px">
 				<p>
 					The radio station has live shows, and I thought it would be useful for you to know not only what is currently playing, but what will be coming on in the near future. 
 				</p>
-				<video controls alt="video of schedule feature">
+				<video controls alt="video of schedule feature" style="height: 666px">
 					<source src="@/assets/project-lockedin/scheduleProto.mp4">
 				</video>
 				<p>
@@ -105,17 +105,17 @@
 				<p>
 					The app features Progressive Web App capabilities like adding it to your phone's home screen for quicker access. 
 				</p>
-				<video controls class="mock">
+				<video controls class="mock" style="height: 360px">
 					<source src="@/assets/project-lockedin/pwa-video-dark.mp4">
 				</video>
 				<p>
 					This was great – but the problem was that people don't generally know what PWAs are or that you have this ability, to begin with. My solution to this was to actually build a landing page for the desktop that explains this.
 				</p>
-				<img src="@/assets/project-lockedin/desktop.jpg" alt="desktop page" class="mock">
+				<img src="@/assets/project-lockedin/desktop.jpg" alt="desktop page" class="mock" style="height: 849px">
 				<p>
 					I used vue.js and css grid to actually reuse the same code base for the landing page and PWA app. When you're on a desktop you get the landing page and when on mobile – just the player. This was a good opportunity to keep the audio player on the desktop too, so you could listen there if you wanted to.
 				</p>
-				<img src="@/assets/project-lockedin/rwd.gif" alt="responsive demo" class="mock">
+				<img src="@/assets/project-lockedin/rwd.gif" alt="responsive demo" class="mock" style="height: 378px">
 				<h3>Technical challenges & front-end adventures</h3>
 				<p>
 					Having to delve into a modern front-end framework like vue.js really expanded my outlook into the way web apps are built these days (CLIs now have interfaces!). It was extremely refreshing to see how front-end technologies have matured and a fun challenge to catch-up on everything new. I also got to make something with CSS grid, which is amazing.
@@ -260,7 +260,7 @@ export default {
 			this.scrollPosition = window.scrollY
 
 			this.updateSections();
-		},
+		}
 
 
 	},
@@ -397,6 +397,10 @@ nav {
 			}
 		}
 	}
+
+	p {
+		color: $wl-second;
+	}
 }
 
 .hero-heading {
@@ -468,6 +472,10 @@ audio,
 video {
 	grid-column: 1 / 13;
 	justify-self: center;
+}
+
+.section-thumb {
+	height: 130px;
 }
 
 .duration {
