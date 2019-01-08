@@ -167,7 +167,7 @@ export default {
 	},
 	data: function() {
 		return {
-			audioSrc: require('@/assets/project-lockedin/sample.mp3'),
+			audioSrc: require('@/assets/project-ticketmaster/tm.mp3'),
 			scrollPosition: 0,
 			//
 			contextAreaStart: 0,
