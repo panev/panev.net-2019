@@ -316,7 +316,7 @@ nav {
 }
 
 .active-marker {
-	background: $wl-prime;
+	background: #efefef;
 	height: 8px;
 	width: 140px;
 	transition: 0.3s;
@@ -330,6 +330,7 @@ nav {
 .processActive .process-link,
 .outcomeActive .outcome-link {
 	font-weight: bold;
+	color: $wl-prime;
 }
 
 .contextActive .active-marker {

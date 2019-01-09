@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import ProjectLockedin from './views/ProjectLockedin.vue'
 import ProjectTicketmaster from './views/ProjectTicketmaster.vue'
+import ProjectSunflow from './views/ProjectSunflow.vue'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/project-ticketmaster', 
       name: 'ticketmaster',
       component: ProjectTicketmaster
+    },
+    {
+      path: '/project-sunflow', 
+      name: 'sunflow',
+      component: ProjectSunflow
     }
 
   ],

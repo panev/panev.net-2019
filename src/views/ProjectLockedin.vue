@@ -340,7 +340,7 @@ nav {
 .implementationActive .implementation-link,
 .outcomeActive .outcome-link {
 	font-weight: bold;
-	color: #efefef;
+	color: $wl-prime;
 }
 
 .inceptionActive .active-marker {

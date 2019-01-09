@@ -23,7 +23,7 @@
 			</li>
 
 			<li class="project sunflow">
-				<router-link to="/project-ticketmaster">
+				<router-link to="/project-sunflow">
 					<img src="@/assets/worksThumbSunflow.svg" alt="project thumbnail">
 					<h3>Sunflow</h3>
 					<p>A web app that allows you to create flows & mind maps.</p>

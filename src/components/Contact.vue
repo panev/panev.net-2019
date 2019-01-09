@@ -50,7 +50,6 @@ export default {
 @import '@/scss/utils.scss';
 
 #contact {
-	/*padding-top: calc(#{$nav-height} * 2);*/
 	padding-top: $nav-height;
 	margin-bottom: 200px;
 }
