@@ -20,7 +20,7 @@ export default new Router({
     },
     {
       path: '/project-ticketmaster', 
-      name: 'lockedin',
+      name: 'ticketmaster',
       component: ProjectTicketmaster
     }
 

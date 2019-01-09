@@ -42,7 +42,16 @@ export default {
 }
 
 .about-heading {
-
+    &::after {
+        content: '';
+        width: 38px;
+        height: 102px;
+        background: url('../assets/homeAbout.svg');
+        display: inline-block;
+        margin-left: 40px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
 }
 
 p {

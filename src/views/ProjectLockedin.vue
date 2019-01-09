@@ -325,7 +325,7 @@ nav {
 }
 
 .active-marker {
-	background: $wl-prime;
+	background: #efefef;
 	height: 8px;
 	width: 150px;
 	transition: 0.3s;
@@ -340,6 +340,7 @@ nav {
 .implementationActive .implementation-link,
 .outcomeActive .outcome-link {
 	font-weight: bold;
+	color: #efefef;
 }
 
 .inceptionActive .active-marker {

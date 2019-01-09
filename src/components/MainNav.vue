@@ -179,16 +179,16 @@ a {
 		height: 8px;
 		width: 120px;
 		display: block;
-		background: #efefef;
+		background: $wl-prime;
 		position: relative;
 		top: 28px;
 		opacity: 0;
-    	left: -20px;
+    	left: -20px;	
     	transition: 0.35s;
 	}
 
 	&:hover::after {
-		opacity: 0.85;
+		opacity: 0.55;
 	}
 }
 
@@ -197,10 +197,11 @@ a {
 .worksActive .works-link,
 .contactActive .contact-link {
 	font-weight: bold;
+	color: $wl-prime;
 }
 
 .active-marker {
-	background: $wl-prime;
+	background: #efefef;
 	height: 8px;
 	width: 120px;
 	transition: 0.3s;

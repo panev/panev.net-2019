@@ -1,7 +1,6 @@
 <template>
     <div id="hello" ref="hello" class="grid-container">
         <h1 class="hello-heading section-heading">Hi there!</h1>
-        <div class="test"></div>
         <div class="t-himsg">
             <h2>I'm Todor &ndash; a 
                     <span class="t-role" :style="{color: currentColour}">
@@ -114,6 +113,16 @@ export default {
 
 .hello-heading {
     margin-top: 150px;
+    &::after {
+        content: '';
+        width: 105px;
+        height: 105px;
+        background: url('../assets/homeHello.svg');
+        display: inline-block;
+        margin-left: 40px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
 }
 
 .visual-colour {

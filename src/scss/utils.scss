@@ -41,7 +41,8 @@ $ixd-colour: #FFBC9A;
     
     &::before {
         content: '';
-        background: #efefef;
+        /*background: #efefef;*/
+        background: #fff;
         width: 430px;
         height: 28px;
         position: absolute;
@@ -53,7 +54,7 @@ $ixd-colour: #FFBC9A;
 
 h1 {
 	font-size: $type-heading;
-	color: $wl-second;
+	color: $wl-prime;
 }
 
 h2 {

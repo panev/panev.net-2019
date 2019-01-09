@@ -83,7 +83,14 @@ $wl-lockedin: #6FADF5;
 }
 
 .works-heading {
-
+    &::after {
+        content: '';
+        width: 77px;
+        height: 97px;
+        background: url('../assets/homeWork.svg');
+        display: inline-block;
+        margin-left: 30px;
+    }
 }
 
 .project {

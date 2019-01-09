@@ -58,6 +58,16 @@ export default {
 .contact-heading {
 	margin-bottom: 0;
 	margin-top: 0;
+    &::after {
+        content: '';
+        width: 83px;
+        height: 48px;
+        background: url('../assets/homeContact.svg'); 
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
 }
 
 h2 {
