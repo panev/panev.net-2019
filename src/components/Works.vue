@@ -6,25 +6,29 @@
 			
 			<li class="project lockedin">
 				<router-link to="/project-lockedinlive">
-					<img src="@/assets/worksThumbLockedin.svg" alt="">
+					<img src="@/assets/worksThumbLockedin.svg" alt="project thumbnail">
 					<h3>Lockedin Live</h3>
 					<p>A Progressive Web App that allows you to easily listen to online radio.</p>
 					<span class="cta">View case study ></span>
 				</router-link>
 			</li>
 
-			<li class="project">
+			<li class="project ticketmaster">
 				<router-link to="/project-ticketmaster">
+					<img src="@/assets/worksThumbTicketmaster.svg" alt="project thumbnail">
 					<h3>Ticketmaster</h3>
-					<p>A Progressive Web App that allows you to easily listen to online radio.</p>
+					<p>UI and design system work for the ticketmaster.com website.</p>
+					<span class="cta">View case study ></span>
 				</router-link>
 			</li>
 
-			<li class="project">
-				<!-- <router-link to="/project-lockedinlive"> -->
-					<h3>Beoynd PWA</h3>
-					<p>A Progressive Web App that allows you to easily listen to online radio.</p>
-				<!-- </router-link> -->
+			<li class="project sunflow">
+				<router-link to="/project-ticketmaster">
+					<img src="@/assets/worksThumbSunflow.svg" alt="project thumbnail">
+					<h3>Sunflow</h3>
+					<p>A web app that allows you to create flows & mind maps.</p>
+					<span class="cta">View case study ></span>
+				</router-link>
 			</li>
 
 		</ul>
@@ -59,18 +63,14 @@ export default {
 <style scoped lang="scss">
 @import '@/scss/utils.scss';
 
-$wl-lockedin: #6FADF5;
+$wl-lockedin: #40B8C0;
+$wl-ticketmaster: #009CDE;
+$wl-sunflow: #2B507D;
 
 #works {
-	/*padding-top: calc(#{$nav-height} * 2);*/
 	padding-top: $nav-height;
 
 	& .grid-container {
-
-
-		& a {
-
-		}
 
 		& .project:nth-child(odd) {
 			grid-column: 2 / 7;
@@ -114,10 +114,10 @@ $wl-lockedin: #6FADF5;
 		font-size: $type-small-heading;
 		text-transform: uppercase;
 		margin-bottom: 10px;
-		color: $wl-lockedin;
 		z-index: 20;
 		position: relative;
 		transition: 0.3s;
+		text-shadow: 3px 3px 3px rgba(0,0,0,0.00);
 	}
 
 	& p {
@@ -137,26 +137,44 @@ $wl-lockedin: #6FADF5;
 		text-transform: uppercase;
 		color: #fff;
 		display: inline-block;
+		position: relative;
+		z-index: 20;
+	}
+
+	& img {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 10;
+		transition: 0.5s;
+	}
+
+	&:hover {
+	
+		& h3 {
+			color: #fff!important;
+			transform: translateY(-40px);
+			text-shadow: 3px 3px 3px rgba(0,0,0,0.15);
+		}
+	
+		& p {
+			color: #fff;
+			transform: translateY(-35px);
+		}
+	
+		& .cta {
+			opacity: 1;
+			transform: translateY(-25px);
+		}
 	}
 
 	&.lockedin {
-
-		z-index: 20;
-
-		& img {
-			position: absolute;
-			top: 0;
-			right: 0;
-			z-index: 10;
-			transition: 0.3s;
-		}
 
 		&::before {
 			content: '';
 			display: block;
 			position: absolute;
 			z-index: -10;
-			background: url('../assets/worksBackLockedin.svg') no-repeat;
 			width: 319px;
 			height: 303px;
     		top: -120px;
@@ -164,30 +182,44 @@ $wl-lockedin: #6FADF5;
 		}
 
 		&:hover {
-
-			background: $wl-lockedin;
-			
 			& img {
-				transform: scale(5) rotate(-45deg);
-
-			}
-
-			& h3 {
-				color: #fff;
-				transform: translateY(-40px);
-			}
-
-			& p {
-				color: #fff;
-				transform: translateY(-35px);
-			}
-
-			& .cta {
-				opacity: 1;
-				transform: translateY(-25px);
+				transform: scale(10) rotate(-15deg) translate(-30px, -20px);
 			}
 		}
+
+		& h3 {
+			color: $wl-lockedin;
+		}
+		
 	}
+
+	&.ticketmaster {
+
+		&:hover {
+			& img {
+				transform: scale(10) rotate(-15deg) translate(-50px, -20px);
+			}
+		}
+
+		& h3 {
+			color: $wl-ticketmaster;
+		}	
+	}
+
+	&.sunflow {
+
+		&:hover {
+			& img {
+				transform: scale(10) rotate(-15deg) translate(-110px, 0px);
+			}
+		}
+
+		& h3 {
+			color: $wl-sunflow;
+		}
+	}
+
+
 }
 
 </style>

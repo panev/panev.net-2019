@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="268px" height="207px" viewBox="0 0 268 207" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 36</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="320" height="210"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#14223C" offset="0%"></stop>
+            <stop stop-color="#2B507D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Visual-playground" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Full-HD-Copy" transform="translate(-116.000000, -4797.000000)">
+            <g id="Group-36" transform="translate(64.000000, 4797.567189)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Rectangle" fill-rule="nonzero"></g>
+                <g id="Group-32" mask="url(#mask-2)">
+                    <g transform="translate(52.000000, -34.000000)">
+                        <path d="M194.268441,150.420407 L129.780267,166.499114 L128.328736,160.67734 L194.008215,144.301607 C194.002744,143.86839 194,143.434515 194,143 C194,87.2192403 239.21924,42 295,42 C350.78076,42 396,87.2192403 396,143 C396,198.78076 350.78076,244 295,244 C241.714888,244 198.067385,202.736489 194.268441,150.420416 Z" id="Combined-Shape" fill="url(#linearGradient-3)" fill-rule="evenodd"></path>
+                        <path d="M152.66135,91.6527548 L136.37031,144.938346 C142.666599,148.033102 147,154.510491 147,162 C147,172.49341 138.49341,181 128,181 C117.50659,181 109,172.49341 109,162 C109,151.50659 117.50659,143 128,143 C130.290779,143 132.48687,143.405404 134.520443,144.148382 L150.823215,90.8244181 C148.529838,89.4177921 147,86.8875525 147,84 C147,82.9452456 147.204121,81.9381663 147.575016,81.0161097 L102.861317,54.1494087 C96.6318704,63.1238628 86.2521579,69 74.5,69 C55.4461761,69 40,53.5538239 40,34.5 C40,15.4461761 55.4461761,0 74.5,0 C93.5538239,0 109,15.4461761 109,34.5 C109,40.7272096 107.350153,46.5690767 104.463727,51.6123335 L149.19842,78.4916486 C150.656057,76.9569118 152.716279,76 155,76 C159.418278,76 163,79.581722 163,84 C163,88.418278 159.418278,92 155,92 C154.186366,92 153.401102,91.8785372 152.66135,91.6527548 Z" id="Combined-Shape" fill="url(#linearGradient-3)" fill-rule="evenodd"></path>
+                        <circle id="Oval" fill="#284A74" fill-rule="nonzero" cx="192" cy="221.5" r="5.5"></circle>
+                        <circle id="Oval-Copy-4" fill="#284A74" fill-rule="nonzero" cx="14" cy="94" r="14"></circle>
+                        <circle id="Oval-Copy-5" fill="#284A74" fill-rule="nonzero" cx="204" cy="57" r="3"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
