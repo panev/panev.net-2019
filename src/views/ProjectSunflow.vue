@@ -30,7 +30,6 @@
 					<ul>
 						<li>Product Designer</li>
 						<li>Software Engineer</li>
-						<!-- <li>Chief Visionary</li> -->
 					</ul>
 				</div>
 			</div>
@@ -139,16 +138,6 @@ export default {
 	name: 'project-sunflow',
 	components: {
     	Footer
-	},
-	data: function() {
-
-	},
-	methods: {
-		
-	},
-
-	mounted() {
-		
 	}
 }
 </script>

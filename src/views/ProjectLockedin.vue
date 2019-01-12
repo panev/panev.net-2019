@@ -40,7 +40,6 @@
 					<ul>
 						<li>Product Designer</li>
 						<li>Software Engineer</li>
-						<li>Chief Visionary</li>
 					</ul>
 				</div>
 			</div>
