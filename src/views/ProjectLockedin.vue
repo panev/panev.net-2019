@@ -133,7 +133,7 @@
 			</section>
 			<section id="buttons">
 				<router-link to="/" class="button back">< Back to Home Page</router-link>
-				<a href="http://lockedin.live" target="_blank" class="button visit external">Visit live project <img src="@/assets/iconExternal.svg" alt="external icon"></a>
+				<a href="http://lockedin.live" target="_blank" class="button visit external" rel="noreferrer">Visit live project <img src="@/assets/iconExternal.svg" alt="external icon"></a>
 			</section>
 		</div>
 

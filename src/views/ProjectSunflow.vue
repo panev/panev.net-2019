@@ -120,9 +120,9 @@
 				<img src="@/assets/project-sunflow/7.jpg" alt="screenshot" class="mock">
 			</section>
 			<section id="buttons">
-				<p>To to try out the app, you need an account &ndash; register one <a href="https://sunflow.rs/super-secret-register-page.html" target="_blank">here</a></p>
+				<p>To to try out the app, you need an account &ndash; register one <a href="https://sunflow.rs/super-secret-register-page.html" target="_blank" rel="noreferrer">here</a></p>
 				<router-link to="/" class="button back">< Back to Home Page</router-link>
-				<a href="http://sunflow.rs" target="_blank" class="button visit external">Visit live project <img src="@/assets/iconExternal.svg" alt="external icon"></a>
+				<a href="http://sunflow.rs" target="_blank" class="button visit external" rel="noreferrer">Visit live project <img src="@/assets/iconExternal.svg" alt="external icon"></a>
 			</section>
 		</div>
 
