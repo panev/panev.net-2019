@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="198px" height="218px" viewBox="0 0 198 218" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 14</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="2.58083454%" y1="2.58083454%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#3BC2BB" stop-opacity="0.75" offset="0%"></stop>
+            <stop stop-color="#4183CF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Visual-playground" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Full-HD-Copy" transform="translate(-510.000000, -4338.000000)" fill="url(#linearGradient-1)">
+            <g id="Group-16" transform="translate(249.000000, 4233.000000)">
+                <g id="Group-6" transform="translate(0.000000, 2.000000)">
+                    <g id="Group-2" transform="translate(0.000000, 103.000000)">
+                        <g id="Group-11" transform="translate(210.000000, -134.000000)">
+                            <g id="Group-14">
+                                <rect id="Rectangle-2" transform="translate(146.500000, 147.000000) rotate(-45.000000) translate(-146.500000, -147.000000) " x="92" y="-5" width="109" height="304"></rect>
+                                <rect id="Rectangle-2-Copy" transform="translate(187.500000, 245.500000) rotate(-315.000000) translate(-187.500000, -245.500000) " x="133" y="150" width="109" height="191"></rect>
+                                <polygon id="Rectangle-2-Copy-2" transform="translate(54.500000, 217.500000) rotate(-315.000000) translate(-54.500000, -217.500000) " points="35 202.275395 74 198 69.8100835 237"></polygon>
+                                <polygon id="Rectangle-2-Copy-4" transform="translate(220.500000, 332.500000) rotate(-315.000000) translate(-220.500000, -332.500000) " points="214 327.425132 227 326 225.603361 339"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
