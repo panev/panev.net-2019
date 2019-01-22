@@ -27,7 +27,7 @@ export default {
 			this.aboutAreaEnd = this.$refs.about.offsetTop + this.$refs.about.offsetHeight;
 			this.$emit('aboutAreaStartCalculated', this.aboutAreaStart)
 			this.$emit('aboutAreaEndCalculated', this.aboutAreaEnd)
-		}
+		},
 	},
 	mounted() {
 		this.getAboutArea();

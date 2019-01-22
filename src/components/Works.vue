@@ -1,6 +1,6 @@
 <template> 
     <div id="works" ref="works">
-   		<h1 class="works-heading section-heading">Works</h1>
+   		<h1 class="works-heading section-heading">Work</h1>
     	
     	<ul class="grid-container">
 			
