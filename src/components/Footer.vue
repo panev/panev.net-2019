@@ -12,7 +12,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/scss/utils.scss';
+@import '@/scss/core.scss';
 	
 footer {
 	height: 250px;
@@ -21,7 +21,7 @@ footer {
 }
 
 .tagline {
-	color: $wl-prime;
+	color: $wl-gray;
 }
 
 </style>

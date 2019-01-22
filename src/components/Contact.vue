@@ -47,7 +47,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/scss/utils.scss';
+@import '@/scss/core.scss';
 
 #contact {
 	padding-top: $nav-height;
@@ -55,8 +55,10 @@ export default {
 }
 
 .contact-heading {
+
 	margin-bottom: 0;
 	margin-top: 0;
+
     &::after {
         content: '';
         width: 83px;

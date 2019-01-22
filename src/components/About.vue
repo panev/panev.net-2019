@@ -37,13 +37,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/scss/utils.scss';
+@import '@/scss/core.scss';
 
 #about {
 	padding-top: $nav-height;
 }
 
 .about-heading {
+
     &::after {
         content: '';
         width: 38px;
@@ -60,9 +61,6 @@ p {
 	grid-column: 6 / 11;
 	text-align: left;
 	align-self: center;
-	/*background-image: linear-gradient(0deg, #47D8D8 0%, #4FD1DB 15%, #A68AFF 43%, #2B507D 66%, #4AADE2 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent*/
 }
 
 img {

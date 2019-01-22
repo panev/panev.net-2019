@@ -110,7 +110,7 @@ export default {
 
 <style scoped lang="scss">
 
-@import '@/scss/utils.scss';
+@import '@/scss/core.scss';
 
 
 .personHasScrolled {
@@ -151,7 +151,6 @@ export default {
 		display: block;
 		width: 100%;
 		height: 30px;
-		/*background: rgba(255,255,255,0.2);*/
 		background-image: linear-gradient(-180deg, #000 0%, rgba(255,255,255,0.00) 100%);
 		opacity: 0;
 		transition: 0.3s;

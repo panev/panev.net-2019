@@ -143,7 +143,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/scss/utils.scss';
+@import '@/scss/core.scss';
 
 #project-sunflow {
 	padding-top: $nav-height;

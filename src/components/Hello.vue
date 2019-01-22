@@ -103,12 +103,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/scss/utils.scss';
+@import '@/scss/core.scss';
 
 #hello {
     padding-top: $nav-height;
-    /*padding-top: calc(#{$nav-height} * 2);*/
-    /*margin-bottom: 50px;*/
 }
 
 .hello-heading {

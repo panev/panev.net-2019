@@ -61,7 +61,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/scss/utils.scss';
+@import '@/scss/core.scss';
 
 $wl-lockedin: #40B8C0;
 $wl-ticketmaster: #009CDE;

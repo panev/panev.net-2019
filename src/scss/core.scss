@@ -1,5 +1,4 @@
-$nav-height: 80px;
-
+/* main colours */
 $wl-prime: #52DBDB;
 $wl-prime-lite: rgba(133, 230, 230, 1);
 $wl-second: #2B3E56;
@@ -9,20 +8,27 @@ $wl-third: #FFCD7A;
 $wl-gray: #D6D6D6;
 $wl-body: #4A4A4A;
 
+/* project colours */
+$wl-lockedin: #40B8C0;
+$wl-ticketmaster: #009CDE;
+$wl-sunflow: $wl-second-lite;
+
+/* role colours */
+$visual-colour: #F68EFF;
+$ux-colour: $wl-prime;
+$product-colour: #A68AFF;
+$ixd-colour: #FFBC9A;
+
+/* type sizes */ 
 $type-heading: 87px;
 $type-small-heading: 30px;
 $type-project-heading: 24px;
 $type-paragraph: 19px;
 
 
-$visual-colour: #F68EFF;
-$ux-colour: $wl-prime;
-$product-colour: #A68AFF;
-$ixd-colour: #FFBC9A;
+/* layout */
 
-* {
-	/*box-sizing: border-box;*/
-}
+$nav-height: 80px;
 
 .grid-container {
 	width: 100%;
@@ -32,24 +38,14 @@ $ixd-colour: #FFBC9A;
 	justify-content: center;
 }
 
+/* typography */
+
 .section-heading {
     height: auto;
     position: relative;
     z-index: 10;
 	grid-column: 1 / 13;
 	z-index: 30;
-    
-    &::before {
-        content: '';
-        /*background: #efefef;*/
-        background: #fff;
-        width: 430px;
-        height: 28px;
-        position: absolute;
-        z-index: -1;
-        top: 45px;
-        transform: translate(-110px, 23px);
-    }
 }
 
 h1 {
@@ -66,3 +62,10 @@ p {
 	font-size: $type-paragraph;
 	color: $wl-body;
 }
+
+
+
+
+
+
+

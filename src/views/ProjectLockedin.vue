@@ -272,7 +272,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/scss/utils.scss';
+@import '@/scss/core.scss';
 
 #project-lockedin {
 	padding-top: $nav-height;

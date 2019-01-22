@@ -5,6 +5,8 @@
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 
+/* some global scss lives here */
+
 * {
   box-sizing: border-box;
 }
