@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.c7a7339315aab3ebb9c4f347e14b06ea.js"
+  "/precache-manifest.b9d1bcb3c3c595b47e9340c13b0a07f3.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "landing-test"});
+workbox.core.setCacheNameDetails({prefix: "panev.net"});
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
