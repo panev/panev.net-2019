@@ -27,7 +27,6 @@ $type-paragraph: 19px;
 
 
 /* layout */
-
 $nav-height: 80px;
 
 .grid-container {
@@ -39,7 +38,6 @@ $nav-height: 80px;
 }
 
 /* typography */
-
 .section-heading {
     height: auto;
     position: relative;
@@ -95,7 +93,18 @@ p {
 }
 
 
+.button-slim {
+	font-size: $type-paragraph;
+	color: $wl-prime;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
 
+	&:hover {
+		cursor: pointer;
+		color: $wl-prime-lite;
+	}
+}
 
 
 

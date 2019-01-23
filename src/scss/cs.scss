@@ -61,6 +61,11 @@ nav a {
 	height: 620px;
 }
 
+.hero-thumb {
+	grid-column: 1 / 5;
+	margin-top: 150px;
+}
+
 .hero-info {
 	grid-column: 6 / 13;
 	text-align: left;
