@@ -63,6 +63,36 @@ p {
 	color: $wl-body;
 }
 
+/* buttons */
+.button {
+	height: 58px;
+	border-radius: 30px;
+	padding: 20px 30px;
+	font-weight: bold;
+	color: #fff;
+	display: inline-block;
+	margin: 0 20px;
+	box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.15);
+	transition: 0.3s;
+
+	&.back {
+		background: $wl-second;
+	}
+
+	&.visit {
+		background: $wl-prime;
+	}
+
+	& img {
+		vertical-align: bottom;
+		margin-left: 8px;
+	}
+
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.20);
+	}
+}
 
 
 

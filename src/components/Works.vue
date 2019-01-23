@@ -63,10 +63,6 @@ export default {
 <style scoped lang="scss">
 @import '@/scss/core.scss';
 
-$wl-lockedin: #40B8C0;
-$wl-ticketmaster: #009CDE;
-$wl-sunflow: #2B507D;
-
 #works {
 	padding-top: $nav-height;
 
