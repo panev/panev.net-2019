@@ -67,7 +67,6 @@ export default {
 	},
 	mounted() {
 		this.getAboutArea();
-		console.log(this.aboutAreaStart)
 	}
 }
 </script>
@@ -81,6 +80,7 @@ export default {
 
 .about-heading {
 	
+	margin-top: 100px;
 	position: relative;
 
     & .heading-ani {

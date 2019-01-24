@@ -4,7 +4,7 @@
 		<header class="grid-container">
 			<div class="logo-and-back">
 				<h3>Project<span>:</span> Ticketmaster</h3>
-				<router-link to="/">< Back</router-link>
+				<router-link to="/"><< Back</router-link>
 			</div>
 			<nav :class=" { 
 				contextActive: contextActive,
@@ -148,7 +148,7 @@
 				<p>Thanks for reading!</p>
 			</section>
 			<section id="buttons">
-				<router-link to="/" class="button back">< Back to Home Page</router-link>
+				<router-link to="/" class="button back"><< Back to Home Page</router-link>
 			</section>
 		</div>
 

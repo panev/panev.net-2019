@@ -4,7 +4,7 @@
 		<header class="grid-container">
 			<div class="logo-and-back">
 				<h3>Project<span>:</span> Lockedin Live</h3>
-				<router-link to="/">< Back</router-link>
+				<router-link to="/"><< Back</router-link>
 			</div>
 			<nav :class=" { 
 				inceptionActive: inceptionActive,
@@ -132,7 +132,7 @@
 				<p>Thanks for reading!</p>
 			</section>
 			<section id="buttons">
-				<router-link to="/" class="button back">< Back to Home Page</router-link>
+				<router-link to="/" class="button back"><< Back to Home Page</router-link>
 				<a href="http://lockedin.live" target="_blank" class="button visit external" rel="noreferrer">Visit live project <img src="@/assets/iconExternal.svg" alt="external icon"></a>
 			</section>
 		</div>

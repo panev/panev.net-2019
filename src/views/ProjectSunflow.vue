@@ -4,7 +4,7 @@
 		<header class="grid-container">
 			<div class="logo-and-back">
 				<h3>Project<span>:</span> Sunflow.rs</h3>
-				<router-link to="/">< Back</router-link>
+				<router-link to="/"><< Back</router-link>
 			</div>
 			<nav>
 				<p>Casestudy comming soon~</p>
@@ -121,7 +121,7 @@
 			</section>
 			<section id="buttons">
 				<p>To to try out the app, you need an account &ndash; register one <a href="https://sunflow.rs/super-secret-register-page.html" target="_blank" rel="noreferrer">here</a></p>
-				<router-link to="/" class="button back">< Back to Home Page</router-link>
+				<router-link to="/" class="button back"><< Back to Home Page</router-link>
 				<a href="http://sunflow.rs" target="_blank" class="button visit external" rel="noreferrer">Visit live project <img src="@/assets/iconExternal.svg" alt="external icon"></a>
 			</section>
 		</div>
@@ -192,8 +192,11 @@ nav {
 
 	& p a {
 		color: $wl-prime;
-		text-decoration: underline;
 		font-weight: bold;
+	}
+
+	&:hover {
+		color: $wl-prime;
 	}
 
 	& p {
