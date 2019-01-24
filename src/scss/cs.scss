@@ -13,7 +13,7 @@ header {
 
 	& h3 {
 		font-size: $type-project-heading;
-		margin: 10px 0 0 0;
+		margin: 5px 0 0 0;
 
 
 		& span {
@@ -28,19 +28,23 @@ header {
 	}
 }
 
+nav {
+	height: $nav-height;
+}
+
 nav a {
 	display: inline-block;
 	box-sizing: border-box;
 	display: inline-block;
 	font-size: 17px;
-	color: $wl-second;
+	color: $wl-black;
 	transition: 0.3s;	
-	padding: 25px 20px;
+	padding: 20px;
 	width: 140px;	
 }
 
 .active-marker {
-	background: #efefef;
+	background: $wl-prime;
 	height: 8px;
 	width: 140px;
 	transition: 0.3s;
@@ -54,7 +58,7 @@ nav a {
 .processActive .process-link,
 .outcomeActive .outcome-link {
 	font-weight: bold;
-	color: $wl-prime;
+	color: $wl-black;
 }
 
 .hero-unit {

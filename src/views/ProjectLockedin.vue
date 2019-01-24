@@ -288,23 +288,23 @@ nav {
 }
 
 .inceptionActive .active-marker {
-	transform: translateX(0px) translateY(0px) scaleX(1);
+	transform: translateX(25px) translateY(0px) scaleX(1);
 }
 
 .projectGoalsActive .active-marker {
-	transform: translateX(150px) translateY(0px) scaleX(1);
+	transform: translateX(165px) translateY(0px) scaleX(1);
 }
 
 .gettingThereActive .active-marker {
-	transform: translateX(300px) translateY(0px) scaleX(1);
+	transform: translateX(310px) translateY(0px) scaleX(1);
 }
 
 .implementationActive .active-marker {
-	transform: translateX(450px) translateY(0px) scaleX(1);
+	transform: translateX(455px) translateY(0px) scaleX(1);
 }
 
 .outcomeActive .active-marker {
-	transform: translateX(600px) translateY(0px) scaleX(1);
+	transform: translateX(590px) translateY(0px) scaleX(0.8);
 }
 
 .hero-unit {
