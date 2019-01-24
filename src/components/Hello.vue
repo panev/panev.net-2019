@@ -1,6 +1,11 @@
 <template>
     <div id="hello" ref="hello" class="grid-container">
-        <h1 class="hello-heading section-heading">Hi there!</h1>
+        <h1 class="hello-heading section-heading">
+            Hi there!
+            <div class="heading-ani">
+                <img src="@/assets/homeHello.svg" alt="heading thumbnail">
+            </div>
+        </h1>
         <div class="t-himsg">
             <h2>I'm Todor &ndash; a 
                     <span class="t-role" :style="{color: currentColour}">
@@ -110,16 +115,16 @@ export default {
 }
 
 .hello-heading {
-    margin-top: 150px;
-    &::after {
-        content: '';
-        width: 105px;
-        height: 105px;
-        background: url('../assets/homeHello.svg');
-        display: inline-block;
-        margin-left: 40px;
-        margin-top: 0px;
-        margin-bottom: 10px;
+    margin-top: 250px;
+    position: relative;
+
+
+    & .heading-ani {
+        width: 111px;
+        height: 111px;
+        position: absolute;
+        right: 30%;
+        bottom: 10px;
     }
 }
 
@@ -143,7 +148,7 @@ export default {
     grid-column: 1 / 13;
     margin-top: 50px;
     font-size: $type-small-heading;
-    color: #2B3E56;
+    color: $wl-black;
     text-align: center;
     margin: 40px auto;
     margin-bottom: 150px;
@@ -171,13 +176,13 @@ export default {
 }
 
 .t-role-up {
-    top: -45px;
+    top: -40px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .t-role-down {
-    bottom: -30px;
+    bottom: -38px;
     left: 50%;
     transform: translateX(-50%);
 }

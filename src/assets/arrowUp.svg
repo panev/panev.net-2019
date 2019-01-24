@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="25px" height="17px" viewBox="0 0 25 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
     <title>Triangle</title>
     <desc>Created with Sketch.</desc>
     <g id="Visual-playground" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Home-Full-HD-Copy" transform="translate(-565.000000, -448.000000)" fill="#D8D8D8">
-            <path d="M575.102027,449.697298 C576.426391,447.931479 578.570607,447.927475 579.897973,449.697298 L588.602027,461.302702 C589.926391,463.068521 589.207545,464.5 587.001529,464.5 L567.998471,464.5 C565.790176,464.5 565.070607,463.072525 566.397973,461.302702 L575.102027,449.697298 Z" id="Triangle"></path>
+        <g id="Home-Full-HD-Copy-6" transform="translate(-628.000000, -500.000000)" fill="#52DBDB">
+            <path d="M638.102027,502.197298 C639.426391,500.431479 641.570607,500.427475 642.897973,502.197298 L651.602027,513.802702 C652.926391,515.568521 652.207545,517 650.001529,517 L630.998471,517 C628.790176,517 628.070607,515.572525 629.397973,513.802702 L638.102027,502.197298 Z" id="Triangle"></path>
         </g>
     </g>
 </svg>

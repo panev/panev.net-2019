@@ -5,6 +5,7 @@ $wl-second: #2B3E56;
 $wl-second-lite: #2B507D;
 $wl-third: #FFCD7A;
 
+$wl-black: #353535;
 $wl-gray: #D6D6D6;
 $wl-body: #4A4A4A;
 
@@ -20,8 +21,8 @@ $product-colour: #A68AFF;
 $ixd-colour: #FFBC9A;
 
 /* type sizes */ 
-$type-heading: 87px;
-$type-small-heading: 30px;
+$type-heading: 49px;
+$type-small-heading: 19px;
 $type-project-heading: 24px;
 $type-paragraph: 19px;
 
@@ -48,7 +49,7 @@ $nav-height: 80px;
 
 h1 {
 	font-size: $type-heading;
-	color: $wl-prime;
+	color: $wl-black;
 }
 
 h2 {
@@ -58,7 +59,7 @@ h2 {
 
 p {
 	font-size: $type-paragraph;
-	color: $wl-body;
+	color: $wl-black;
 }
 
 /* buttons */
