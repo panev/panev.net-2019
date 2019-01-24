@@ -99,10 +99,36 @@ p {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
+	text-shadow: 0 7px 15px rgba(0, 0, 0, 0);
+	display: inline-block;
+	transition: 0.2s;
+	overflow: visible;
+
+	&::after {
+		width: 80%;
+		content: '';
+		display: block;
+		height: 3px;
+		border-radius: 50%;
+		opacity: 0;
+		background: rgba(0,0,0,0.15);
+		filter: blur(4px);
+		transition: 0.2s;
+		position: relative;
+		transform: translateY(0px) translateX(-50%);
+		left: 50%;
+	}
+
 
 	&:hover {
 		cursor: pointer;
 		color: $wl-prime-lite;
+		transform: translateY(-3px);
+		/*text-shadow: 0 7px 15px rgba(0, 0, 0, 0.20);*/
+		&::after {
+			transform: translateY(2px) translateX(-50%);
+			opacity: 1;
+		}
 	}
 }
 
