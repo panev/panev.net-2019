@@ -4,7 +4,7 @@
 		<header class="grid-container">
 			<div class="logo-and-back">
 				<h3>Project<span>:</span> Lockedin Live</h3>
-				<router-link to="/">< Back</router-link>
+				<router-link to="/"><< Back</router-link>
 			</div>
 			<nav :class=" { 
 				inceptionActive: inceptionActive,
@@ -132,7 +132,7 @@
 				<p>Thanks for reading!</p>
 			</section>
 			<section id="buttons">
-				<router-link to="/" class="button back">< Back to Home Page</router-link>
+				<router-link to="/" class="button back"><< Back to Home Page</router-link>
 				<a href="http://lockedin.live" target="_blank" class="button visit external" rel="noreferrer">Visit live project <img src="@/assets/iconExternal.svg" alt="external icon"></a>
 			</section>
 		</div>
@@ -272,98 +272,43 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/scss/utils.scss';
+@import '@/scss/core.scss';
+@import '@/scss/cs.scss';
 
 #project-lockedin {
 	padding-top: $nav-height;
 }
 
-header {
-	height: $nav-height;
-	background: #fff;
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
-	position: fixed;
-	top: 0;
-	z-index: 9000;
-}
-
-.logo-and-back {
-	grid-column: 1 / 5;
-	text-align: left;
-
-	& h3 {
-		font-size: $type-project-heading;
-		margin: 10px 0 0 0;
-
-
-		& span {
-			color: $wl-prime;
-		}
-	}
-
-	& a {
-		color: $wl-prime;
-		font-size: 16px;
-		font-weight: bold;
-	}
-}
-
 nav {
 	grid-column: 5 / 13;
-
-	& a {
-		display: inline-block;
-		box-sizing: border-box;
-		display: inline-block;
-		font-size: 17px;
-		color: $wl-second;
-		transition: 0.3s;	
-		padding: 25px 20px;
-		width: 150px;	
-	}
 }
 
 .active-marker {
-	background: #efefef;
-	height: 8px;
-	width: 150px;
-	transition: 0.3s;
 	transform: translateX(-360px) translateY(0px) scaleX(1.55);
-	z-index: 5;
-	position: relative;
-}
-
-.inceptionActive .inception-link,
-.projectGoalsActive .project-goals-link,
-.gettingThereActive .getting-there-link,
-.implementationActive .implementation-link,
-.outcomeActive .outcome-link {
-	font-weight: bold;
-	color: $wl-prime;
 }
 
 .inceptionActive .active-marker {
-	transform: translateX(0px) translateY(0px) scaleX(1);
+	transform: translateX(25px) translateY(0px) scaleX(1);
 }
 
 .projectGoalsActive .active-marker {
-	transform: translateX(150px) translateY(0px) scaleX(1);
+	transform: translateX(165px) translateY(0px) scaleX(1);
 }
 
 .gettingThereActive .active-marker {
-	transform: translateX(300px) translateY(0px) scaleX(1);
+	transform: translateX(310px) translateY(0px) scaleX(1);
 }
 
 .implementationActive .active-marker {
-	transform: translateX(450px) translateY(0px) scaleX(1);
+	transform: translateX(455px) translateY(0px) scaleX(1);
 }
 
 .outcomeActive .active-marker {
-	transform: translateX(600px) translateY(0px) scaleX(1);
+	transform: translateX(590px) translateY(0px) scaleX(0.8);
 }
 
 .hero-unit {
-	height: 620px;
+	/* height is fixed in cs.scss */
 	background-image: linear-gradient(-135deg, rgba(59,194,187,0.75) 0%, #4183CF 100%);
 	margin-bottom: 250px;
 }
@@ -373,156 +318,32 @@ nav {
 	margin-top: 70px;
 }
 
+
+/* Colours, should you wish to override */
 .hero-info {
-	grid-column: 6 / 13;
-	text-align: left;
-	margin-top: 70px;
 
-	& ul {
-		padding-left: 0;
+	& li {
+		/*color: #fff;*/
 
-		& li {
-			font-size: $type-paragraph;
-			color: #fff;
-			margin-bottom: 5px;
-
-			&::before {
-				content: '';
-				width: 10px;
-				height: 10px;
-				border-radius: 50%;
-				margin-right: 15px;
-				background: $wl-second;
-				display: inline-block;
-			}
+		&::before {
+			/*background: $wl-second;*/
 		}
 	}
 
 	p {
-		color: $wl-second;
+		/*color: $wl-second;*/
 	}
 }
 
 .hero-heading {
-	font-size: 42px;
-	color: #FFFFFF;
-	margin-top: 40px;
-
-	& span {
-		font-weight: bold;
-	}
+	/*color: #FFFFFF;*/
 }
 
 .hero-subheading {
-	font-weight: bold;
-	font-size: 21px;
-	color: $wl-second;
-	margin-top: 40px;
+	/*color: $wl-second;*/
 }
 
-.content {
 
-	h2 {
-		grid-column: 1 / 13;
-		text-align: center;
-		text-transform: uppercase;
-		color: $wl-prime;
-		font-weight: bold;
-	}
-
-	h3 {
-		grid-column: 1 / 13;
-		text-align: center;
-		text-transform: uppercase;
-		color: $wl-second;
-		font-weight: bold;
-	}
-
-	& section {
-		padding-top: $nav-height;
-		text-align: left;
-		margin-bottom: 80px;
-
-		&.audio {
-			border-top: 1px dashed #ddd;
-			border-bottom: 1px dashed #ddd;
-			padding-bottom: 50px;
-			padding-top: 50px;
-			background: #fcfcfc;
-			position: relative;
-		}
-	}
-
-	& p {
-		grid-column: 3 / 11;
-	}
-
-	& .mock {
-		grid-column: 2 / 12;
-		margin-top: 10px;
-		margin-bottom: 55px;
-		justify-self: center;
-	}
-}
-
-.section-thumb,
-.duration,
-.listen-label,
-audio,
-video {
-	grid-column: 1 / 13;
-	justify-self: center;
-}
-
-.section-thumb {
-	height: 130px;
-}
-
-.duration {
-	color: $wl-prime;
-	margin-bottom: 5px; 
-	font-weight: bold;
-}
-
-.listen-label {
-	margin-bottom: 25px;
-}
-
-#buttons {
-	width: 100%;
-	text-align: center;
-	padding-top: 0;
-}
-
-.button {
-	height: 58px;
-	border-radius: 30px;
-	padding: 20px 30px;
-	font-weight: bold;
-	color: #fff;
-	display: inline-block;
-	margin: 0 20px;
-	box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.15);
-	transition: 0.3s;
-
-	&.back {
-		background: $wl-second;
-	}
-
-	&.visit {
-		background: $wl-prime;
-	}
-
-	& img {
-		vertical-align: bottom;
-		margin-left: 8px;
-	}
-
-	&:hover {
-		transform: translateY(-5px);
-		box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.20);
-	}
-}
 
 </style>
 

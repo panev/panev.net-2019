@@ -110,7 +110,7 @@ export default {
 
 <style scoped lang="scss">
 
-@import '@/scss/utils.scss';
+@import '@/scss/core.scss';
 
 
 .personHasScrolled {
@@ -151,7 +151,6 @@ export default {
 		display: block;
 		width: 100%;
 		height: 30px;
-		/*background: rgba(255,255,255,0.2);*/
 		background-image: linear-gradient(-180deg, #000 0%, rgba(255,255,255,0.00) 100%);
 		opacity: 0;
 		transition: 0.3s;
@@ -170,8 +169,9 @@ a {
 	padding: 20px;
 	display: inline-block;
 	font-size: $type-paragraph;
-	color: $wl-second;
+	color: $wl-black;
 	width: 120px;
+	height: 65px;
 	transition: 0.3s;
 
 	&::after {
@@ -179,9 +179,9 @@ a {
 		height: 8px;
 		width: 120px;
 		display: block;
-		background: $wl-prime;
+		background: #efefef;
 		position: relative;
-		top: 28px;
+		top: 21px;
 		opacity: 0;
     	left: -20px;	
     	transition: 0.35s;
@@ -197,11 +197,11 @@ a {
 .worksActive .works-link,
 .contactActive .contact-link {
 	font-weight: bold;
-	color: $wl-prime;
+	color: $wl-black;
 }
 
 .active-marker {
-	background: #efefef;
+	background: $wl-prime;
 	height: 8px;
 	width: 120px;
 	transition: 0.3s;

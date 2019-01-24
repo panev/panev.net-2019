@@ -1,0 +1,137 @@
+/* main colours */
+$wl-prime: #52DBDB;
+$wl-prime-lite: rgba(133, 230, 230, 1);
+$wl-second: #2B3E56;
+$wl-second-lite: #2B507D;
+$wl-third: #FFCD7A;
+
+$wl-black: #353535;
+$wl-gray: #D6D6D6;
+$wl-body: #4A4A4A;
+
+/* project colours */
+$wl-lockedin: #40B8C0;
+$wl-ticketmaster: #009CDE;
+$wl-sunflow: $wl-second-lite;
+
+/* role colours */
+$visual-colour: #F68EFF;
+$ux-colour: $wl-prime;
+$product-colour: #A68AFF;
+$ixd-colour: #FFBC9A;
+
+/* type sizes */ 
+$type-heading: 49px;
+$type-small-heading: 19px;
+$type-project-heading: 24px;
+$type-paragraph: 19px;
+
+
+/* layout */
+$nav-height: 70px;
+
+.grid-container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(12, 68px);
+	grid-column-gap: 30px;
+	justify-content: center;
+}
+
+/* typography */
+.section-heading {
+    height: auto;
+    position: relative;
+    z-index: 10;
+	grid-column: 1 / 13;
+	z-index: 30;
+}
+
+h1 {
+	font-size: $type-heading;
+	color: $wl-black;
+}
+
+h2 {
+	font-size: $type-small-heading;
+	font-weight: normal;
+}
+
+p {
+	font-size: $type-paragraph;
+	color: $wl-black;
+}
+
+/* buttons */
+.button {
+	height: 58px;
+	border-radius: 30px;
+	padding: 20px 30px;
+	font-weight: bold;
+	color: #fff;
+	display: inline-block;
+	margin: 0 20px;
+	box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.15);
+	transition: 0.3s;
+
+	&.back {
+		background: $wl-second;
+	}
+
+	&.visit {
+		background: $wl-prime;
+	}
+
+	& img {
+		vertical-align: bottom;
+		margin-left: 8px;
+	}
+
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.20);
+	}
+}
+
+
+.button-slim {
+	font-size: $type-paragraph;
+	color: $wl-prime;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 0 7px 15px rgba(0, 0, 0, 0);
+	display: inline-block;
+	transition: 0.2s;
+	overflow: visible;
+
+	&::after {
+		width: 80%;
+		content: '';
+		display: block;
+		height: 3px;
+		border-radius: 50%;
+		opacity: 0;
+		background: rgba(0,0,0,0.15);
+		filter: blur(4px);
+		transition: 0.2s;
+		position: relative;
+		transform: translateY(0px) translateX(-50%);
+		left: 50%;
+	}
+
+
+	&:hover {
+		cursor: pointer;
+		color: $wl-prime-lite;
+		transform: translateY(-3px);
+		/*text-shadow: 0 7px 15px rgba(0, 0, 0, 0.20);*/
+		&::after {
+			transform: translateY(2px) translateX(-50%);
+			opacity: 1;
+		}
+	}
+}
+
+
+

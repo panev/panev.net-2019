@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="198px" height="218px" viewBox="0 0 198 218" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+<svg width="177px" height="187px" viewBox="0 0 177 187" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
     <title>Group 14</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <linearGradient x1="2.58083454%" y1="2.58083454%" x2="100%" y2="100%" id="linearGradient-1">
-            <stop stop-color="#3BC2BB" stop-opacity="0.75" offset="0%"></stop>
-            <stop stop-color="#4183CF" offset="100%"></stop>
-        </linearGradient>
-    </defs>
     <g id="Visual-playground" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Home-Full-HD-Copy" transform="translate(-510.000000, -4338.000000)" fill="url(#linearGradient-1)">
-            <g id="Group-16" transform="translate(249.000000, 4233.000000)">
-                <g id="Group-6" transform="translate(0.000000, 2.000000)">
+        <g id="Home-Full-HD-Copy-6" transform="translate(-531.000000, -4338.000000)">
+            <g id="Group-16" transform="translate(249.000000, 4235.000000)">
+                <g id="Group-6">
                     <g id="Group-2" transform="translate(0.000000, 103.000000)">
-                        <g id="Group-11" transform="translate(210.000000, -134.000000)">
+                        <g id="Group-11" transform="translate(236.000000, -134.000000)">
                             <g id="Group-14">
-                                <rect id="Rectangle-2" transform="translate(146.500000, 147.000000) rotate(-45.000000) translate(-146.500000, -147.000000) " x="92" y="-5" width="109" height="304"></rect>
-                                <rect id="Rectangle-2-Copy" transform="translate(187.500000, 245.500000) rotate(-315.000000) translate(-187.500000, -245.500000) " x="133" y="150" width="109" height="191"></rect>
-                                <polygon id="Rectangle-2-Copy-2" transform="translate(54.500000, 217.500000) rotate(-315.000000) translate(-54.500000, -217.500000) " points="35 202.275395 74 198 69.8100835 237"></polygon>
-                                <polygon id="Rectangle-2-Copy-4" transform="translate(220.500000, 332.500000) rotate(-315.000000) translate(-220.500000, -332.500000) " points="214 327.425132 227 326 225.603361 339"></polygon>
+                                <polygon id="Rectangle-2" fill="#D8D8D8" transform="translate(133.544218, 134.053977) rotate(-45.000000) translate(-133.544218, -134.053977) " points="83.8818462 -4.52174648 183.262402 -4.54175846 183.206589 272.629701 83.826033 272.649713"></polygon>
+                                <polygon id="Rectangle-2-Copy" fill="#BABABA" transform="translate(170.918367, 223.879261) rotate(-315.000000) translate(-170.918367, -223.879261) " points="121.210556 136.7973 220.591112 136.817312 220.626179 310.961223 121.245623 310.941211"></polygon>
+                                <polygon id="Rectangle-2-Copy-2" fill="#D8D8D8" transform="translate(49.675759, 198.345176) rotate(-315.000000) translate(-49.675759, -198.345176) " points="31.8970607 184.457394 67.4544564 180.56647 63.6414677 216.123882"></polygon>
+                                <polygon id="Rectangle-2-Copy-4" fill="#D8D8D8" transform="translate(200.998495, 303.217331) rotate(-315.000000) translate(-200.998495, -303.217331) " points="195.072263 298.588071 206.924728 297.291096 205.653732 309.143567"></polygon>
                             </g>
                         </g>
                     </g>

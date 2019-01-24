@@ -7,7 +7,9 @@ import './registerServiceWorker'
 
 Vue.config.productionTip = false
 
-Vue.use(VueScrollTo)
+Vue.use(VueScrollTo, {
+	easing: "ease"
+})
 
 Vue.use(VueAnalytics, {
   id: 'UA-132321652-1',

@@ -1,6 +1,11 @@
 <template>
 	<div id="contact" ref="contact" class="grid-container">
-		<h1 class="section-heading contact-heading">Get in touch</h1>
+		<h1 class="section-heading contact-heading">
+			Get in touch
+			<div class="heading-ani">
+				<img src="@/assets/homeContact.svg" alt="section thumbnail" style="height: 55px;">
+			</div>
+		</h1>
 		<h2>Feel free to contact me via <a href="mailto:todor@panev.net">email</a> or directly message me on&nbsp;<a href="https://twitter.com/messages/compose?recipient_id=553687251" target="_blank" rel="noreferrer">twitter</a>.</h2>
 		<div class="social-links">
 			<a href="https://www.linkedin.com/in/todorpanev/" target="_blank" rel="noreferrer">
@@ -47,36 +52,39 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/scss/utils.scss';
+@import '@/scss/core.scss';
 
 #contact {
 	padding-top: $nav-height;
-	margin-bottom: 200px;
+	margin-bottom: 400px;
 }
 
 .contact-heading {
+
 	margin-bottom: 0;
-	margin-top: 0;
-    &::after {
-        content: '';
-        width: 83px;
-        height: 48px;
-        background: url('../assets/homeContact.svg'); 
-        display: inline-block;
-        margin-left: 20px;
-        margin-top: 0px;
-        margin-bottom: 10px;
+	margin-top: 100px;
+
+    & .heading-ani {
+        width: 111px;
+        height: 111px;
+        position: absolute;
+        right: 30%;
+        bottom: 0px;
     }
 }
 
 h2 {
 	grid-column: 3 / 11;
-	text-align: left;
+	text-align: center;
+	margin-bottom: 50px;
 
 	& a {
 		font-weight: bold;
 		color: $wl-prime;
-		text-decoration: underline;
+
+		&:hover {
+			color: $wl-prime-lite;
+		}
 	}
 }
 
