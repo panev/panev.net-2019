@@ -119,16 +119,19 @@ nav a {
 		grid-column: 1 / 13;
 		text-align: center;
 		text-transform: uppercase;
-		color: $wl-prime;
+		color: $wl-black;
 		font-weight: bold;
+		font-size: 30px;
 	}
 
 	h3 {
 		grid-column: 1 / 13;
 		text-align: center;
 		text-transform: uppercase;
-		color: $wl-second;
+		color: $wl-black;
 		font-weight: bold;
+		margin-top: 40px;
+		margin-bottom: 10px;
 	}
 
 	& section {
