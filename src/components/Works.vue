@@ -1,33 +1,41 @@
 <template> 
     <div id="works" ref="works">
-   		<h1 class="works-heading section-heading">Work</h1>
+   		<h1 class="works-heading section-heading">
+   			Work
+   			<div class="heading-ani">
+   				<img src="@/assets/homeWork.svg" alt="section thumbnail" style="height: 97px;">
+   			</div>
+   		</h1>
     	
     	<ul class="grid-container">
 			
 			<li class="project lockedin">
 				<router-link to="/project-lockedinlive">
+					<img class="hidden" src="@/assets/worksThumbLockedinHover.svg" alt="project thumbnail">
 					<img src="@/assets/worksThumbLockedin.svg" alt="project thumbnail">
 					<h3>Lockedin Live</h3>
 					<p>A Progressive Web App that allows you to easily listen to online radio.</p>
-					<span class="cta">View case study ></span>
+					<span class="cta">View case study >></span>
 				</router-link>
 			</li>
 
 			<li class="project ticketmaster">
 				<router-link to="/project-ticketmaster">
+					<img class="hidden" src="@/assets/worksThumbTicketmasterHover.svg" alt="project thumbnail">
 					<img src="@/assets/worksThumbTicketmaster.svg" alt="project thumbnail">
 					<h3>Ticketmaster</h3>
 					<p>UI and design system work for the ticketmaster.com website.</p>
-					<span class="cta">View case study ></span>
+					<span class="cta">View case study >></span>
 				</router-link>
 			</li>
 
 			<li class="project sunflow">
 				<router-link to="/project-sunflow">
+					<img class="hidden" src="@/assets/worksThumbSunflowHover.svg" alt="project thumbnail">
 					<img src="@/assets/worksThumbSunflow.svg" alt="project thumbnail">
 					<h3>Sunflow</h3>
 					<p>A web app that allows you to create flows & mind maps.</p>
-					<span class="cta">View case study ></span>
+					<span class="cta">View case study >></span>
 				</router-link>
 			</li>
 
@@ -79,13 +87,16 @@ export default {
 }
 
 .works-heading {
-    &::after {
-        content: '';
-        width: 77px;
-        height: 97px;
-        background: url('../assets/homeWork.svg');
-        display: inline-block;
-        margin-left: 30px;
+	
+	position: relative;
+	display: inline-block;
+
+    & .heading-ani {
+        width: 111px;
+        height: 111px;
+        position: absolute;
+        right: -120px;
+        bottom: 0px;
     }
 }
 
@@ -93,27 +104,25 @@ export default {
 	height: 360px;
 	background: #fff;
 	border-radius: 16px;
-	border: 1px $wl-gray;
-	border-style: dashed;
+	border: 1px solid #E4E4E4;
 	margin-bottom: 25px;
 	text-align: left;
 	padding-left: 30px;
 	padding-top: 190px;
 	box-sizing: border-box;
-	box-shadow: 0 3px 5px 0 rgba(0,0,0,0.06);
+	box-shadow: 0 7px 10px 0 rgba(0,0,0,0.09);
 	position: relative;
 	z-index: 20;
 	overflow: hidden;
 	transition: 0.3s;
 
 	& h3 {
-		font-size: $type-small-heading;
+		font-size: 30px;
 		text-transform: uppercase;
 		margin-bottom: 10px;
 		z-index: 20;
 		position: relative;
 		transition: 0.3s;
-		text-shadow: 3px 3px 3px rgba(0,0,0,0.00);
 	}
 
 	& p {
@@ -131,7 +140,7 @@ export default {
 		font-size: $type-paragraph;
 		font-weight: bold;
 		text-transform: uppercase;
-		color: #fff;
+		color: $wl-prime;
 		display: inline-block;
 		position: relative;
 		z-index: 20;
@@ -143,18 +152,19 @@ export default {
 		right: 0;
 		z-index: 10;
 		transition: 0.5s;
+
+		&.hidden {
+			opacity: 0;
+		}
 	}
 
 	&:hover {
 	
 		& h3 {
-			color: #fff!important;
 			transform: translateY(-40px);
-			text-shadow: 3px 3px 3px rgba(0,0,0,0.15);
 		}
 	
 		& p {
-			color: #fff;
 			transform: translateY(-35px);
 		}
 	
@@ -162,28 +172,23 @@ export default {
 			opacity: 1;
 			transform: translateY(-25px);
 		}
+
+		& img.hidden {
+			opacity: 1;
+		}
+
+		img {
+			opacity: 0;
+		}
 	}
 
 	&.lockedin {
 
-		&::before {
-			content: '';
-			display: block;
-			position: absolute;
-			z-index: -10;
-			width: 319px;
-			height: 303px;
-    		top: -120px;
-    		right: -90px;
-		}
-
-		&:hover {
-			& img {
-				transform: scale(10) rotate(-15deg) translate(-30px, -20px);
-			}
-		}
-
 		& h3 {
+			color: $wl-lockedin;
+		}
+
+		& .cta {
 			color: $wl-lockedin;
 		}
 		
@@ -191,28 +196,25 @@ export default {
 
 	&.ticketmaster {
 
-		&:hover {
-			& img {
-				transform: scale(10) rotate(-15deg) translate(-50px, -20px);
-			}
+		& h3 {
+			color: $wl-ticketmaster;
 		}
 
-		& h3 {
+		& .cta {
 			color: $wl-ticketmaster;
 		}	
 	}
 
 	&.sunflow {
 
-		&:hover {
-			& img {
-				transform: scale(10) rotate(-15deg) translate(-110px, 0px);
-			}
-		}
-
 		& h3 {
 			color: $wl-sunflow;
 		}
+
+		& .cta {
+			color: $wl-sunflow;
+		}
+
 	}
 
 

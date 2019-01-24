@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="246px" height="196px" viewBox="0 0 246 196" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 35</title>
+    <title>Group 35 Copy</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <rect id="path-1" x="0" y="0" width="310" height="204"></rect>
+        <linearGradient x1="31.4376131%" y1="1.20750568%" x2="31.4376066%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#3B6FC2" stop-opacity="0.75" offset="0%"></stop>
+            <stop stop-color="#009CDE" offset="100%"></stop>
+            <stop stop-color="#009CDE" offset="100%"></stop>
+        </linearGradient>
     </defs>
     <g id="Visual-playground" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Home-Full-HD-Copy-6" transform="translate(-949.000000, -4336.000000)">
-            <g id="Group-35" transform="translate(885.000000, 4336.000000)">
+        <g id="Artboard" transform="translate(-949.000000, -743.000000)">
+            <g id="Group-35-Copy" transform="translate(885.000000, 743.000000)">
                 <mask id="mask-2" fill="white">
                     <use xlink:href="#path-1"></use>
                 </mask>
@@ -18,11 +23,11 @@
                         <g transform="translate(222.873675, 222.685136) rotate(-45.000000) translate(-222.873675, -222.685136) translate(29.873675, 101.185136)">
                             <g id="Group-34" transform="translate(0.000000, -0.000000)">
                                 <g id="Group-33" transform="translate(0.000000, -0.000000)">
-                                    <rect id="Rectangle" fill="#D8D8D8" x="66.6548223" y="60.9620253" width="319.218274" height="162.227848"></rect>
+                                    <rect id="Rectangle" fill="url(#linearGradient-3)" x="66.6548223" y="60.9620253" width="319.218274" height="162.227848"></rect>
                                     <ellipse id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="66.6548223" cy="223.189873" rx="15.8477157" ry="15.7721519"></ellipse>
                                     <ellipse id="Oval-Copy" fill="#FFFFFF" fill-rule="nonzero" cx="66.6548223" cy="65.4683544" rx="15.8477157" ry="15.7721519"></ellipse>
-                                    <circle id="Oval-Copy-2" fill="#CCCCCC" transform="translate(63.857011, 14.403330) rotate(45.000000) translate(-63.857011, -14.403330) " cx="63.8570114" cy="14.4033301" r="10.1632223"></circle>
-                                    <circle id="Oval-Copy-3" fill="#CCCCCC" transform="translate(59.854859, 227.895874) rotate(45.000000) translate(-59.854859, -227.895874) " cx="59.8548588" cy="227.895874" r="5.08161116"></circle>
+                                    <circle id="Oval-Copy-2" fill="url(#linearGradient-3)" transform="translate(63.857011, 14.403330) rotate(45.000000) translate(-63.857011, -14.403330) " cx="63.8570114" cy="14.4033301" r="10.1632223"></circle>
+                                    <circle id="Oval-Copy-3" fill="url(#linearGradient-3)" transform="translate(59.854859, 227.895874) rotate(45.000000) translate(-59.854859, -227.895874) " cx="59.8548588" cy="227.895874" r="5.08161116"></circle>
                                     <g id="Group-30" transform="translate(65.305210, 148.699414) rotate(45.000000) translate(-65.305210, -148.699414) translate(19.805210, 103.199414)" fill="#FFFFFF" fill-rule="nonzero">
                                         <rect id="Rectangle" x="0" y="0" width="11.319797" height="11.2658228"></rect>
                                         <rect id="Rectangle-Copy-5" x="45.2791878" y="45.0632911" width="11.319797" height="11.2658228"></rect>
@@ -33,10 +38,10 @@
                                         <rect id="Rectangle-Copy-4" x="33.9593909" y="33.7974684" width="11.319797" height="11.2658228"></rect>
                                         <rect id="Rectangle-Copy-8" x="79.2385787" y="78.8607595" width="11.319797" height="11.2658228"></rect>
                                     </g>
-                                    <circle id="Oval" fill="#BABABA" fill-rule="nonzero" transform="translate(183.040711, 142.075949) rotate(45.000000) translate(-183.040711, -142.075949) " cx="183.040711" cy="142.075949" r="30.489667"></circle>
+                                    <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" transform="translate(183.040711, 142.075949) rotate(45.000000) translate(-183.040711, -142.075949) " cx="183.040711" cy="142.075949" r="30.489667"></circle>
                                 </g>
-                                <polygon id="Rectangle" fill="#BABABA" transform="translate(156.767508, 225.552097) rotate(-15.000000) translate(-156.767508, -225.552097) " points="143.264782 212.104897 170.330733 212.044963 170.270234 238.999298 143.204283 239.059231"></polygon>
-                                <polygon id="Rectangle-Copy-9" fill="#FFFFFF" transform="translate(111.844959, 79.819541) rotate(-15.000000) translate(-111.844959, -79.819541) " points="105.093596 73.0959403 118.626572 73.0659736 118.596322 86.5431407 105.063346 86.5731074"></polygon>
+                                <polygon id="Rectangle" fill="url(#linearGradient-3)" transform="translate(156.767508, 225.552097) rotate(-15.000000) translate(-156.767508, -225.552097) " points="143.264782 212.104897 170.330733 212.044963 170.270234 238.999298 143.204283 239.059231"></polygon>
+                                <polygon id="Rectangle-Copy-9" fill="url(#linearGradient-3)" transform="translate(111.844959, 79.819541) rotate(-15.000000) translate(-111.844959, -79.819541) " points="105.093596 73.0959403 118.626572 73.0659736 118.596322 86.5431407 105.063346 86.5731074"></polygon>
                             </g>
                         </g>
                     </g>

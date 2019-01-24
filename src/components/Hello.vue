@@ -3,7 +3,7 @@
         <h1 class="hello-heading section-heading">
             Hi there!
             <div class="heading-ani">
-                <img src="@/assets/homeHello.svg" alt="heading thumbnail">
+                <img src="@/assets/homeHello.svg" alt="heading thumbnail" style="height: 105px;">
             </div>
         </h1>
         <div class="t-himsg">

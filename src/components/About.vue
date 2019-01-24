@@ -3,7 +3,7 @@
 		<h1 class="about-heading section-heading">
 			About me
 			<div class="heading-ani">
-				<img src="@/assets/homeAbout.svg" alt="section thumbnail">	
+				<img src="@/assets/homeAbout.svg" alt="section thumbnail" style="height: 102px;">	
 			</div>
 		</h1>
 		<img src="@/assets/aboutGraph.svg" alt="timeline graph" class="timeline-graph">
