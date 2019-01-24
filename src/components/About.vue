@@ -1,6 +1,11 @@
 <template>
 	<div id="about" ref="about" class="grid-container">
-		<h1 class="about-heading section-heading">About me</h1>
+		<h1 class="about-heading section-heading">
+			About me
+			<div class="heading-ani">
+				<img src="@/assets/homeAbout.svg" alt="section thumbnail">	
+			</div>
+		</h1>
 		<img src="@/assets/aboutGraph.svg" alt="timeline graph" class="timeline-graph">
 		<div class="info-block" v-bind:class="{ more: personWantsToKnowMore }">
 			<p>
@@ -75,16 +80,15 @@ export default {
 }
 
 .about-heading {
+	
+	position: relative;
 
-    &::after {
-        content: '';
-        width: 38px;
-        height: 102px;
-        background: url('../assets/homeAbout.svg');
-        display: inline-block;
-        margin-left: 40px;
-        margin-top: 0px;
-        margin-bottom: 10px;
+    & .heading-ani {
+        width: 111px;
+        height: 111px;
+        position: absolute;
+        right: 30%;
+        bottom: 10px;
     }
 }
 
