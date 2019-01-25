@@ -3,10 +3,20 @@
 		<h1 class="section-heading contact-heading">
 			Get in touch
 			<div class="heading-ani">
-				<img src="@/assets/homeContact.svg" alt="section thumbnail" style="height: 55px;">
+				<svg width="83px" height="48px" viewBox="0 0 83 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				    <title>Contact Icon</title>
+	                <rect id="Rectangle-10" fill="#F5F5F5" x="0" y="0" width="83" height="42" rx="10"></rect>
+	                <polygon id="Rectangle-10-Copy" fill="#E1E1E1" points="17 42 27 42 17 48"></polygon>
+	                <circle id="Oval-3" fill="#63DFDF" cx="51" cy="21" r="3"></circle>
+	                <circle id="Oval-2" fill="#63DFDF" cx="41" cy="21" r="3"></circle>
+	                <circle id="Oval-1" fill="#63DFDF" cx="31" cy="21" r="3"></circle>
+				</svg>			
 			</div>
 		</h1>
 		<h2>Feel free to contact me via <a href="mailto:todor@panev.net">email</a> or directly message me on&nbsp;<a href="https://twitter.com/messages/compose?recipient_id=553687251" target="_blank" rel="noreferrer">twitter</a>.</h2>
+		<svg>
+            <circle id="Oval-15" fill="#63DFDF" cx="51" cy="21" r="3"></circle>
+		</svg>
 		<div class="social-links">
 			<a href="https://www.linkedin.com/in/todorpanev/" target="_blank" rel="noreferrer">
 				<img src="@/assets/social-icons/linkedin.svg" alt="linkedin icon">
@@ -96,5 +106,63 @@ h2 {
 		margin: 0px 25px;
 	}
 }
+
+
+#Oval-1, 
+#Oval-2,
+#Oval-3 {
+	animation: updown 2s infinite ease-out;
+}
+
+#Oval-1 {
+	animation-delay: 0s;
+}
+
+#Oval-2 {
+	animation-delay: .35s;
+}
+
+#Oval-3 {
+	animation-delay: .75s;
+
+}
+
+@keyframes updown {
+	0% {
+		transform: translateY(0px);
+		fill: #47D8D8;
+	}
+
+	25% {
+		transform: translateY(-12px);
+		fill: #A68AFF;
+	}
+	
+	50% {
+		transform: translateY(0px);
+		fill: #47D8D8;
+	}
+
+	100% {
+		transform: translateY(0px);
+		fill: #47D8D8;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </style>
