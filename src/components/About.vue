@@ -203,7 +203,7 @@ export default {
 
 .timeline-graph {
 	grid-column: 2 / 5;
-	height: 760px;
+	height: 763px;
 }
 
 

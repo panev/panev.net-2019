@@ -3,6 +3,8 @@
         <h1 class="hello-heading section-heading">
             Hi there!
             <div class="heading-ani">
+
+                <transition name="swap-thumb">
                 <svg v-if="activePhoto === 0" width="111px" height="105px" viewBox="0 0 111 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <title>Hello UX Thumbnail</title>
                     <g id="Group-0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -23,6 +25,106 @@
                         </g>
                     </g>
                 </svg>
+                </transition>
+
+                <transition name="swap-thumb">
+                <svg v-if="activePhoto === 1" width="111px" height="111px" viewBox="0 0 111 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+                    <title>Group 17</title>
+                    <desc>Created with Sketch.</desc>
+                    <defs>
+                        <circle id="path-1" cx="39.5" cy="39.5" r="36.5"></circle>
+                        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="73" height="73" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <circle id="path-3" cx="39.5" cy="39.5" r="36.5"></circle>
+                        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="73" height="73" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                    </defs>
+                    <g id="Icons-&amp;-Graph" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Group-17" fill-rule="nonzero">
+                            <g id="Group-16">
+                                <g id="Group-15">
+                                    <rect id="Rectangle-Copy-4" fill="#FFFFFF" x="0" y="0" width="111" height="111"></rect>
+                                    <g id="Group-12" transform="translate(16.000000, 16.000000)">
+                                        <g id="Group-13">
+                                            <g id="Group-14">
+                                                <circle id="Oval" stroke="#EFEFEF" cx="39.5" cy="39.5" r="39"></circle>
+                                                <use id="Oval" stroke="#A68AFF" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="5,5" xlink:href="#path-1"></use>
+                                                <circle id="Oval" stroke="#EFEFEF" cx="39.5" cy="39.5" r="39"></circle>
+                                                <use id="Oval" stroke="#A68AFF" mask="url(#mask-4)" stroke-width="2" stroke-dasharray="5,5" xlink:href="#path-3"></use>
+                                                <path d="M39.5,52 C46.4035594,52 52,46.4035594 52,39.5 C52,32.5964406 46.4035594,27 39.5,27 C32.5964406,27 27,32.5964406 27,39.5 C27,46.4035594 32.5964406,52 39.5,52 Z" id="Oval" fill="#EFEFEF"></path>
+                                                <path d="M39.5,42 C40.8807119,42 42,40.8807119 42,39.5 C42,38.1192881 40.8807119,37 39.5,37 C38.1192881,37 37,38.1192881 37,39.5 C37,40.8807119 38.1192881,42 39.5,42 Z" id="Oval" fill="#D8D8D8"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(18.000000, 7.000000)">
+                                <circle id="Oval" fill="#A68AFF" cx="75.5" cy="52.5" r="13.5"></circle>
+                                <g id="Group-11">
+                                    <circle id="Oval" fill="#EFEFEF" cx="14.5" cy="14.5" r="14.5"></circle>
+                                    <circle id="Oval" fill="#FFFFFF" cx="14.5" cy="14.5" r="8.5"></circle>
+                                    <circle id="Oval" fill="#A68AFF" cx="14.5" cy="14.5" r="4.5"></circle>
+                                </g>
+                                <polygon id="Rectangle" fill="#D8D8D8" transform="translate(17.427027, 81.431179) rotate(60.000000) translate(-17.427027, -81.431179) " points="6.8585178 70.8740152 27.9758858 70.8936651 27.9955357 91.9883433 6.87816771 91.9686934"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                </transition>
+
+                <transition name="swap-thumb">
+                <svg v-if="activePhoto === 2" width="111px" height="111px" viewBox="0 0 111 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>Group 6</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Icons-&amp;-Graph" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Group-17" transform="translate(-170.000000, -4.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                            <g id="Group-16">
+                                <g id="Group-15">
+                                    <rect id="Rectangle-Copy-5" x="170" y="4" width="111" height="111"></rect>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Group-6" fill-rule="nonzero">
+                            <polygon id="Rectangle-Copy-2" fill="#2B507D" transform="translate(93.000000, 86.000000) rotate(-90.000000) translate(-93.000000, -86.000000) " points="91 84 95 85.0466324 92.0466324 88"></polygon>
+                            <path d="M56,83 C67.5259426,83 80.8592759,73.852459 96,55.557377 C80.8592759,37.852459 67.5259426,29 56,29 C44.4740574,29 31.1407241,37.852459 16,55.557377 C31.1407241,73.852459 44.4740574,83 56,83 Z" id="Oval" fill="#D8D8D8"></path>
+                            <path d="M56,83 C67.5259426,83 80.8592759,73.852459 96,55.557377 C80.8592759,37.852459 67.5259426,29 56,29 C44.4740574,29 31.1407241,37.852459 16,55.557377 C31.1407241,73.852459 44.4740574,83 56,83 Z" id="Oval" fill="#EFEFEF"></path>
+                            <circle id="Oval" fill="#FFFFFF" cx="56" cy="56" r="16"></circle>
+                            <circle id="Oval" fill="#2B507D" cx="56" cy="56" r="14"></circle>
+                            <circle id="Oval" fill="#FFFFFF" cx="56" cy="56" r="7"></circle>
+                            <circle id="Oval-Copy-3" fill="#EFEFEF" cx="19" cy="31" r="4"></circle>
+                            <polygon id="Rectangle-Copy" fill="#E3E3E3" transform="translate(103.500000, 25.000000) rotate(-90.000000) translate(-103.500000, -25.000000) " points="95.5 17.5 111.5 21.4248717 99.6865298 32.5"></polygon>
+                            <polygon id="Rectangle" fill="#EFEFEF" transform="translate(30.648151, 91.234754) rotate(-330.000000) translate(-30.648151, -91.234754) " points="28.3518159 88.9257802 32.9225945 88.9476716 32.9444859 93.5437282 28.3737074 93.5218368"></polygon>
+                            <polygon id="Rectangle-Copy-3" fill="#EFEFEF" transform="translate(62.286343, 13.295595) rotate(-330.000000) translate(-62.286343, -13.295595) " points="57.6936729 8.67764728 66.8352301 8.72143016 66.8790129 17.9135434 57.7374558 17.8697605"></polygon>
+                        </g>
+                    </g>
+                </svg>
+                </transition>
+
+                <transition name="swap-thumb">
+                <svg v-if="activePhoto === 3" width="111px" height="111px" viewBox="0 0 111 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+                    <title>Slice</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Icons-&amp;-Graph" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Group-8" fill-rule="nonzero">
+                            <rect id="Rectangle-Copy-6" x="0" y="0" width="111" height="111"></rect>
+                            <circle id="Oval-Copy-4" fill="#F0F0F0" cx="45" cy="32" r="3"></circle>
+                            <circle id="Oval-Copy-5" fill="#FFBC9A" cx="37" cy="10" r="6"></circle>
+                            <polygon id="Rectangle" fill="#FFBC9A" transform="translate(70.500000, 29.500000) rotate(-90.000000) translate(-70.500000, -29.500000) " points="62 21 79 25.4481879 66.4481879 38"></polygon>
+                            <rect id="Rectangle" fill="#F0F0F0" x="29" y="49" width="54" height="54" rx="2"></rect>
+                            <rect id="Rectangle" fill="#FFBC9A" x="35" y="72" width="42" height="24" rx="2"></rect>
+                            <circle id="Oval" fill="#FFBC9A" cx="51.5" cy="58.5" r="3.5"></circle>
+                            <circle id="Oval-Copy" fill="#FFFFFF" cx="50.5" cy="88.5" r="1.5"></circle>
+                            <circle id="Oval-Copy-2" fill="#FFFFFF" cx="58" cy="81" r="3"></circle>
+                            <rect id="Rectangle" fill="#E3E3E3" transform="translate(55.500000, 52.500000) scale(1, -1) translate(-55.500000, -52.500000) " x="24" y="49" width="63" height="7" rx="2"></rect>
+                        </g>
+                    </g>
+                </svg>
+                </transition>
+
             </div>
         </h1>
         <div class="t-himsg">
@@ -80,12 +182,12 @@ export default {
                 {
                     id: '3',
                     buttonString: "Visual",
-                    roleColour: "#F68EFF",
+                    roleColour: "#2B507D",
                     role: "VD"
                 }, 
                 {
                     id: '4',
-                    buttonString: "Interaction",
+                    buttonString: "Front-end",
                     roleColour: "#FFBC9A",
                     role: "IXD"
                 }
@@ -160,6 +262,32 @@ export default {
         position: absolute;
         right: 30%;
         bottom: 10px;
+
+        & svg {
+            position: absolute;
+            left: 0;
+            transform-origin: center;
+        }
+    }
+}
+
+.swap-thumb-enter-active {
+    animation: swap-thumb 0.5s reverse;
+}
+.swap-thumb-leave-active {
+    animation: swap-thumb 0.5s;
+}
+
+
+@keyframes swap-thumb {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+    
+    100% {
+        transform: rotate(360deg) scale(0);
+        opacity: 0;
     }
 }
 
@@ -315,6 +443,7 @@ export default {
 svg {
     overflow: visible;
 }
+
 
 
 
