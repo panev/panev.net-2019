@@ -29,9 +29,6 @@
 
                 <transition name="swap-thumb">
                 <svg v-if="activePhoto === 1" width="111px" height="111px" viewBox="0 0 111 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
-                    <title>Group 17</title>
-                    <desc>Created with Sketch.</desc>
                     <defs>
                         <circle id="path-1" cx="39.5" cy="39.5" r="36.5"></circle>
                         <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="73" height="73" fill="white">
@@ -42,28 +39,28 @@
                             <use xlink:href="#path-3"></use>
                         </mask>
                     </defs>
-                    <g id="Icons-&amp;-Graph" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Product" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="Group-17" fill-rule="nonzero">
                             <g id="Group-16">
                                 <g id="Group-15">
                                     <rect id="Rectangle-Copy-4" fill="#FFFFFF" x="0" y="0" width="111" height="111"></rect>
-                                    <g id="Group-12" transform="translate(16.000000, 16.000000)">
+                                    <g id="product-circle" transform="translate(16.000000, 16.000000)">
                                         <g id="Group-13">
                                             <g id="Group-14">
                                                 <circle id="Oval" stroke="#EFEFEF" cx="39.5" cy="39.5" r="39"></circle>
                                                 <use id="Oval" stroke="#A68AFF" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="5,5" xlink:href="#path-1"></use>
                                                 <circle id="Oval" stroke="#EFEFEF" cx="39.5" cy="39.5" r="39"></circle>
                                                 <use id="Oval" stroke="#A68AFF" mask="url(#mask-4)" stroke-width="2" stroke-dasharray="5,5" xlink:href="#path-3"></use>
-                                                <path d="M39.5,52 C46.4035594,52 52,46.4035594 52,39.5 C52,32.5964406 46.4035594,27 39.5,27 C32.5964406,27 27,32.5964406 27,39.5 C27,46.4035594 32.5964406,52 39.5,52 Z" id="Oval" fill="#EFEFEF"></path>
-                                                <path d="M39.5,42 C40.8807119,42 42,40.8807119 42,39.5 C42,38.1192881 40.8807119,37 39.5,37 C38.1192881,37 37,38.1192881 37,39.5 C37,40.8807119 38.1192881,42 39.5,42 Z" id="Oval" fill="#D8D8D8"></path>
+                                                <path d="M39.5,52 C46.4035594,52 52,46.4035594 52,39.5 C52,32.5964406 46.4035594,27 39.5,27 C32.5964406,27 27,32.5964406 27,39.5 C27,46.4035594 32.5964406,52 39.5,52 Z" id="p-oval-2" fill="#EFEFEF"></path>
+                                                <path d="M39.5,42 C40.8807119,42 42,40.8807119 42,39.5 C42,38.1192881 40.8807119,37 39.5,37 C38.1192881,37 37,38.1192881 37,39.5 C37,40.8807119 38.1192881,42 39.5,42 Z" id="p-oval-2" fill="#D8D8D8"></path>
                                             </g>
                                         </g>
                                     </g>
                                 </g>
                             </g>
                             <g id="Group" transform="translate(18.000000, 7.000000)">
-                                <circle id="Oval" fill="#A68AFF" cx="75.5" cy="52.5" r="13.5"></circle>
-                                <g id="Group-11">
+                                <circle id="p-oval-purple" fill="#A68AFF" cx="75.5" cy="52.5" r="13.5"></circle>
+                                <g id="p-oval-target">
                                     <circle id="Oval" fill="#EFEFEF" cx="14.5" cy="14.5" r="14.5"></circle>
                                     <circle id="Oval" fill="#FFFFFF" cx="14.5" cy="14.5" r="8.5"></circle>
                                     <circle id="Oval" fill="#A68AFF" cx="14.5" cy="14.5" r="4.5"></circle>
@@ -379,7 +376,7 @@ export default {
 @keyframes sunscale {
     0% {
         transform: scale(1);
-        opacity: 0.0;
+        opacity: 0;
     }
 
     50% {
@@ -387,7 +384,7 @@ export default {
     }
 
     100% {
-        opacity: 0.0;
+        opacity: 0;
         transform: scale(1.1);
     }
 }
@@ -411,33 +408,67 @@ export default {
     }
 }
 
-.text-ani-enter-active,
-.text-ani-leave-active {
-    animation: textInOut 0.5s;
+
+#p-oval-1,
+#p-oval-2 {
+    animation: scaleOvals 1.5s infinite;
+    transform-origin: 50% 50%;
 }
 
-@keyframes textInOut {
+#p-oval-2 {
+    animation-delay: 1.35s;
+}
+
+
+@keyframes scaleOvals {
     0% {
-        transform: scale(1);
         opacity: 1;
     }
 
+    50% {
+        opacity: 0.4;
+    }
+
     100% {
-        transform: scale(0);
-        opacity: 0;
+        opacity: 1;
     }
 }
 
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
+#Product {
+    animation: rotateProduct 7s infinite linear;
+    transform-origin: center;
 }
 
+#Rectangle {
+    animation: heartscale 1s infinite linear;
+    transform-origin: 50% 50%;
+}
 
+#p-oval-purple {
+    animation: heartscale 2s infinite linear;
+    transform-origin: 50% 50%;
+}
 
+#p-oval-target {
+    animation: heartscale 3s infinite linear reverse;
+    transform-origin: 50% 50%s;
+}
+
+@keyframes rotateProduct {
+    0% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
 
 
 svg {
