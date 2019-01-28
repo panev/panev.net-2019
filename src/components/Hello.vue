@@ -100,20 +100,17 @@
 
                 <transition name="swap-thumb">
                 <svg v-if="activePhoto === 3" width="111px" height="111px" viewBox="0 0 111 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
-                    <title>Slice</title>
-                    <desc>Created with Sketch.</desc>
-                    <g id="Icons-&amp;-Graph" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="FE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="Group-8" fill-rule="nonzero">
                             <rect id="Rectangle-Copy-6" x="0" y="0" width="111" height="111"></rect>
-                            <circle id="Oval-Copy-4" fill="#F0F0F0" cx="45" cy="32" r="3"></circle>
-                            <circle id="Oval-Copy-5" fill="#FFBC9A" cx="37" cy="10" r="6"></circle>
-                            <polygon id="Rectangle" fill="#FFBC9A" transform="translate(70.500000, 29.500000) rotate(-90.000000) translate(-70.500000, -29.500000) " points="62 21 79 25.4481879 66.4481879 38"></polygon>
+                            <circle id="fe-particle-1" fill="#F0F0F0" cx="45" cy="32" r="3"></circle>
+                            <circle id="fe-particle-2" fill="#FFBC9A" cx="37" cy="10" r="6"></circle>
+                            <polygon id="fe-particle-3" fill="#FFBC9A" transform="translate(70.500000, 29.500000) rotate(-90.000000) translate(-70.500000, -29.500000) " points="62 21 79 25.4481879 66.4481879 38"></polygon>
                             <rect id="Rectangle" fill="#F0F0F0" x="29" y="49" width="54" height="54" rx="2"></rect>
                             <rect id="Rectangle" fill="#FFBC9A" x="35" y="72" width="42" height="24" rx="2"></rect>
-                            <circle id="Oval" fill="#FFBC9A" cx="51.5" cy="58.5" r="3.5"></circle>
-                            <circle id="Oval-Copy" fill="#FFFFFF" cx="50.5" cy="88.5" r="1.5"></circle>
-                            <circle id="Oval-Copy-2" fill="#FFFFFF" cx="58" cy="81" r="3"></circle>
+                            <circle id="fe-particle-4" fill="#FFBC9A" cx="51.5" cy="58.5" r="3.5"></circle>
+                            <circle id="fe-particle-5" fill="#FFFFFF" cx="50.5" cy="88.5" r="1.5"></circle>
+                            <circle id="fe-particle-6" fill="#FFFFFF" cx="58" cy="81" r="3"></circle>
                             <rect id="Rectangle" fill="#E3E3E3" transform="translate(55.500000, 52.500000) scale(1, -1) translate(-55.500000, -52.500000) " x="24" y="49" width="63" height="7" rx="2"></rect>
                         </g>
                     </g>
@@ -409,14 +406,9 @@ export default {
 
 #p-oval-1,
 #p-oval-2 {
-    animation: aniOvals 1.5s infinite;
+    animation: aniOvals 7s infinite;
     transform-origin: 50% 50%;
 }
-
-#p-oval-2 {
-    animation-delay: 1.35s;
-}
-
 
 @keyframes aniOvals {
     0% {
@@ -455,16 +447,19 @@ export default {
 @keyframes rotateProduct {
     0% {
         opacity: 1;
-        transform: rotate(0deg);
+        transform: rotate(0deg) scale(1);
     }
 
     50% {
         opacity: 0.6;
+        transform: rotate(180deg) scale(0.85);
+
     }
 
     100% {
         opacity: 1;
-        transform: rotate(360deg);
+        transform: rotate(360deg) scale(1);
+
     }
 }
 
@@ -502,6 +497,7 @@ export default {
 #vd-particle-5 {
     animation: aniParticles 1.5s infinite;
     transform-origin: 50% 50%;
+    opacity: 0;
 }
 
 #vd-particle-1 {
@@ -542,7 +538,56 @@ export default {
     }
 }
 
+#fe-particle-1,
+#fe-particle-2,
+#fe-particle-3,
+#fe-particle-4,
+#fe-particle-5,
+#fe-particle-6 {
+    animation: aniParticlesUp 2s infinite;
+    transform-origin: 50% 50%;
+    opacity: 0;
+}
 
+#fe-particle-1 {
+    animation-delay: 0.3s
+}
+
+#fe-particle-2 {
+    animation-delay: 0s
+}
+
+#fe-particle-3 {
+    animation-delay: 0.7s
+}
+
+#fe-particle-4 {
+    animation-delay: 1.3s
+}
+
+#fe-particle-5 {
+    animation-delay: 1.0s
+}
+
+#fe-particle-6 {
+    animation-delay: 0.5s
+}
+
+@keyframes aniParticlesUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-20px) rotate(10deg);
+        opacity: 0;
+    }
+}
 
 
 
