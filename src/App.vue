@@ -7,6 +7,11 @@
 
 /* some global scss lives here */
 
+::selection {
+  background: lighten(#A68AFF, 15%);
+  color: #353535;
+}
+
 * {
   box-sizing: border-box;
 }

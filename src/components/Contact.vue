@@ -14,9 +14,6 @@
 			</div>
 		</h1>
 		<h2>Feel free to contact me via <a href="mailto:todor@panev.net">email</a> or directly message me on&nbsp;<a href="https://twitter.com/messages/compose?recipient_id=553687251" target="_blank" rel="noreferrer">twitter</a>.</h2>
-		<svg>
-            <circle id="Oval-15" fill="#63DFDF" cx="51" cy="21" r="3"></circle>
-		</svg>
 		<div class="social-links">
 			<a href="https://www.linkedin.com/in/todorpanev/" target="_blank" rel="noreferrer">
 				<img src="@/assets/social-icons/linkedin.svg" alt="linkedin icon">

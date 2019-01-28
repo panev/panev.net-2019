@@ -31,7 +31,7 @@
 		<img src="@/assets/aboutGraph.svg" alt="timeline graph" class="timeline-graph">
 		<div class="info-block" v-bind:class="{ more: personWantsToKnowMore }">
 			<p>
-				I've spent most of my career helping build digital products, learning about the intracacies that web technology has to offer and exploring what user experience is and applying it in the real world.
+				I've spent most of my career helping build digital products, learning about the intricacies that web technology has to offer and exploring what user experience is and applying it in the real world.
 				<br><br>
 				My current interests lie in understanding complex problems holistically and applying solutions that have a positive impact throughout the entire system or product. 
 				<br><br>
