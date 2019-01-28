@@ -37,11 +37,11 @@
 				<br><br>
 				I think that often people associate the word <strong>design</strong> with creativity, art and having the freedom to make whatever one pleases. I believe this to be an inaccurate notion. I think that in order to design something, you have to have clear objectives in mind. Sometimes defining those objectives is part of the process. Design is also <strong>used</strong> by people. This leads to outcomes which can be observed, measured and reflected upon.
 				<br><br>
-				While living in the physical world, we also face constraints: time, business goals and people's perception of different things, to name a few. These limitations do not hinder us, but offer the rare opportunity to synchronise with &mdash; and operate in &mdash; reailty.
+				While living in the physical world, we also face constraints: time, business goals and people's perception of different things, to name a few. These limitations do not hinder us, but offer the rare opportunity to synchronise with&mdash;and operate in&mdash;reailty.
 				<br><br>
 				I believe that it is crucial to aim to view issues on a broader level &ndash; having context is necessary in order to empathize with people and understand their needs and pain points. This can happen using a variety of research methods, my favourite of which happens to be talking to the actual people I'm designing for.
 				<br><br>
-				Design is engineering for people.
+				Thanks for reading – check out the projects bellow.
 			</p>
 
 			<div class="buttons">
