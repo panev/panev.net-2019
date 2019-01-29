@@ -4,7 +4,7 @@
 		<header class="grid-container">
 			<div class="logo-and-back">
 				<h3>Project<span>:</span> Ticketmaster</h3>
-				<router-link to="/"><< Back</router-link>
+				<router-link to="/"><< BACK</router-link>
 			</div>
 			<nav :class=" { 
 				contextActive: contextActive,

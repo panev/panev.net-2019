@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.51e6808eaa888f30d4b9646abd17ac02.js"
+  "/precache-manifest.27fcddead792ec8703831d2475f8d38f.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "panev.net"});
