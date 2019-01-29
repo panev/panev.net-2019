@@ -48,9 +48,9 @@
                                         <g id="Group-13">
                                             <g id="Group-14">
                                                 <circle id="Oval" stroke="#EFEFEF" cx="39.5" cy="39.5" r="39"></circle>
-                                                <use id="Oval" stroke="#A68AFF" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="5,5" xlink:href="#path-1"></use>
+                                                <use id="Oval" stroke="#A1A1A1" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="5,5" xlink:href="#path-1"></use>
                                                 <circle id="Oval" stroke="#EFEFEF" cx="39.5" cy="39.5" r="39"></circle>
-                                                <use id="Oval" stroke="#A68AFF" mask="url(#mask-4)" stroke-width="2" stroke-dasharray="5,5" xlink:href="#path-3"></use>
+                                                <use id="Oval" stroke="#A1A1A1" mask="url(#mask-4)" stroke-width="2" stroke-dasharray="5,5" xlink:href="#path-3"></use>
                                                 <path d="M39.5,52 C46.4035594,52 52,46.4035594 52,39.5 C52,32.5964406 46.4035594,27 39.5,27 C32.5964406,27 27,32.5964406 27,39.5 C27,46.4035594 32.5964406,52 39.5,52 Z" id="p-oval-2" fill="#EFEFEF"></path>
                                                 <path d="M39.5,42 C40.8807119,42 42,40.8807119 42,39.5 C42,38.1192881 40.8807119,37 39.5,37 C38.1192881,37 37,38.1192881 37,39.5 C37,40.8807119 38.1192881,42 39.5,42 Z" id="p-oval-2" fill="#D8D8D8"></path>
                                             </g>
@@ -63,9 +63,9 @@
                                 <g id="p-oval-target">
                                     <circle id="Oval" fill="#EFEFEF" cx="14.5" cy="14.5" r="14.5"></circle>
                                     <circle id="Oval" fill="#FFFFFF" cx="14.5" cy="14.5" r="8.5"></circle>
-                                    <circle id="Oval" fill="#A68AFF" cx="14.5" cy="14.5" r="4.5"></circle>
+                                    <circle id="Oval" fill="#A1A1A1" cx="14.5" cy="14.5" r="4.5"></circle>
                                 </g>
-                                <polygon id="p-rectangle" fill="#D8D8D8" transform="translate(17.427027, 81.431179) rotate(60.000000) translate(-17.427027, -81.431179) " points="6.8585178 70.8740152 27.9758858 70.8936651 27.9955357 91.9883433 6.87816771 91.9686934"></polygon>
+                                <polygon id="p-rectangle" fill="#D8D8D8" transform="translate(17.427027, 81.431179) rotate(60.000000) translate(-17.427027, -81.431179) " opacity="0.5" points="6.8585178 70.8740152 27.9758858 70.8936651 27.9955357 91.9883433 6.87816771 91.9686934"></polygon>
                             </g>
                         </g>
                     </g>
@@ -83,7 +83,7 @@
                             </g>
                         </g>
                         <g id="Group-6" fill-rule="nonzero">
-                            <polygon id="vd-particle-4" fill="#2B507D" transform="translate(93.000000, 86.000000) rotate(-90.000000) translate(-93.000000, -86.000000) " points="91 84 95 85.0466324 92.0466324 88"></polygon>
+                            <polygon id="vd-particle-4" fill="#A1A1A1" transform="translate(93.000000, 86.000000) rotate(-90.000000) translate(-93.000000, -86.000000) " points="91 84 95 85.0466324 92.0466324 88"></polygon>
                             <path d="M56,83 C67.5259426,83 80.8592759,73.852459 96,55.557377 C80.8592759,37.852459 67.5259426,29 56,29 C44.4740574,29 31.1407241,37.852459 16,55.557377 C31.1407241,73.852459 44.4740574,83 56,83 Z" id="Oval" fill="#D8D8D8"></path>
                             <path d="M56,83 C67.5259426,83 80.8592759,73.852459 96,55.557377 C80.8592759,37.852459 67.5259426,29 56,29 C44.4740574,29 31.1407241,37.852459 16,55.557377 C31.1407241,73.852459 44.4740574,83 56,83 Z" id="Oval" fill="#EFEFEF"></path>
                             <circle id="Oval" fill="#FFFFFF" cx="56" cy="56" r="16"></circle>
@@ -104,11 +104,11 @@
                         <g id="Group-8" fill-rule="nonzero">
                             <rect id="Rectangle-Copy-6" x="0" y="0" width="111" height="111"></rect>
                             <circle id="fe-particle-1" fill="#F0F0F0" cx="45" cy="32" r="3"></circle>
-                            <circle id="fe-particle-2" fill="#FFBC9A" cx="37" cy="10" r="6"></circle>
-                            <polygon id="fe-particle-3" fill="#FFBC9A" transform="translate(70.500000, 29.500000) rotate(-90.000000) translate(-70.500000, -29.500000) " points="62 21 79 25.4481879 66.4481879 38"></polygon>
+                            <circle id="fe-particle-2" fill="#F0F0F0" cx="37" cy="10" r="6"></circle>
+                            <polygon id="fe-particle-3" fill="#F0F0F0" transform="translate(70.500000, 29.500000) rotate(-90.000000) translate(-70.500000, -29.500000) " points="62 21 79 25.4481879 66.4481879 38"></polygon>
                             <rect id="Rectangle" fill="#F0F0F0" x="29" y="49" width="54" height="54" rx="2"></rect>
                             <rect id="Rectangle" fill="#FFBC9A" x="35" y="72" width="42" height="24" rx="2"></rect>
-                            <circle id="fe-particle-4" fill="#FFBC9A" cx="51.5" cy="58.5" r="3.5"></circle>
+                            <circle id="fe-particle-4" fill="#F0F0F0" cx="51.5" cy="58.5" r="3.5"></circle>
                             <circle id="fe-particle-5" fill="#FFFFFF" cx="50.5" cy="88.5" r="1.5"></circle>
                             <circle id="fe-particle-6" fill="#FFFFFF" cx="58" cy="81" r="3"></circle>
                             <rect id="Rectangle" fill="#E3E3E3" transform="translate(55.500000, 52.500000) scale(1, -1) translate(-55.500000, -52.500000) " x="24" y="49" width="63" height="7" rx="2"></rect>
