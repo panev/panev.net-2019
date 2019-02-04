@@ -226,5 +226,26 @@ a {
 	transform: translateX(360px) translateY(0px);
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 1200px) {
+
+
+.header {
+	display: none;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 </style>

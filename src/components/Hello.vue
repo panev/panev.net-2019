@@ -146,7 +146,7 @@
                         </span>
 
                     </span> 
-                designer based in Sofia, Bulgaria.
+                designer <span class="hide-on-mobile">based in Sofia, Bulgaria.</span>
             </h2>
         </div>
     </div>
@@ -589,22 +589,25 @@ export default {
     }
 }
 
-
-
-
-
-
-
 svg {
     overflow: visible;
 }
 
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 1200px) {
 
+    .hello-heading .heading-ani {
+        right: 50%;
+        bottom: 100px;
+        transform: translateX(50%);
+    }
 
+    .t-himsg {
+        display: block;
+        text-align: center;
+    }
 
-
-
+}
 
 
 

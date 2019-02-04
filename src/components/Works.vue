@@ -301,7 +301,48 @@ svg {
 }
 
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 1200px) {
 
+
+.works-heading .heading-ani {
+	bottom: 70px;
+    right: 50%;
+	transform: translateX(50%);
+}
+
+.project {
+
+	width: 100vw;
+
+		& h3 {
+			transform: translateY(-40px);
+		}
+	
+		& p {
+			transform: translateY(-35px);
+			font-size: 16px;
+		}
+	
+		& .cta {
+			opacity: 1;
+			transform: translateY(-25px);
+		}
+
+		& img.hidden {
+			opacity: 1;
+		}
+
+		img {
+			opacity: 0;
+		}
+}
+
+.grid-container {
+	padding: 0;
+}
+
+
+}
 
 
 

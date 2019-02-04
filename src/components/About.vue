@@ -323,8 +323,23 @@ svg {
 	overflow: visible;
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 1200px) {
 
+.info-block {
+	padding: 0px 30px;
+}
 
+.about-heading .heading-ani {
+	bottom: 110px;
+    right: 48%;
+	transform: translateX(50%);
+}
+
+.button-slim {
+	margin-bottom: 45px;
+}
+
+}
 
 
 

@@ -134,11 +134,29 @@ p {
 
 
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 1200px) {
+
+.hide-on-mobile {
+	display: none;
+}
+
+.grid-container {
+	display: block;
+}
+
+.section-heading {
+	display: block;
+	width: 100vw;
+}
 
 
 
 
 
+
+
+
+}
 
 
 
