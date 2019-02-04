@@ -596,10 +596,14 @@ svg {
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 1200px) {
 
-    .hello-heading .heading-ani {
-        right: 50%;
-        bottom: 100px;
-        transform: translateX(50%);
+    .hello-heading {
+        margin-bottom: 70px;
+        
+        & .heading-ani {
+            right: 50%;
+            bottom: 100px;
+            transform: translateX(50%);
+        }
     }
 
     .t-himsg {

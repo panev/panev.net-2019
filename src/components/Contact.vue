@@ -149,7 +149,18 @@ h2 {
 
 
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 1200px) {
 
+#contact {
+	margin-bottom: 50px;
+}
+
+.social-links a {
+	margin: 45px;
+	display: inline-block;
+}
+
+}
 
 
 

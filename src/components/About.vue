@@ -35,6 +35,7 @@
 				<br><br>
 				My current interests lie in understanding complex problems holistically and applying solutions that have a positive impact throughout the entire system or product. 
 				<br><br>
+				<span class="hide-on-mobile">
 				Some thoughts and personal reflections on design:
 				<br><br>
 				I think that often people associate the word <strong>design</strong> with aesthetics, art and having the freedom to make whatever one pleases. I believe this to be an inaccurate notion. I think that in order to design something, you have to have clear objectives in mind. Sometimes defining those objectives is part of the process. Design is also <strong>used</strong> by people. This leads to outcomes which can be observed, measured and reflected upon.
@@ -42,9 +43,8 @@
 				While living in the physical world, we also face constraints: time, business goals and people's perception of different things, to name a few. These limitations do not hinder us, but offer the rare opportunity to synchronise with&mdash;and operate in&mdash;reailty.
 				<br><br>
 				I believe that it is crucial to aim to view issues on a broader level &ndash; having context is necessary in order to empathize with people and understand their needs and pain points. This can happen using a variety of research methods, my favourite of which happens to be talking to the actual people I'm designing for.
-<!-- 				<br><br>
-				Thanks for reading – check out the projects bellow.
- -->			</p>
+				</span>
+			</p>
 
 			<div class="buttons">
 				<a class="button-slim" @click="toggleMoreInfo()">{{ personWantsToKnowMore ? 'READ LESS' : 'READ MORE' }}</a>
@@ -326,7 +326,20 @@ svg {
 @media only screen and (min-device-width : 320px) and (max-device-width : 1200px) {
 
 .info-block {
-	padding: 0px 30px;
+	height: 380px;
+
+	&::before,
+	&::after,
+	.buttons {
+		display: none;
+	}
+
+	& p {
+		padding: 0px 30px;
+		position: static;
+		transform: translateY(0px);
+		height: 350px;
+	}
 }
 
 .about-heading .heading-ani {
@@ -337,6 +350,7 @@ svg {
 
 .button-slim {
 	margin-bottom: 45px;
+	margin-left: 30px;
 }
 
 }
