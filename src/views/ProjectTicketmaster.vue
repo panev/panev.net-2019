@@ -107,7 +107,7 @@
 				<p>
 					After a few iterations and some trial and error, we set up an elaborate process that helped us communicate better amongst ourselves and the core design team, created a coherent feedback loop with product owners and stakeholders and established a hand-off procedure with the development teams. 
 				</p>
-				<img src="@/assets/project-ticketmaster/workflow.svg" alt="process workflow" class="mock" style="height: 2004px">
+				<img src="@/assets/project-ticketmaster/workflow.jpg" alt="process workflow" class="mock" style="height: 2004px">
 				<p>
 					It looks a bit intense, I know. However, this seemingly bloated looking process diagram actually provided a lot of value as it gave us a framework for our workflow within the organisation and wasn't actually that slow and heavy to work with.
 				</p>
