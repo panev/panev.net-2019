@@ -594,7 +594,7 @@ svg {
 }
 
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 1200px) {
+@media only screen and (min-width : 320px) and (max-width : 1200px) {
 
     .hello-heading {
         margin-bottom: 70px;

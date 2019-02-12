@@ -323,7 +323,7 @@ svg {
 	overflow: visible;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 1200px) {
+@media only screen and (min-width : 320px) and (max-width : 1200px) {
 
 .info-block {
 	height: 380px;
