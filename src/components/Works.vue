@@ -118,17 +118,16 @@ export default {
     }
 }
 
-.project {
+.project { 
 	height: 360px;
-	background: #fff;
-	border-radius: 16px;
-	border: 1px solid #E4E4E4;
+	background: #fcfcfc;
+	border-radius: 8px;
+	border: 1px solid #f0f0f0;
 	margin-bottom: 25px;
 	text-align: left;
 	padding-left: 30px;
-	padding-top: 190px;
 	box-sizing: border-box;
-	box-shadow: 0 7px 10px 0 rgba(0,0,0,0.09);
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.09);
 	position: relative;
 	z-index: 20;
 	overflow: hidden;
@@ -141,6 +140,8 @@ export default {
 		z-index: 20;
 		position: relative;
 		transition: 0.3s;
+		margin-top: 190px;
+		margin-left: 30px;
 	}
 
 	& p {
@@ -148,6 +149,7 @@ export default {
 		margin-top: 0px;
 		z-index: 20;
 		position: relative;
+		margin-left: 30px;
 		transition: 0.3s;
 	}
 
@@ -161,6 +163,7 @@ export default {
 		color: $wl-prime;
 		display: inline-block;
 		position: relative;
+		margin-left: 30px;
 		z-index: 20;
 	}
 
@@ -175,8 +178,20 @@ export default {
 			opacity: 0;
 		}
 	}
+	& a {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+	}
 
 	&:hover {
+		background: #fff;
+
+		transform: translateY(-8px);
+		box-shadow: 0 8px 16px 4px rgba(0,0,0,0.09);
+
 	
 		& h3 {
 			transform: translateY(-40px);
